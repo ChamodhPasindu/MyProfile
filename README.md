@@ -1,5 +1,6 @@
-#This is my portfolio
 
-####IJSE
+# This is my portfolio
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+#### TEST
+
+![Image of Myprofile](assets/images/portfolio.png)
