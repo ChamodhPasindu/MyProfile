@@ -54,7 +54,7 @@ section>nav>ul>li>a:hover{
     margin-left: 25px;
     margin-right: 25px;
     box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49!important;
+    background-color: #383B49;
 }
 
 #home{
@@ -238,6 +238,130 @@ main> #home>aside:nth-child(1)>p{
     font-size: 20px;
 }
 
+/*----------------services-----------------------*/
 
+#services{
+    position: relative;
+    height: 500px;
+    top: 185px;
+    background-color:#323040 ;
+}
+#services>h2{
+    position: absolute;
+    width:300px;
+    height: 50px;
+    bottom: 520px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 50px;
+    color: white;
+}
+#services>h2>span{
+    font-weight: normal;
+    color: #ea3131;
+    text-decoration: underline;
+}
+#services>div:nth-child(2){
+    position: absolute;
+    width: 37%;
+    height: 10px;
+    left: 0;
+    background-color: #ea3131;
+    bottom: 530px;
+}
+#services>div:nth-child(3){
+    position: absolute;
+    width: 39%;
+    height: 10px;
+    right: 0;
+    background-color: white;
+    bottom: 530px;
+}
+#services>section{
+    position: absolute;
+    width:calc( 95%/3);
+    height: 500px;
+    display: inline-block;
+}
+#services>section:nth-child(4){
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+    position: absolute;
+    left: 0;
+}
+#services>section:nth-child(4)>div>img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#services>section:nth-child(4)>div>p{
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 235px;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+}
+#services>section:nth-child(5){
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+    position: absolute;
+    right:0 ;
+    left: 0;
+    margin: auto;
+}
+
+#services>section:nth-child(5)>div>img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#services>section:nth-child(5)>div>p{
+    position: absolute;
+    width: 210px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 235px;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+}
+#services>section:nth-child(6){
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+    position: absolute;
+    right:0 ;
+}
+
+#services>section:nth-child(6)>div>img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#services>section:nth-child(6)>div>p{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    bottom: 235px;
+    margin: auto;
+    color: white;
+    font-size: 25px;
+}
 
 
