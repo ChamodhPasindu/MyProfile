@@ -1,50 +1,126 @@
 *{
-    background-color: #323040;
     font-family: Roboto;
 }
 
 /*------------ navigation---------------------*/
-body>header{
-    position: relative;
-    height: 100vh;
+body{
+    background-color: #323040;
 }
-nav>div{
-    left: 30px;
+header>section{
+    position: relative;
+    height: 80px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+header>section>div{
     position: absolute;
-    border: 2px solid red;
+    top: 10px;
     width: 150px;
     height: 35px;
+    border: 2px solid #ea3131;
 }
-nav>div>span{
-    position: relative;
-    color: #FF0000;
+div>span{
+    position: absolute;
     font-size: 30px;
     font-weight: bold;
-    left: 10px;
+    color: #ea3131;
+    left: 8px;
 }
-nav>ul{
+header>section>nav>ul{
     position: absolute;
     padding: 0;
     margin: 0;
-    top: 20px;
-    right: 30px;
+    top: 15px;
+    right: 0px;
     list-style: none;
 }
-nav>ul>li{
+section>nav>ul>li{
     display: inline-block;
     padding-left: 35px;
-    font-size: 20px;
 }
-nav>ul>li>a{
+section>nav>ul>li>a{
     text-decoration: none;
     color: #f5f0f0;
     padding-bottom: 10px;
     font-size: 25px;
 }
-nav>ul>li>a:hover{
+section>nav>ul>li>a:hover{
     font-weight: bold;
 }
 
 /*----------------------------*/
+
+.main-section{
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49!important;
+}
+
+#home{
+    position: relative;
+    height: 500px;
+    top: 5px;
+}
+main> #home>aside:nth-child(1){
+    position: absolute;
+    width: 40%;
+    height: 45%;
+    top: 40px;
+    left: 70px;
+    margin: 0;
+}
+main> #home>aside:nth-child(1)>h3{
+    font-size: 50px;
+    color: #ea3131;
+    margin-bottom: -22px;
+}
+main> #home>aside:nth-child(1)>p{
+    color: white;
+    font-size: 37px;
+    margin-bottom: -30px;
+}
+main> #home>aside:nth-child(1)>h1{
+    color: white;
+    font-size: 37px;
+    margin-bottom:35px ;
+}
+main> #home>aside:nth-child(1)>button{
+    height: 40px;
+    width:100px ;
+    font-size: 20px;
+    background-color: #323040;
+    border: 5px solid #ea3131;
+}
+main> #home>aside:nth-child(1)>button:hover{
+    color:white;
+    font-weight: bold;
+}
+main> #home>aside:nth-child(1)>nav{
+    position: relative;
+    top: 30px;
+    width: 1000px;
+    height: 60px;
+}
+main> #home>aside:nth-child(1)>nav>a>img{
+    width: 60px;
+    height: 60px;
+    padding-right: 25px;
+}
+
+main> #home>aside:nth-child(2)>img{
+    position: absolute;
+    width: 400px;
+    height: 425px;
+    top: 0;
+    bottom: 0;
+    right: 120px;
+    border-radius: 100%;
+    border: 1px solid black;
+    margin: auto;
+
+}
+
+
 
 
