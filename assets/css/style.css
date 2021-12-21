@@ -53,13 +53,13 @@ section>nav>ul>li>a:hover{
 .main-section{
     margin-left: 25px;
     margin-right: 25px;
-    box-shadow:10px 13px 8px -5px #282626;
     background-color: #383B49;
 }
 
 #home{
     position: relative;
     height: 500px;
+    box-shadow:10px 13px 8px -5px #282626;
     top: 5px;
 }
 #home>aside:nth-child(1){
@@ -127,6 +127,7 @@ main> #home>aside:nth-child(1)>p{
 #about{
     position: relative;
     height: 500px;
+    box-shadow:10px 13px 8px -5px #282626;
     top: 100px;
 }
 #about>h2{
@@ -292,13 +293,14 @@ main> #home>aside:nth-child(1)>p{
 }
 #services>section:nth-child(4)>div>img{
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    top: 40px;
     left: 0;
     right: 0;
     margin: auto;
 }
-#services>section:nth-child(4)>div>p{
+#services>section:nth-child(4)>div>p:nth-child(2){
     position: absolute;
     width: 260px;
     height: 50px;
@@ -309,6 +311,19 @@ main> #home>aside:nth-child(1)>p{
     color: white;
     font-size: 25px;
 }
+#services>section:nth-child(4)>div>p:last-child{
+    position: absolute;
+    height: 52px;
+    width: 250px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 286px;
+    font-size: 22px;
+    color: white;
+    line-height: 1.3;
+}
+
 #services>section:nth-child(5){
     box-shadow:10px 13px 8px -5px #282626;
     background-color: #383B49;
@@ -320,13 +335,14 @@ main> #home>aside:nth-child(1)>p{
 
 #services>section:nth-child(5)>div>img{
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    top: 40px;
     left: 0;
     right: 0;
     margin: auto;
 }
-#services>section:nth-child(5)>div>p{
+#services>section:nth-child(5)>div>p:nth-child(2){
     position: absolute;
     width: 210px;
     height: 50px;
@@ -337,6 +353,18 @@ main> #home>aside:nth-child(1)>p{
     color: white;
     font-size: 25px;
 }
+#services>section:nth-child(5)>div>p:last-child{
+    position: absolute;
+    height: 52px;
+    width: 220px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 286px;
+    font-size: 22px;
+    color: white;
+    line-height: 1.3;
+}
 #services>section:nth-child(6){
     box-shadow:10px 13px 8px -5px #282626;
     background-color: #383B49;
@@ -346,13 +374,14 @@ main> #home>aside:nth-child(1)>p{
 
 #services>section:nth-child(6)>div>img{
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+    top: 40px;
     left: 0;
     right: 0;
     margin: auto;
 }
-#services>section:nth-child(6)>div>p{
+#services>section:nth-child(6)>div>p:nth-child(2){
     position: absolute;
     width: 150px;
     height: 50px;
@@ -363,5 +392,58 @@ main> #home>aside:nth-child(1)>p{
     color: white;
     font-size: 25px;
 }
+#services>section:nth-child(6)>div>p:last-child{
+    position: absolute;
+    height: 52px;
+    width: 220px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 286px;
+    font-size: 22px;
+    color: white;
+    line-height: 1.3;
+}
 
+/*------------------skills---------------------*/
+
+#skills{
+    position: relative;
+    height: 500px;
+    top: 255px;
+    background-color:#323040 ;
+}
+#skills>h2{
+    position: absolute;
+    width:300px;
+    height: 50px;
+    bottom: 520px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 50px;
+    color: white;
+}
+
+#skills>h2>span{
+    font-weight: normal;
+    color: #ea3131;
+    text-decoration: underline;
+}
+#skills>div:nth-child(2){
+    position: absolute;
+    width: 37%;
+    height: 10px;
+    left: 0;
+    background-color: #ea3131;
+    bottom: 530px;
+}
+#skills>div:nth-child(3){
+    position: absolute;
+    width: 44%;
+    height: 10px;
+    right: 0;
+    background-color: white;
+    bottom: 530px;
+}
 
