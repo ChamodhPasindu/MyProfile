@@ -283,7 +283,7 @@ main> #home>aside:nth-child(1)>p{
     position: absolute;
     width:calc( 95%/3);
     height: 500px;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 #services>section:nth-child(4){
     box-shadow:10px 13px 8px -5px #282626;
@@ -410,14 +410,14 @@ main> #home>aside:nth-child(1)>p{
 #skills{
     position: relative;
     height: 500px;
-    top: 255px;
+    top: 280px;
     background-color:#323040 ;
 }
 #skills>h2{
     position: absolute;
     width:300px;
     height: 50px;
-    bottom: 520px;
+    bottom: 525px;
     left: 0;
     right: 0;
     margin: auto;
@@ -436,7 +436,7 @@ main> #home>aside:nth-child(1)>p{
     height: 10px;
     left: 0;
     background-color: #ea3131;
-    bottom: 530px;
+    bottom: 535px;
 }
 #skills>div:nth-child(3){
     position: absolute;
@@ -444,6 +444,63 @@ main> #home>aside:nth-child(1)>p{
     height: 10px;
     right: 0;
     background-color: white;
-    bottom: 530px;
+    bottom: 535px;
 }
+#skills>div:nth-child(4){
+    background-color: #383B49;
+    box-shadow:10px 13px 8px -5px #282626;
+    position: absolute;
+    width: calc(95% / 3);
+    height:calc(460px /2) ;
+    left: 0;
+}
+#skills>div:nth-child(5){
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+    position: absolute;
+    width: calc(95% / 3);
+    height:calc(460px /2) ;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#skills>div:nth-child(6){
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+    position: absolute;
+    width: calc(95% / 3);
+    height:calc(460px /2) ;
+    right: 0;
+}
+#skills>div:nth-child(7){
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+    position: absolute;
+    width: calc(95% / 3);
+    height:calc(460px /2) ;
+    bottom: 0;
+    left: 0;
+}
+#skills>div:nth-child(8){
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+    position: absolute;
+    width: calc(95% / 3);
+    height:calc(460px /2) ;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+#skills>div:nth-child(9){
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+    position: absolute;
+    width: calc(95% / 3);
+    height:calc(460px /2) ;
+    right: 0;
+    bottom: 0;
+}
+
+
 
