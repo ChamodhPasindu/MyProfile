@@ -409,7 +409,7 @@ main> #home>aside:nth-child(1)>p{
 
 #skills{
     position: relative;
-    height: 500px;
+    height: 450px;
     top: 280px;
     background-color:#323040 ;
 }
@@ -417,7 +417,7 @@ main> #home>aside:nth-child(1)>p{
     position: absolute;
     width:300px;
     height: 50px;
-    bottom: 525px;
+    bottom: 475px;
     left: 0;
     right: 0;
     margin: auto;
@@ -436,7 +436,7 @@ main> #home>aside:nth-child(1)>p{
     height: 10px;
     left: 0;
     background-color: #ea3131;
-    bottom: 535px;
+    bottom: 485px;
 }
 #skills>div:nth-child(3){
     position: absolute;
@@ -444,14 +444,14 @@ main> #home>aside:nth-child(1)>p{
     height: 10px;
     right: 0;
     background-color: white;
-    bottom: 535px;
+    bottom: 485px;
 }
 #skills>div:nth-child(4){
     background-color: #383B49;
     box-shadow:10px 13px 8px -5px #282626;
     position: absolute;
     width: calc(95% / 3);
-    height:calc(460px /2) ;
+    height:calc(410px /2) ;
     left: 0;
 }
 #skills>div:nth-child(5){
@@ -459,7 +459,7 @@ main> #home>aside:nth-child(1)>p{
     background-color: #383B49;
     position: absolute;
     width: calc(95% / 3);
-    height:calc(460px /2) ;
+    height:calc(410px /2) ;
     left: 0;
     right: 0;
     margin: auto;
@@ -469,7 +469,7 @@ main> #home>aside:nth-child(1)>p{
     background-color: #383B49;
     position: absolute;
     width: calc(95% / 3);
-    height:calc(460px /2) ;
+    height:calc(410px /2) ;
     right: 0;
 }
 #skills>div:nth-child(7){
@@ -477,7 +477,7 @@ main> #home>aside:nth-child(1)>p{
     background-color: #383B49;
     position: absolute;
     width: calc(95% / 3);
-    height:calc(460px /2) ;
+    height:calc(410px /2) ;
     bottom: 0;
     left: 0;
 }
@@ -486,7 +486,7 @@ main> #home>aside:nth-child(1)>p{
     background-color: #383B49;
     position: absolute;
     width: calc(95% / 3);
-    height:calc(460px /2) ;
+    height:calc(410px /2) ;
     right: 0;
     left: 0;
     bottom: 0;
@@ -497,7 +497,7 @@ main> #home>aside:nth-child(1)>p{
     background-color: #383B49;
     position: absolute;
     width: calc(95% / 3);
-    height:calc(460px /2) ;
+    height:calc(410px /2) ;
     right: 0;
     bottom: 0;
 }
@@ -515,13 +515,14 @@ main> #home>aside:nth-child(1)>p{
     color: white;
     font-size: 35px;
     left: 160px;
+    bottom: 15px;
 
 }
 #skills>div:nth-child(4)>div>img{
     position: absolute;
     width: 125px;
     left: 0;
-    top: 60px;
+    top: 50px;
 
 }
 #skills>div:nth-child(4)>div>p{
@@ -529,6 +530,7 @@ main> #home>aside:nth-child(1)>p{
     position: relative;
     font-size: 25px;
     left: 160px;
+    bottom: 20px;
 }
 #skills>div:nth-child(4)>div>p>span{
     color: #ea3131;
@@ -550,6 +552,8 @@ main> #home>aside:nth-child(1)>p{
     color: white;
     font-size: 35px;
     left: 160px;
+    bottom: 15px;
+
 
 }
 #skills>div:nth-child(5)>div>img{
@@ -564,6 +568,8 @@ main> #home>aside:nth-child(1)>p{
     position: relative;
     font-size: 25px;
     left: 160px;
+    bottom: 20px;
+
 }
 #skills>div:nth-child(5)>div>p>span{
     color: #ea3131;
@@ -585,6 +591,8 @@ main> #home>aside:nth-child(1)>p{
     color: white;
     font-size: 35px;
     left: 160px;
+    bottom: 15px;
+
 
 }
 #skills>div:nth-child(6)>div>img{
@@ -599,6 +607,8 @@ main> #home>aside:nth-child(1)>p{
     position: relative;
     font-size: 25px;
     left: 160px;
+    bottom: 20px;
+
 }
 #skills>div:nth-child(6)>div>p>span{
     color: #ea3131;
@@ -621,6 +631,8 @@ main> #home>aside:nth-child(1)>p{
     color: white;
     font-size: 35px;
     left: 160px;
+    bottom: 15px;
+
 
 }
 #skills>div:nth-child(7)>div>img{
@@ -635,6 +647,8 @@ main> #home>aside:nth-child(1)>p{
     position: relative;
     font-size: 25px;
     left: 160px;
+    bottom: 20px;
+
 }
 #skills>div:nth-child(7)>div>p>span{
     color: #ea3131;
@@ -657,6 +671,8 @@ main> #home>aside:nth-child(1)>p{
     color: white;
     font-size: 35px;
     left: 160px;
+    bottom: 15px;
+
 
 }
 #skills>div:nth-child(8)>div>img{
@@ -671,6 +687,8 @@ main> #home>aside:nth-child(1)>p{
     position: relative;
     font-size: 25px;
     left: 160px;
+    bottom: 20px;
+
 }
 #skills>div:nth-child(8)>div>p>span{
     color: #ea3131;
@@ -693,6 +711,8 @@ main> #home>aside:nth-child(1)>p{
     color: white;
     font-size: 35px;
     left: 160px;
+    bottom: 15px;
+
 
 }
 #skills>div:nth-child(9)>div>img{
@@ -707,6 +727,8 @@ main> #home>aside:nth-child(1)>p{
     position: relative;
     font-size: 25px;
     left: 160px;
+    bottom: 20px;
+
 }
 #skills>div:nth-child(9)>div>p>span{
     color: #ea3131;
@@ -716,7 +738,7 @@ main> #home>aside:nth-child(1)>p{
 
 #projects{
     position: relative;
-    height: 500px;
+    height: 400px;
     box-shadow:10px 13px 8px -5px #282626;
     top: 360px;
 }
@@ -724,7 +746,7 @@ main> #home>aside:nth-child(1)>p{
     position: absolute;
     width:300px;
     height: 50px;
-    bottom: 525px;
+    bottom: 425px;
     left: 0;
     right: 0;
     margin: auto;
@@ -743,7 +765,7 @@ main> #home>aside:nth-child(1)>p{
     height: 10px;
     left: 0;
     background-color: #ea3131;
-    bottom: 540px;
+    bottom: 440px;
 }
 #projects>div:nth-child(3){
     position: absolute;
@@ -751,5 +773,253 @@ main> #home>aside:nth-child(1)>p{
     height: 10px;
     right: 0;
     background-color: white;
-    bottom: 540px;
+    bottom: 440px;
+}
+#projects>div:nth-child(4)>button{
+    position: absolute;
+    color: white;
+    height: 40px;
+    width:120px ;
+    font-size: 20px;
+    background-color: #323040;
+    border: 5px solid #ea3131;
+    right: 0;
+    left: 0;
+    bottom: -55px;
+    margin: auto;
+}
+#projects>div:nth-child(4)>button:hover{
+    color:#ea3131;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*-----------------education---------------*/
+
+#education{
+    position: relative;
+    height: 500px;
+    box-shadow: 10px 13px 8px -5px #282626;
+    top: 515px;
+}
+#education>h2{
+    position: absolute;
+    width:310px;
+    height: 50px;
+    bottom: 520px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 50px;
+    color: white;
+}
+
+#education>h2>span{
+    font-weight: normal;
+    color: #ea3131;
+    text-decoration: underline;
+}
+#education>div:nth-child(2){
+    position: absolute;
+    width: 37%;
+    height: 10px;
+    left: 0;
+    background-color: #ea3131;
+    bottom: 530px;
+}
+#education>div:nth-child(3){
+    position: absolute;
+    width: 37%;
+    height: 10px;
+    right: 0;
+    background-color: white;
+    bottom: 530px;
+}
+#education>aside{
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    left: 0;
+    right:  0;
+    margin: auto;
+}
+#education>aside>div:nth-child(1){
+    position: absolute;
+    background-color: white;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: auto;
+}
+#education>aside>div:nth-child(2){
+    position: absolute;
+    background-color: white;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: auto;
+}
+#education>aside>div:nth-child(3){
+    position: absolute;
+    background-color: white;
+    height: 440px;
+    width: 8px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#education>aside>div:nth-child(4){
+    position: absolute;
+    background-color:#ea3131 ;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 250px;
+    margin: auto;
+}
+#education>aside>div:nth-child(5){
+    position: absolute;
+    background-color:#ea3131 ;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    left: 250px;
+    right: 0;
+    top: 0;
+    bottom: 250px;
+    margin: auto;
+}
+#education>aside>div:nth-child(6){
+    position: absolute;
+    background-color:#ea3131 ;
+    height: 5px;
+    width: 125px;
+    left: 130px;
+    right: 0;
+    top: 0;
+    bottom: 250px;
+    margin: auto;
+}
+#education>aside>div:nth-child(7){
+    position: absolute;
+    background-color:#ea3131 ;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 250px;
+    bottom: 0;
+    margin: auto;
+}
+#education>aside>div:nth-child(8){
+    position: absolute;
+    background-color:#ea3131 ;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    left: 250px;
+    right: 0;
+    top: 250px;
+    bottom: 0;
+    margin: auto;
+}
+#education>aside>div:nth-child(9){
+    position: absolute;
+    background-color:#ea3131 ;
+    height: 5px;
+    width: 125px;
+    left: 130px;
+    right: 0;
+    top: 250px;
+    bottom: 0;
+    margin: auto;
+}
+#education>aside>div:nth-child(10){
+    position: absolute;
+    background-color:#ea3131 ;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+}
+#education>aside>div:nth-child(11){
+    position: absolute;
+    background-color:#ea3131 ;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    left: 0;
+    right: 250px;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+}
+#education>aside>div:nth-child(12){
+    position: absolute;
+    background-color:#ea3131 ;
+    height: 5px;
+    width: 125px;
+    left: 0;
+    right: 130px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#education>aside>div:nth-child(13){
+    position: absolute;
+    padding-bottom: 10px ;
+    padding-left: 20px;
+    color: white;
+    height: 130px;
+    width: 300px;
+    border: 2px solid white;
+    top: 0;
+    bottom: 190px;
+    left: 605px;
+    right: 0;
+    margin: auto;
+}
+#education>aside>div:nth-child(14){
+    position: absolute;
+    padding-bottom: 10px ;
+    padding-left: 20px;
+    color: white;
+    height: 130px;
+    width: 300px;
+    border: 2px solid white;
+    top: 60px;
+    bottom: 0;
+    left:0 ;
+    right: 605px;
+    margin: auto;
+}
+#education>aside>div:nth-child(15){
+    position: absolute;
+    padding-bottom: 10px ;
+    padding-left: 20px;
+    color: white;
+    height: 130px;
+    width: 300px;
+    border: 2px solid white;
+    top: 300px;
+    bottom: 0;
+    left:605px ;
+    right: 0;
+    margin: auto;
 }
