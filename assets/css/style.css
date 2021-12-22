@@ -1125,18 +1125,16 @@ main> #home>aside:nth-child(1)>p{
 /*------------contacts------------*/
 #contact{
     position: relative;
-    height: 700px;
+    height: 550px;
     top: 720px;
     background-color: #323040;
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color:#383B49 ;
 }
 
 #contact>h2{
     position: absolute;
     width:260px;
     height: 50px;
-    bottom: 730px;
+    bottom: 570px;
     left: 0;
     right: 0;
     margin: auto;
@@ -1155,7 +1153,7 @@ main> #home>aside:nth-child(1)>p{
     height: 10px;
     left: 0;
     background-color: #ea3131;
-    bottom: 740px;
+    bottom: 585px;
 }
 #contact>div:nth-child(3){
     position: absolute;
@@ -1163,5 +1161,182 @@ main> #home>aside:nth-child(1)>p{
     height: 10px;
     right: 0;
     background-color: white;
-    bottom: 740px;
+    bottom: 585px;
+}
+#contact>section:nth-child(4){
+    position: relative;
+    width:40% ;
+    height:700px ;
+    top: 100px;
+}
+#contact>section:nth-child(4)>div{
+    position: absolute;
+    width: 70%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#contact>section:nth-child(4)>div:nth-child(1){
+    left: 0;
+    top: 0;
+
+}
+#contact>section:nth-child(4)>div:nth-child(2){
+    left: 0;
+    top: 100px;
+}
+#contact>section:nth-child(4)>div:nth-child(3){
+    left: 0;
+    top: 230px;
+}
+#contact>section:nth-child(4)>div:nth-child(4){
+    left: 0;
+    top: 330px;
+}
+#contact>section:nth-child(4)>div>img{
+    width: 60px;
+    height: 60px;
+}
+.contact-p1{
+    position: absolute;
+    width:80px;
+    left: 85px;
+    top: -25px;
+    font-size: 20px;
+    color: white;
+}
+.contact-p2{
+    position: absolute;
+    width:150px;
+    left: 85px;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+}
+#contact>article{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    width: 56%;
+    height: 150px;
+    color: #d5c7c7;
+    font-size: 19px;
+}
+#contact>section:nth-child(6){
+    position: absolute;
+    width: 56%;
+    right: 0;
+    top: 200px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ea3131;
+}
+#contact>section:nth-child(6)>p{
+    position: absolute;
+    width: 215px;
+    top:-35px ;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#contact>section:nth-child(6)>form{
+    position: absolute;
+    width: 100%;
+    height: 330px;
+    top:365px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#contact>section:nth-child(6)>form>input:nth-child(1){
+    position: absolute;
+    background-color: #383B49;
+    width: 60%;
+    height: 30px;
+    top:0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#contact>section:nth-child(6)>form>input:nth-child(3){
+    position: absolute;
+    background-color: #383B49;
+    width: 60%;
+    height: 30px;
+    top:calc(40% / 3);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#contact>section:nth-child(6)>form>input:nth-child(5){
+    position: absolute;
+    background-color: #383B49;
+    width: 60%;
+    height: 30px;
+    top:calc((40% / 3)*2);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#contact>section:nth-child(6)>form>textarea{
+    position: absolute;
+    background-color: #383B49;
+    width: 60%;
+    height: 130px;
+    top:calc((40% / 3)*3);
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#contact>section:nth-child(6)>form>button{
+    color: white;
+    font-size: 18px;
+    background-color: #383B49;
+    border: 5px solid #ea3131;
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*-----------------footer---------------*/
+
+footer>section{
+    position: relative;
+    height: 100px;
+    top: 720px;
+    background-color: #383B49;
+    box-shadow:10px 13px 8px -5px #282626;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+footer>section>nav{
+    position: absolute;
+    width: 233px;
+    height: 50px;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+footer>section>nav>a>img{
+    width: 45px;
+    height: 45px;
+    padding-right: 25px;
+}
+footer>section>p{
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+footer>section>p>span{
+    color: #ea3131;
 }
