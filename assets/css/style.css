@@ -712,3 +712,44 @@ main> #home>aside:nth-child(1)>p{
     color: #ea3131;
 }
 
+/*---------------projects---------------*/
+
+#projects{
+    position: relative;
+    height: 500px;
+    box-shadow:10px 13px 8px -5px #282626;
+    top: 360px;
+}
+#projects>h2{
+    position: absolute;
+    width:300px;
+    height: 50px;
+    bottom: 525px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 50px;
+    color: white;
+}
+
+#projects>h2>span{
+    font-weight: normal;
+    color: #ea3131;
+    text-decoration: underline;
+}
+#projects>div:nth-child(2){
+    position: absolute;
+    width: 37%;
+    height: 10px;
+    left: 0;
+    background-color: #ea3131;
+    bottom: 540px;
+}
+#projects>div:nth-child(3){
+    position: absolute;
+    width: 39%;
+    height: 10px;
+    right: 0;
+    background-color: white;
+    bottom: 540px;
+}
