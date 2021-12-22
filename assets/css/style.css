@@ -9,6 +9,7 @@ body{
 header>section{
     position: relative;
     height: 80px;
+    top: 10px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -589,8 +590,9 @@ main> #home>aside:nth-child(1)>p{
 #skills>div:nth-child(6)>div>h3{
     position: relative;
     color: white;
+    width: 130px;
     font-size: 35px;
-    left: 160px;
+    margin-left: 160px;
     bottom: 15px;
 
 
@@ -605,8 +607,9 @@ main> #home>aside:nth-child(1)>p{
 #skills>div:nth-child(6)>div>p{
     color: white;
     position: relative;
+    width: 130px;
     font-size: 25px;
-    left: 160px;
+    margin-left: 160px;
     bottom: 20px;
 
 }
@@ -709,8 +712,9 @@ main> #home>aside:nth-child(1)>p{
 #skills>div:nth-child(9)>div>h3{
     position: relative;
     color: white;
+    width: 140px;
     font-size: 35px;
-    left: 160px;
+    margin-left: 160px;
     bottom: 15px;
 
 
@@ -725,8 +729,9 @@ main> #home>aside:nth-child(1)>p{
 #skills>div:nth-child(9)>div>p{
     color: white;
     position: relative;
+    width: 130px;
     font-size: 25px;
-    left: 160px;
+    margin-left: 160px;
     bottom: 20px;
 
 }
@@ -1027,7 +1032,7 @@ main> #home>aside:nth-child(1)>p{
 
 #interest{
     position: relative;
-    height: 150px;
+    height: 270px;
     top: 610px;
     background-color: #323040;
 }
@@ -1036,7 +1041,7 @@ main> #home>aside:nth-child(1)>p{
     position: absolute;
     width:430px;
     height: 50px;
-    bottom: 180px;
+    bottom: 295px;
     left: 0;
     right: 0;
     margin: auto;
@@ -1055,7 +1060,7 @@ main> #home>aside:nth-child(1)>p{
     height: 10px;
     left: 0;
     background-color: #ea3131;
-    bottom: 195px;
+    bottom: 310px;
 }
 #interest>div:nth-child(3){
     position: absolute;
@@ -1063,7 +1068,7 @@ main> #home>aside:nth-child(1)>p{
     height: 10px;
     right: 0;
     background-color: white;
-    bottom: 195px;
+    bottom: 310px;
 }
 #interest>section:nth-child(4)>div{
     position: absolute;
@@ -1121,6 +1126,24 @@ main> #home>aside:nth-child(1)>p{
     margin-left: 62px;
     bottom: 10px;
 }
+#interest>section:nth-child(5){
+    position: absolute;
+    width: 650px;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    margin:auto ;
+    border: 2px solid #ea3131;
+    border-radius: 40px;
+}
+#interest>section>p{
+    position: relative;
+    width: 650px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
 
 /*------------contacts------------*/
 #contact{
@@ -1166,7 +1189,7 @@ main> #home>aside:nth-child(1)>p{
 #contact>section:nth-child(4){
     position: relative;
     width:40% ;
-    height:700px ;
+    height:400px ;
     top: 100px;
 }
 #contact>section:nth-child(4)>div{
@@ -1252,7 +1275,8 @@ main> #home>aside:nth-child(1)>p{
 #contact>section:nth-child(6)>form>input:nth-child(1){
     position: absolute;
     background-color: #383B49;
-    width: 60%;
+    border: 1px solid black;
+    width: 70%;
     height: 30px;
     top:0px;
     left: 0;
@@ -1261,8 +1285,9 @@ main> #home>aside:nth-child(1)>p{
 }
 #contact>section:nth-child(6)>form>input:nth-child(3){
     position: absolute;
+    border: 1px solid black;
     background-color: #383B49;
-    width: 60%;
+    width: 70%;
     height: 30px;
     top:calc(40% / 3);
     left: 0;
@@ -1271,8 +1296,9 @@ main> #home>aside:nth-child(1)>p{
 }
 #contact>section:nth-child(6)>form>input:nth-child(5){
     position: absolute;
+    border: 1px solid black;
     background-color: #383B49;
-    width: 60%;
+    width: 70%;
     height: 30px;
     top:calc((40% / 3)*2);
     left: 0;
@@ -1281,8 +1307,9 @@ main> #home>aside:nth-child(1)>p{
 }
 #contact>section:nth-child(6)>form>textarea{
     position: absolute;
+    border: 1px solid black;
     background-color: #383B49;
-    width: 60%;
+    width: 70%;
     height: 130px;
     top:calc((40% / 3)*3);
     left: 0;
@@ -1310,9 +1337,9 @@ footer>section{
     height: 100px;
     top: 720px;
     background-color: #383B49;
-    box-shadow:10px 13px 8px -5px #282626;
-    margin-left: 25px;
-    margin-right: 25px;
+   /* box-shadow:10px 13px 8px -5px #282626;*/
+  /*  margin-left: 25px;
+    margin-right: 25px;*/
 }
 footer>section>nav{
     position: absolute;
