@@ -501,6 +501,214 @@ main> #home>aside:nth-child(1)>p{
     right: 0;
     bottom: 0;
 }
+#skills>div:nth-child(4)>div{
+    width: 75%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#skills>div:nth-child(4)>div>h3{
+    position: relative;
+    color: white;
+    font-size: 35px;
+    left: 160px;
+
+}
+#skills>div:nth-child(4)>div>img{
+    position: absolute;
+    width: 125px;
+    left: 0;
+    top: 60px;
+
+}
+#skills>div:nth-child(4)>div>p{
+    color: white;
+    position: relative;
+    font-size: 25px;
+    left: 160px;
+}
+#skills>div:nth-child(4)>div>p>span{
+    color: #ea3131;
+}
+
+/*------------------------------*/
+
+#skills>div:nth-child(5)>div{
+    width: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#skills>div:nth-child(5)>div>h3{
+    position: relative;
+    color: white;
+    font-size: 35px;
+    left: 160px;
+
+}
+#skills>div:nth-child(5)>div>img{
+    position: absolute;
+    width: 125px;
+    left: 0;
+    top: 75px;
+
+}
+#skills>div:nth-child(5)>div>p{
+    color: white;
+    position: relative;
+    font-size: 25px;
+    left: 160px;
+}
+#skills>div:nth-child(5)>div>p>span{
+    color: #ea3131;
+}
+
+/*-----------------------------------------*/
+
+#skills>div:nth-child(6)>div{
+    width: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#skills>div:nth-child(6)>div>h3{
+    position: relative;
+    color: white;
+    font-size: 35px;
+    left: 160px;
+
+}
+#skills>div:nth-child(6)>div>img{
+    position: absolute;
+    width: 125px;
+    left: 0;
+    top: 60px;
+
+}
+#skills>div:nth-child(6)>div>p{
+    color: white;
+    position: relative;
+    font-size: 25px;
+    left: 160px;
+}
+#skills>div:nth-child(6)>div>p>span{
+    color: #ea3131;
+}
+
+/*-----------------------------------*/
 
 
+#skills>div:nth-child(7)>div{
+    width: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#skills>div:nth-child(7)>div>h3{
+    position: relative;
+    color: white;
+    font-size: 35px;
+    left: 160px;
+
+}
+#skills>div:nth-child(7)>div>img{
+    position: absolute;
+    width: 110px;
+    left: 0;
+    top: 75px;
+
+}
+#skills>div:nth-child(7)>div>p{
+    color: white;
+    position: relative;
+    font-size: 25px;
+    left: 160px;
+}
+#skills>div:nth-child(7)>div>p>span{
+    color: #ea3131;
+}
+
+/*-------------------------------------*/
+
+
+#skills>div:nth-child(8)>div{
+    width: 75%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#skills>div:nth-child(8)>div>h3{
+    position: relative;
+    color: white;
+    font-size: 35px;
+    left: 160px;
+
+}
+#skills>div:nth-child(8)>div>img{
+    position: absolute;
+    width: 130px;
+    left: 0;
+    top: 60px;
+
+}
+#skills>div:nth-child(8)>div>p{
+    color: white;
+    position: relative;
+    font-size: 25px;
+    left: 160px;
+}
+#skills>div:nth-child(8)>div>p>span{
+    color: #ea3131;
+}
+
+/*--------------------------*/
+
+
+#skills>div:nth-child(9)>div{
+    width: 75%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#skills>div:nth-child(9)>div>h3{
+    position: relative;
+    color: white;
+    font-size: 35px;
+    left: 160px;
+
+}
+#skills>div:nth-child(9)>div>img{
+    position: absolute;
+    width: 110px;
+    left: 0;
+    top: 70px;
+
+}
+#skills>div:nth-child(9)>div>p{
+    color: white;
+    position: relative;
+    font-size: 25px;
+    left: 160px;
+}
+#skills>div:nth-child(9)>div>p>span{
+    color: #ea3131;
+}
 
