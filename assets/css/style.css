@@ -987,11 +987,11 @@ main> #home>aside:nth-child(1)>p{
     padding-left: 20px;
     color: white;
     height: 130px;
-    width: 300px;
+    width: 370px;
     border: 2px solid white;
     top: 0;
     bottom: 190px;
-    left: 605px;
+    left: 640px;
     right: 0;
     margin: auto;
 }
@@ -1001,12 +1001,11 @@ main> #home>aside:nth-child(1)>p{
     padding-left: 20px;
     color: white;
     height: 130px;
-    width: 300px;
+    width: 370px;
     border: 2px solid white;
     top: 60px;
     bottom: 0;
-    left:0 ;
-    right: 605px;
+    left:-35px ;
     margin: auto;
 }
 #education>aside>div:nth-child(15){
@@ -1015,11 +1014,154 @@ main> #home>aside:nth-child(1)>p{
     padding-left: 20px;
     color: white;
     height: 130px;
-    width: 300px;
+    width: 370px;
     border: 2px solid white;
     top: 300px;
     bottom: 0;
-    left:605px ;
+    left:640px ;
     right: 0;
     margin: auto;
+}
+
+/*---------------interest-----------*/
+
+#interest{
+    position: relative;
+    height: 150px;
+    top: 610px;
+    background-color: #323040;
+}
+
+#interest>h2{
+    position: absolute;
+    width:430px;
+    height: 50px;
+    bottom: 180px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 50px;
+    color: white;
+}
+
+#interest>h2>span{
+    font-weight: normal;
+    color: #ea3131;
+    text-decoration: underline;
+}
+#interest>div:nth-child(2){
+    position: absolute;
+    width: 32%;
+    height: 10px;
+    left: 0;
+    background-color: #ea3131;
+    bottom: 195px;
+}
+#interest>div:nth-child(3){
+    position: absolute;
+    width: 34%;
+    height: 10px;
+    right: 0;
+    background-color: white;
+    bottom: 195px;
+}
+#interest>section:nth-child(4)>div{
+    position: absolute;
+    width: calc(90%/6);
+    height: 150px;
+}
+#interest>section:nth-child(4)>div:nth-child(1){
+    position: absolute;
+    left: 0;
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+}
+#interest>section:nth-child(4)>div:nth-child(2){
+    position: absolute;
+    left: calc((100%/6)*1);
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+}
+#interest>section:nth-child(4)>div:nth-child(3){
+    position: absolute;
+    left: calc((100%/6)*2);
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+}
+#interest>section:nth-child(4)>div:nth-child(4){
+    position: absolute;
+    left: calc((100%/6)*3);
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+}
+#interest>section:nth-child(4)>div:nth-child(5){
+    position: absolute;
+    left: calc((100%/6)*4);
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+}
+#interest>section:nth-child(4)>div:nth-child(6){
+    position: absolute;
+    left:calc((100%/6)*5);
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+}
+.interest-img{
+    position: relative;
+    height: 90px;
+    width: 90px;
+    left: 45px;
+    top: 8px;
+}
+.interest-text{
+    position: relative;
+    font-size: 18px;
+    width: 75px;
+    color: white;
+    margin-left: 62px;
+    bottom: 10px;
+}
+
+/*------------contacts------------*/
+#contact{
+    position: relative;
+    height: 700px;
+    top: 720px;
+    background-color: #323040;
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color:#383B49 ;
+}
+
+#contact>h2{
+    position: absolute;
+    width:260px;
+    height: 50px;
+    bottom: 730px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 50px;
+    color: white;
+}
+
+#contact>h2>span{
+    font-weight: normal;
+    color: #ea3131;
+    text-decoration: underline;
+}
+#contact>div:nth-child(2){
+    position: absolute;
+    width: 38%;
+    height: 10px;
+    left: 0;
+    background-color: #ea3131;
+    bottom: 740px;
+}
+#contact>div:nth-child(3){
+    position: absolute;
+    width: 38%;
+    height: 10px;
+    right: 0;
+    background-color: white;
+    bottom: 740px;
 }
