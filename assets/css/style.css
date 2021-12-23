@@ -24,35 +24,76 @@
     background: #b30000;
 }
 
+span{
+    color: #ef4747;
+}
+.span{
+    font-weight: normal;
+    text-decoration: underline;
+}
+.button{
+    color: white;
+    font-size: 20px;
+    background-color: #323040;
+    border: 5px solid #ea3131;
+}
+
+.button:hover{
+    color:#ea3131;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tittle-line1{
+    position: absolute;
+    left: 0;
+    background-color: #ea3131;
+    height: 10px;
+}
+.tittle-line2{
+    position: absolute;
+    height: 10px;
+    right: 0;
+    background-color: #ffffff;
+}
+.main-title{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 50px;
+    color: white;
+}
+
 /*------------ Header-navigation---------------------*/
+
 body{
     background-color: #323040;
 }
-header>section{
+
+#header>section{
     position: relative;
     height: 80px;
     top: 10px;
     margin-left: 25px;
     margin-right: 25px;
 }
-header>section>div{
+#header>section>div{
     position: absolute;
     top: 10px;
     width: 150px;
     height: 35px;
     border: 2px solid #ea3131;
 }
-div>span{
+#header>section>div>h3{
     position: absolute;
     font-size: 30px;
-    font-weight: bold;
-    color: #ea3131;
-    left: 8px;
+    left: 10px;
+    top: 2px;
+    margin:auto;
 }
 header>section>nav>ul{
     position: absolute;
-    padding: 0;
-    margin: 0;
+    margin: auto;
     top: 15px;
     right: 0px;
     list-style: none;
@@ -64,7 +105,6 @@ section>nav>ul>li{
 section>nav>ul>li>a{
     text-decoration: none;
     color: #f5f0f0;
-    padding-bottom: 10px;
     font-size: 25px;
 }
 section>nav>ul>li>a:hover{
@@ -72,8 +112,12 @@ section>nav>ul>li>a:hover{
 }
 
 /*---------------home--------------*/
+body>main{
+    position: relative;
+}
 
 .main-section{
+    position: relative;
     margin-left: 25px;
     margin-right: 25px;
     background-color: #383B49;
@@ -81,17 +125,15 @@ section>nav>ul>li>a:hover{
 
 #home{
     position: relative;
-    height: 500px;
+    height: 515px;
+    top: 12px;
     box-shadow:10px 13px 8px -5px #282626;
-    top: 5px;
 }
 #home>aside:nth-child(1){
     position: absolute;
-    width: 40%;
-    height: 45%;
     top: 40px;
     left: 70px;
-    margin: 0;
+    margin: auto;
 }
 #home>aside:nth-child(1)>h3{
     font-size: 50px;
@@ -107,24 +149,16 @@ main> #home>aside:nth-child(1)>p{
     color: white;
     font-size: 37px;
     margin-bottom:35px ;
+    margin-top: 37px;
 }
 #home>aside:nth-child(1)>button{
-    color: white;
     height: 40px;
     width:100px ;
-    font-size: 20px;
-    background-color: #323040;
-    border: 5px solid #ea3131;
-}
-#home>aside:nth-child(1)>button:hover{
-    color:#ea3131;
-    font-weight: bold;
-    cursor: pointer;
 }
 #home>aside:nth-child(1)>nav{
     position: relative;
     top: 30px;
-    width: 1000px;
+    width: 265px;
     height: 60px;
 }
 #home>aside:nth-child(1)>nav>a>img{
@@ -141,7 +175,7 @@ main> #home>aside:nth-child(1)>p{
     bottom: 0;
     right: 120px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 20px solid #39373d;
     margin: auto;
     background-image: url("../images/myImage.jpg");
     background-size: cover;
@@ -150,41 +184,21 @@ main> #home>aside:nth-child(1)>p{
 /*---------------About--------------*/
 
 #about{
-    position: relative;
     height: 500px;
     box-shadow:10px 13px 8px -5px #282626;
-    top: 100px;
+    top: 127px;
 }
 #about>h2{
-    position: absolute;
-    width:300px;
+    width:230px;
     height: 50px;
     bottom: 530px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 50px;
-    color: white;
-}
-#about>h2>span{
-    font-weight: normal;
-    color: #ea3131;
-    text-decoration: underline;
 }
 #about>div:nth-child(2){
-    position: absolute;
-    width: 37%;
-    height: 10px;
-    left: 0;
-    background-color: #ea3131;
+    width: 40%;
     bottom: 540px;
 }
 #about>div:nth-child(3){
-    position: absolute;
-    width: 43%;
-    height: 10px;
-    right: 0;
-    background-color: #ffffff;
+    width: 41%;
     bottom: 540px;
 }
 #about>article{
@@ -208,12 +222,11 @@ main> #home>aside:nth-child(1)>p{
 #about>aside>dl{
     position: absolute;
     border:2px solid #ea3131 ;
-    margin-top: 7px;
-    margin-bottom: 7px;
     width: 460px;
     height: 240px;
     top: 55px;
     right: 30px;
+    margin: auto;
 }
 #about>aside>dl>dd{
     position: relative;
@@ -235,15 +248,6 @@ main> #home>aside:nth-child(1)>p{
     right: 185px;
     width: 155px;
     height: 40px;
-    font-size: 20px;
-    color: #d5c9c9;
-    background-color:#323040 ;
-    border:5px solid #ea3131;
-}
-#about>aside>button:hover{
-    color: #ea3131;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 #about>section{
@@ -267,137 +271,44 @@ main> #home>aside:nth-child(1)>p{
 /*----------------services-----------------------*/
 
 #services{
-    position: relative;
     height: 500px;
-    top: 185px;
+    top: 226px;
     background-color:#323040 ;
 }
 #services>h2{
-    position: absolute;
-    width:300px;
+    width:280px;
     height: 50px;
     bottom: 520px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 50px;
-    color: white;
 }
-#services>h2>span{
-    font-weight: normal;
-    color: #ea3131;
-    text-decoration: underline;
-}
+
 #services>div:nth-child(2){
-    position: absolute;
-    width: 37%;
-    height: 10px;
-    left: 0;
-    background-color: #ea3131;
+    width: 38%;
     bottom: 530px;
 }
 #services>div:nth-child(3){
-    position: absolute;
-    width: 39%;
-    height: 10px;
-    right: 0;
-    background-color: white;
+    width: 38%;
     bottom: 530px;
 }
 #services>section{
     position: absolute;
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
     width:calc( 95%/3);
     height: 500px;
-    /*display: inline-block;*/
 }
 #services>section:nth-child(4){
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
-    position: absolute;
     left: 0;
 }
-#services>section:nth-child(4)>div>img{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: 40px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-#services>section:nth-child(4)>div>p:nth-child(2){
-    position: absolute;
-    width: 260px;
-    height: 50px;
-    left: 0;
-    right: 0;
-    bottom: 235px;
-    margin: auto;
-    color: white;
-    font-size: 25px;
-}
-#services>section:nth-child(4)>div>p:last-child{
-    position: absolute;
-    height: 52px;
-    width: 250px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 286px;
-    font-size: 22px;
-    color: white;
-    line-height: 1.3;
-}
-
 #services>section:nth-child(5){
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
-    position: absolute;
     right:0 ;
     left: 0;
     margin: auto;
-}
-
-#services>section:nth-child(5)>div>img{
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: 40px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-#services>section:nth-child(5)>div>p:nth-child(2){
-    position: absolute;
-    width: 210px;
-    height: 50px;
-    left: 0;
-    right: 0;
-    bottom: 235px;
-    margin: auto;
-    color: white;
-    font-size: 25px;
-}
-#services>section:nth-child(5)>div>p:last-child{
-    position: absolute;
-    height: 52px;
-    width: 220px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 286px;
-    font-size: 22px;
-    color: white;
-    line-height: 1.3;
 }
 #services>section:nth-child(6){
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
-    position: absolute;
     right:0 ;
 }
 
-#services>section:nth-child(6)>div>img{
+.service-img{
     position: absolute;
     width: 150px;
     height: 150px;
@@ -406,83 +317,53 @@ main> #home>aside:nth-child(1)>p{
     right: 0;
     margin: auto;
 }
-#services>section:nth-child(6)>div>p:nth-child(2){
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 0;
-    right: 0;
-    bottom: 235px;
-    margin: auto;
+
+.service-p1{
+    position: relative;
+    text-align: center;
+    top: 190px;
     color: white;
     font-size: 25px;
 }
-#services>section:nth-child(6)>div>p:last-child{
-    position: absolute;
-    height: 52px;
-    width: 220px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 286px;
+.service-p2{
+    position: relative;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+    top: 220px;
     font-size: 22px;
     color: white;
     line-height: 1.3;
 }
-
 /*------------------skills---------------------*/
 
 #skills{
-    position: relative;
     height: 450px;
-    top: 280px;
+    top: 340px;
     background-color:#323040 ;
 }
 #skills>h2{
-    position: absolute;
-    width:300px;
+    width:210px;
     height: 50px;
     bottom: 475px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 50px;
-    color: white;
 }
 
-#skills>h2>span{
-    font-weight: normal;
-    color: #ea3131;
-    text-decoration: underline;
-}
 #skills>div:nth-child(2){
-    position: absolute;
-    width: 37%;
-    height: 10px;
-    left: 0;
-    background-color: #ea3131;
+    width: 41%;
     bottom: 485px;
 }
 #skills>div:nth-child(3){
-    position: absolute;
-    width: 44%;
-    height: 10px;
-    right: 0;
-    background-color: white;
+    width: 41%;
     bottom: 485px;
 }
+
 #skills>div:nth-child(4){
-    background-color: #383B49;
-    box-shadow:10px 13px 8px -5px #282626;
-    position: absolute;
     width: calc(95% / 3);
     height:calc(410px /2) ;
     left: 0;
 }
 #skills>div:nth-child(5){
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
-    position: absolute;
     width: calc(95% / 3);
     height:calc(410px /2) ;
     left: 0;
@@ -490,26 +371,17 @@ main> #home>aside:nth-child(1)>p{
     margin: auto;
 }
 #skills>div:nth-child(6){
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
-    position: absolute;
     width: calc(95% / 3);
     height:calc(410px /2) ;
     right: 0;
 }
 #skills>div:nth-child(7){
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
-    position: absolute;
     width: calc(95% / 3);
     height:calc(410px /2) ;
     bottom: 0;
     left: 0;
 }
 #skills>div:nth-child(8){
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
-    position: absolute;
     width: calc(95% / 3);
     height:calc(410px /2) ;
     right: 0;
@@ -518,92 +390,40 @@ main> #home>aside:nth-child(1)>p{
     margin: auto;
 }
 #skills>div:nth-child(9){
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
-    position: absolute;
     width: calc(95% / 3);
     height:calc(410px /2) ;
     right: 0;
     bottom: 0;
 }
-#skills>div:nth-child(4)>div{
-    width: 75%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-#skills>div:nth-child(4)>div>h3{
+.skills-h1{
     position: relative;
+    text-align: center;
     color: white;
     font-size: 35px;
-    left: 160px;
-    bottom: 15px;
-
+    bottom: 12px;
 }
-#skills>div:nth-child(4)>div>img{
-    position: absolute;
-    width: 125px;
-    left: 0;
-    top: 50px;
-
-}
-#skills>div:nth-child(4)>div>p{
+.skills-p1{
     color: white;
     position: relative;
+    text-align: center;
     font-size: 25px;
-    left: 160px;
-    bottom: 20px;
+    bottom: 30px;
+    margin-left: 60px;
 }
-#skills>div:nth-child(4)>div>p>span{
-    color: #ea3131;
-}
-
-/*------------------------------*/
-
-#skills>div:nth-child(5)>div{
-    width: 70%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-#skills>div:nth-child(5)>div>h3{
-    position: relative;
-    color: white;
-    font-size: 35px;
-    left: 160px;
-    bottom: 15px;
-
-
-}
-#skills>div:nth-child(5)>div>img{
-    position: absolute;
-    width: 125px;
-    left: 0;
-    top: 75px;
-
-}
-#skills>div:nth-child(5)>div>p{
+.skills-p2{
     color: white;
     position: relative;
+    text-align: center;
     font-size: 25px;
-    left: 160px;
-    bottom: 20px;
-
+    bottom: 30px;
+    margin-left: 90px;
 }
-#skills>div:nth-child(5)>div>p>span{
-    color: #ea3131;
+.skill-div1{
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+    position: absolute;
 }
-
-/*-----------------------------------------*/
-
-#skills>div:nth-child(6)>div{
-    width: 70%;
+.skill-div2{
     position: absolute;
     left: 0;
     right: 0;
@@ -611,197 +431,31 @@ main> #home>aside:nth-child(1)>p{
     bottom: 0;
     margin: auto;
 }
-#skills>div:nth-child(6)>div>h3{
-    position: relative;
-    color: white;
-    width: 130px;
-    font-size: 35px;
-    margin-left: 160px;
-    bottom: 15px;
-
-
-}
-#skills>div:nth-child(6)>div>img{
+.skills-img{
     position: absolute;
-    width: 125px;
-    left: 0;
-    top: 60px;
-
-}
-#skills>div:nth-child(6)>div>p{
-    color: white;
-    position: relative;
-    width: 130px;
-    font-size: 25px;
-    margin-left: 160px;
-    bottom: 20px;
-
-}
-#skills>div:nth-child(6)>div>p>span{
-    color: #ea3131;
-}
-
-/*-----------------------------------*/
-
-
-#skills>div:nth-child(7)>div{
-    width: 70%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-#skills>div:nth-child(7)>div>h3{
-    position: relative;
-    color: white;
-    font-size: 35px;
-    left: 160px;
-    bottom: 15px;
-
-
-}
-#skills>div:nth-child(7)>div>img{
-    position: absolute;
-    width: 110px;
-    left: 0;
-    top: 75px;
-
-}
-#skills>div:nth-child(7)>div>p{
-    color: white;
-    position: relative;
-    font-size: 25px;
-    left: 160px;
-    bottom: 20px;
-
-}
-#skills>div:nth-child(7)>div>p>span{
-    color: #ea3131;
-}
-
-/*-------------------------------------*/
-
-
-#skills>div:nth-child(8)>div{
-    width: 75%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-#skills>div:nth-child(8)>div>h3{
-    position: relative;
-    color: white;
-    font-size: 35px;
-    left: 160px;
-    bottom: 15px;
-
-
-}
-#skills>div:nth-child(8)>div>img{
-    position: absolute;
-    width: 130px;
-    left: 0;
-    top: 60px;
-
-}
-#skills>div:nth-child(8)>div>p{
-    color: white;
-    position: relative;
-    font-size: 25px;
-    left: 160px;
-    bottom: 20px;
-
-}
-#skills>div:nth-child(8)>div>p>span{
-    color: #ea3131;
-}
-
-/*--------------------------*/
-
-
-#skills>div:nth-child(9)>div{
-    width: 75%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-#skills>div:nth-child(9)>div>h3{
-    position: relative;
-    color: white;
-    width: 140px;
-    font-size: 35px;
-    margin-left: 160px;
-    bottom: 15px;
-
-
-}
-#skills>div:nth-child(9)>div>img{
-    position: absolute;
-    width: 110px;
-    left: 0;
+    width: 100px;
+    height: 100px;
+    left: 50px;
     top: 70px;
-
 }
-#skills>div:nth-child(9)>div>p{
-    color: white;
-    position: relative;
-    width: 130px;
-    font-size: 25px;
-    margin-left: 160px;
-    bottom: 20px;
-
-}
-#skills>div:nth-child(9)>div>p>span{
-    color: #ea3131;
-}
-
 /*---------------projects---------------*/
 
 #projects{
-    position: relative;
     height: 400px;
     box-shadow:10px 13px 8px -5px #282626;
-    top: 360px;
+    top: 420px;
 }
 #projects>h2{
-    position: absolute;
-    width:300px;
+    width:270px;
     height: 50px;
     bottom: 425px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 50px;
-    color: white;
-}
-
-#projects>h2>span{
-    font-weight: normal;
-    color: #ea3131;
-    text-decoration: underline;
 }
 #projects>div:nth-child(2){
-    position: absolute;
-    width: 37%;
-    height: 10px;
-    left: 0;
-    background-color: #ea3131;
+    width: 39%;
     bottom: 440px;
 }
 #projects>div:nth-child(3){
-    position: absolute;
     width: 39%;
-    height: 10px;
-    right: 0;
-    background-color: white;
     bottom: 440px;
 }
 #projects>div:nth-child(4)>button{
@@ -826,53 +480,32 @@ main> #home>aside:nth-child(1)>p{
 /*-----------------education---------------*/
 
 #education{
-    position: relative;
     height: 500px;
     box-shadow: 10px 13px 8px -5px #282626;
-    top: 515px;
+    top: 590px;
 }
 #education>h2{
-    position: absolute;
-    width:310px;
+    width:305px;
     height: 50px;
     bottom: 520px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 50px;
-    color: white;
-}
-
-#education>h2>span{
-    font-weight: normal;
-    color: #ea3131;
-    text-decoration: underline;
 }
 #education>div:nth-child(2){
-    position: absolute;
     width: 37%;
-    height: 10px;
-    left: 0;
-    background-color: #ea3131;
     bottom: 530px;
 }
 #education>div:nth-child(3){
-    position: absolute;
     width: 37%;
-    height: 10px;
-    right: 0;
-    background-color: white;
     bottom: 530px;
 }
 #education>aside{
     position: absolute;
-    width: 1000px;
-    height: 500px;
+    top: 0;
+    bottom: 0;
     left: 0;
     right:  0;
     margin: auto;
 }
-#education>aside>div:nth-child(1){
+.white-circle{
     position: absolute;
     background-color: white;
     border-radius: 100%;
@@ -880,19 +513,28 @@ main> #home>aside:nth-child(1)>p{
     width: 30px;
     left: 0;
     right: 0;
-    top: 30px;
     margin: auto;
 }
-#education>aside>div:nth-child(2){
+.red-circle{
     position: absolute;
-    background-color: white;
+    background-color:#ea3131 ;
+    height: 25px;
+    width: 25px;
     border-radius: 100%;
-    height: 30px;
-    width: 30px;
-    left: 0;
-    right: 0;
-    bottom: 30px;
     margin: auto;
+}
+.red-line{
+    position: absolute;
+    background-color:#ea3131 ;
+    height: 5px;
+    width: 125px;
+    margin: auto;
+}
+#education>aside>div:nth-child(1){
+    top: 30px;
+}
+#education>aside>div:nth-child(2){
+    bottom: 30px;
 }
 #education>aside>div:nth-child(3){
     position: absolute;
@@ -906,249 +548,141 @@ main> #home>aside:nth-child(1)>p{
     margin: auto;
 }
 #education>aside>div:nth-child(4){
-    position: absolute;
-    background-color:#ea3131 ;
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
     left: 0;
     right: 0;
     top: 0;
     bottom: 250px;
-    margin: auto;
 }
 #education>aside>div:nth-child(5){
-    position: absolute;
-    background-color:#ea3131 ;
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
     left: 250px;
     right: 0;
     top: 0;
     bottom: 250px;
-    margin: auto;
 }
 #education>aside>div:nth-child(6){
-    position: absolute;
-    background-color:#ea3131 ;
-    height: 5px;
-    width: 125px;
     left: 130px;
     right: 0;
     top: 0;
     bottom: 250px;
-    margin: auto;
 }
 #education>aside>div:nth-child(7){
-    position: absolute;
-    background-color:#ea3131 ;
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
     left: 0;
     right: 0;
     top: 250px;
     bottom: 0;
-    margin: auto;
 }
 #education>aside>div:nth-child(8){
-    position: absolute;
-    background-color:#ea3131 ;
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
     left: 250px;
     right: 0;
     top: 250px;
     bottom: 0;
-    margin: auto;
 }
 #education>aside>div:nth-child(9){
-    position: absolute;
-    background-color:#ea3131 ;
-    height: 5px;
-    width: 125px;
     left: 130px;
     right: 0;
     top: 250px;
     bottom: 0;
-    margin: auto;
 }
 #education>aside>div:nth-child(10){
-    position: absolute;
-    background-color:#ea3131 ;
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
     left: 0;
     right: 0;
     top: 0px;
     bottom: 0;
-    margin: auto;
 }
 #education>aside>div:nth-child(11){
-    position: absolute;
-    background-color:#ea3131 ;
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
     left: 0;
     right: 250px;
     top: 0px;
     bottom: 0;
-    margin: auto;
 }
 #education>aside>div:nth-child(12){
-    position: absolute;
-    background-color:#ea3131 ;
-    height: 5px;
-    width: 125px;
     left: 0;
     right: 130px;
     top: 0;
     bottom: 0;
-    margin: auto;
+}
+.education-div{
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 30%;
+    border: 2px solid white;
 }
 #education>aside>div:nth-child(13){
-    position: absolute;
-    padding-bottom: 10px ;
-    padding-left: 20px;
-    color: white;
-    height: 130px;
-    width: 370px;
-    border: 2px solid white;
-    top: 0;
-    bottom: 190px;
-    left: 640px;
-    right: 0;
-    margin: auto;
+    bottom: 60%;
+    left: 61%;
 }
 #education>aside>div:nth-child(14){
-    position: absolute;
-    padding-bottom: 10px ;
-    padding-left: 20px;
-    color: white;
-    height: 130px;
-    width: 370px;
-    border: 2px solid white;
-    top: 60px;
-    bottom: 0;
-    left:-35px ;
-    margin: auto;
+    bottom: 36%;
+    left:8.5% ;
 }
 #education>aside>div:nth-child(15){
-    position: absolute;
-    padding-bottom: 10px ;
-    padding-left: 20px;
-    color: white;
-    height: 130px;
-    width: 370px;
-    border: 2px solid white;
-    top: 300px;
-    bottom: 0;
-    left:640px ;
-    right: 0;
-    margin: auto;
+    bottom: 10%;
+    left:61% ;
 }
 
 /*---------------interest-----------*/
 
 #interest{
-    position: relative;
     height: 270px;
-    top: 610px;
+    top: 720px;
     background-color: #323040;
 }
 
 #interest>h2{
-    position: absolute;
-    width:430px;
+    width:420px;
     height: 50px;
     bottom: 295px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 50px;
-    color: white;
-}
-
-#interest>h2>span{
-    font-weight: normal;
-    color: #ea3131;
-    text-decoration: underline;
 }
 #interest>div:nth-child(2){
-    position: absolute;
-    width: 32%;
-    height: 10px;
-    left: 0;
-    background-color: #ea3131;
+    width: 33%;
     bottom: 310px;
 }
 #interest>div:nth-child(3){
-    position: absolute;
-    width: 34%;
-    height: 10px;
-    right: 0;
-    background-color: white;
+    width: 33%;
     bottom: 310px;
 }
 #interest>section:nth-child(4)>div{
     position: absolute;
     width: calc(90%/6);
     height: 150px;
+    background-color: #383B49;
+    box-shadow:10px 13px 8px -5px #282626;
+
 }
 #interest>section:nth-child(4)>div:nth-child(1){
-    position: absolute;
     left: 0;
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
 }
 #interest>section:nth-child(4)>div:nth-child(2){
-    position: absolute;
     left: calc((100%/6)*1);
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
 }
 #interest>section:nth-child(4)>div:nth-child(3){
-    position: absolute;
     left: calc((100%/6)*2);
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
 }
 #interest>section:nth-child(4)>div:nth-child(4){
-    position: absolute;
     left: calc((100%/6)*3);
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
 }
 #interest>section:nth-child(4)>div:nth-child(5){
-    position: absolute;
-    left: calc((100%/6)*4);
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
+    left: calc((100%/6)*4);;
 }
 #interest>section:nth-child(4)>div:nth-child(6){
-    position: absolute;
     left:calc((100%/6)*5);
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #383B49;
 }
 .interest-img{
-    position: relative;
+    position: absolute;
     height: 90px;
     width: 90px;
-    left: 45px;
+    left: 0;
+    right: 0;
+    margin: auto;
     top: 8px;
 }
 .interest-text{
     position: relative;
+    text-align: center;
     font-size: 18px;
-    width: 75px;
     color: white;
-    margin-left: 62px;
-    bottom: 10px;
+    bottom: -95px;
 }
 #interest>section:nth-child(5){
     position: absolute;
@@ -1161,8 +695,6 @@ main> #home>aside:nth-child(1)>p{
     border-radius: 40px;
 }
 #interest>section>p{
-    position: relative;
-    width: 650px;
     text-align: center;
     color: white;
     font-size: 20px;
@@ -1171,49 +703,29 @@ main> #home>aside:nth-child(1)>p{
 
 /*------------contacts------------*/
 #contact{
-    position: relative;
     height: 550px;
-    top: 720px;
+    top: 806px;
     background-color: #323040;
 }
 
 #contact>h2{
-    position: absolute;
     width:260px;
     height: 50px;
     bottom: 570px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-size: 50px;
-    color: white;
 }
 
-#contact>h2>span{
-    font-weight: normal;
-    color: #ea3131;
-    text-decoration: underline;
-}
 #contact>div:nth-child(2){
-    position: absolute;
-    width: 38%;
-    height: 10px;
-    left: 0;
-    background-color: #ea3131;
+    width: 39%;
     bottom: 585px;
 }
 #contact>div:nth-child(3){
-    position: absolute;
-    width: 38%;
-    height: 10px;
-    right: 0;
-    background-color: white;
+    width: 39%;
     bottom: 585px;
 }
 #contact>section:nth-child(4){
     position: relative;
     width:40% ;
-    height:400px ;
+    height:80% ;
     top: 100px;
 }
 #contact>section:nth-child(4)>div{
@@ -1261,11 +773,9 @@ main> #home>aside:nth-child(1)>p{
     color: white;
 }
 #contact>article{
-    position: absolute;
-    right: 0;
-    top: 25px;
-    width: 56%;
-    height: 150px;
+    position: relative;
+    margin-left: 45%;
+    bottom: 80%;
     color: #d5c7c7;
     font-size: 19px;
 }
@@ -1274,9 +784,6 @@ main> #home>aside:nth-child(1)>p{
     width: 56%;
     right: 0;
     top: 200px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #ea3131;
 }
 #contact>section:nth-child(6)>p{
     position: absolute;
@@ -1285,6 +792,9 @@ main> #home>aside:nth-child(1)>p{
     left: 0;
     right: 0;
     margin: auto;
+    color: #ea3131;
+    font-size: 22px;
+    font-weight: bold;
 }
 #contact>section:nth-child(6)>form{
     position: absolute;
@@ -1297,64 +807,32 @@ main> #home>aside:nth-child(1)>p{
     margin: auto;
     font-size: 16px;
 }
-#contact>section:nth-child(6)>form>input:nth-child(1){
+.contact-form{
     padding-left: 10px;
     border-radius: 10px;
     position: absolute;
     background-color: #383B49;
     border: 1px solid black;
-    width: 70%;
+    width: 80%;
     height: 30px;
-    top:0px;
     left: 0;
     right: 0;
     margin: auto;
+}
+#contact>section:nth-child(6)>form>input:nth-child(1){
+    top:0px;
 }
 #contact>section:nth-child(6)>form>input:nth-child(3){
-    padding-left: 10px;
-    border-radius: 10px;
-    position: absolute;
-    border: 1px solid black;
-    background-color: #383B49;
-    width: 70%;
-    height: 30px;
     top:calc(40% / 3);
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 #contact>section:nth-child(6)>form>input:nth-child(5){
-    padding-left: 10px;
-    border-radius: 10px;
-    position: absolute;
-    border: 1px solid black;
-    background-color: #383B49;
-    width: 70%;
-    height: 30px;
     top:calc((40% / 3)*2);
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 #contact>section:nth-child(6)>form>textarea{
-    padding-left: 10px;
-    padding-top: 10px;
-    border-radius: 10px;
-    position: absolute;
-    border: 1px solid black;
-    background-color: #383B49;
-    width: 70%;
     height: 130px;
     top:calc((40% / 3)*3);
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 #contact>section:nth-child(6)>form>button{
-    color: white;
-    font-size: 18px;
-    background-color: #383B49;
-    border: 5px solid #ea3131;
     position: absolute;
     width: 170px;
     height: 40px;
@@ -1369,11 +847,8 @@ main> #home>aside:nth-child(1)>p{
 footer>section{
     position: relative;
     height: 100px;
-    top: 720px;
+    top: 835px;
     background-color: #383B49;
-   /* box-shadow:10px 13px 8px -5px #282626;*/
-  /*  margin-left: 25px;
-    margin-right: 25px;*/
 }
 footer>section>nav{
     position: absolute;
@@ -1398,6 +873,22 @@ footer>section>p{
     font-size: 18px;
     font-weight: bold;
 }
-footer>section>p>span{
-    color: #ea3131;
+@media all and (min-width: 320px) and (max-width:375px) {
+    body{
+        width: 320px;
+    }
+}
+@media all and (min-width: 2272px) and (max-width:2652px){
+    #header>section{
+        position: relative;
+        height: 80px;
+        top: 10px;
+        margin-right: 500px;
+        margin-left: 500px;
+    }
+    .main-section{
+
+        margin-left: 500px;
+        margin-right: 500px;
+    }
 }
