@@ -77,10 +77,17 @@ body{
     background-color: #323040;
 }
 
+#header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
 #header>section{
     position: relative;
-    height: 80px;
-    top: 10px;
+    height: 50px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -132,7 +139,7 @@ body>main{
 
 #home{
     height: 515px;
-    top: 12px;
+    top: 90px;
     box-shadow:10px 13px 8px -5px #282626;
 }
 #home>aside:nth-child(1){
@@ -192,7 +199,7 @@ body>main{
 #about{
     height: 500px;
     box-shadow:10px 13px 8px -5px #282626;
-    top: 127px;
+    top: 212px;
 }
 #about>h2{
     bottom: 75px;
@@ -271,7 +278,7 @@ body>main{
 
 #services{
     height: 550px;
-    top: 226px;
+    top: 300px;
     background-color:#323040 ;
 }
 #services>h2{
@@ -333,7 +340,7 @@ body>main{
 
 #skills{
     height: 500px;
-    top: 340px;
+    top: 390px;
     background-color:#323040 ;
 }
 #skills>h2{
@@ -429,7 +436,7 @@ body>main{
 #projects{
     height: 500px;
     box-shadow:10px 13px 8px -5px #282626;
-    top: 470px;
+    top: 520px;
 }
 #projects>h2{
     bottom: 70px;
@@ -452,7 +459,7 @@ body>main{
 #education{
     height: 500px;
     box-shadow: 10px 13px 8px -5px #282626;
-    top: 650px;
+    top: 700px;
 }
 #education>h2{
     bottom: 80px;
@@ -588,7 +595,7 @@ body>main{
 
 #interest{
     height: 350px;
-    top: 750px;
+    top: 770px;
     background-color: #323040;
 }
 
@@ -660,7 +667,7 @@ body>main{
 /*------------contacts------------*/
 #contact{
     height: 550px;
-    top: 870px;
+    top: 900px;
     background-color: #323040;
 }
 
@@ -778,6 +785,7 @@ body>main{
     top:calc((40% / 3)*2);
 }
 #contact>section:nth-child(4)>form>textarea{
+    padding-top: 10px;
     height: 130px;
     top:calc((40% / 3)*3);
 }
