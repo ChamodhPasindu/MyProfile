@@ -1,11 +1,12 @@
 *{
     font-family: Roboto;
+    text-decoration: none;
 }
 
 /*---------------scroll bar-----------------*/
 /* width */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 
 /* Track */
@@ -25,6 +26,10 @@
     background: #b30000;
 }
 /*--------------------------------*/
+a{
+    color: white;
+}
+
 span{
     color: #ef4747;
 }
@@ -80,7 +85,7 @@ body{
 #header{
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 55px;
     backdrop-filter: blur(10px);
     z-index: 100;
 }
@@ -102,7 +107,7 @@ body{
     position: absolute;
     font-size: 30px;
     left: 10px;
-    top: 2px;
+    top: 1px;
     margin:auto;
 }
 header>section>nav>ul{
@@ -117,7 +122,6 @@ section>nav>ul>li{
     padding-left: 35px;
 }
 section>nav>ul>li>a{
-    text-decoration: none;
     color: #f5f0f0;
     font-size: 25px;
 }
@@ -209,7 +213,8 @@ body>main{
 }
 #about>article{
     position: absolute;
-    width: 700px;
+    width: max-content;
+    height: max-content;
     left: 60px;
     top: 40px;
 }
@@ -333,7 +338,7 @@ body>main{
     margin: 0;
     top: 220px;
     font-size: 22px;
-    color: white;
+    color: #d5c7c7;
     line-height: 1.3;
 }
 /*------------------skills---------------------*/
@@ -350,41 +355,28 @@ body>main{
     width: 41%;
 }
 
-
 #skills>div:nth-child(2){
-    width: calc(95% / 3);
-    height:calc(410px /2) ;
     left: 0;
 }
 #skills>div:nth-child(3){
-    width: calc(95% / 3);
-    height:calc(410px /2) ;
     left: 0;
     right: 0;
     margin: auto;
 }
 #skills>div:nth-child(4){
-    width: calc(95% / 3);
-    height:calc(410px /2) ;
     right: 0;
 }
 #skills>div:nth-child(5){
-    width: calc(95% / 3);
-    height:calc(410px /2) ;
     bottom: 0;
     left: 0;
 }
 #skills>div:nth-child(6){
-    width: calc(95% / 3);
-    height:calc(410px /2) ;
     right: 0;
     left: 0;
     bottom: 0;
     margin: auto;
 }
 #skills>div:nth-child(7){
-    width: calc(95% / 3);
-    height:calc(410px /2) ;
     right: 0;
     bottom: 0;
 }
@@ -396,7 +388,7 @@ body>main{
     bottom: 12px;
 }
 .skills-p1{
-    color: white;
+    color: #d5c7c7;
     position: relative;
     text-align: center;
     font-size: 25px;
@@ -404,7 +396,7 @@ body>main{
     margin-left: 60px;
 }
 .skills-p2{
-    color: white;
+    color: #d5c7c7;
     position: relative;
     text-align: center;
     font-size: 25px;
@@ -412,6 +404,8 @@ body>main{
     margin-left: 90px;
 }
 .skill-div1{
+    width: calc(95% / 3);
+    height:calc(410px /2) ;
     box-shadow:10px 13px 8px -5px #282626;
     background-color: #383B49;
     position: absolute;
@@ -426,8 +420,8 @@ body>main{
 }
 .skills-img{
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 25%;
+    height: 45%;
     left: 50px;
     top: 70px;
 }
@@ -435,23 +429,88 @@ body>main{
 
 #projects{
     height: 500px;
-    box-shadow:10px 13px 8px -5px #282626;
-    top: 520px;
+    background-color: #323040;
+    top: 535px;
 }
 #projects>h2{
-    bottom: 70px;
+    bottom: 80px;
 }
 #projects>h2>div{
     width: 39%;
 }
-
-#projects>div:last-child>button{
+#projects>section{
+    position: absolute;
+    top: 0;
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #383B49;
+    width:calc( 95%/3);
+    height: 500px;
+}
+#projects>section:nth-child(2){
+    left: 0;
+}
+#projects>section:nth-child(3){
+    right:0 ;
+    left: 0;
+    margin: auto;
+}
+#projects>section:nth-child(4){
+    right:0 ;
+}
+.project-tittle{
+    position: relative;
+    text-align: center;
+    top: 30px;
+    color: white;
+    font-size: 25px;
+}
+.project-img{
+    position: absolute;
+    border-radius: 10%;
+    width: 86%;
+    height: 55%;
+    top: 140px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.project-p{
+    position: relative;
+    text-align: center;
+    padding-top: 64px;
+    border: 5px solid #ea3131;
+    height: 268px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    top: 36px;
+    font-size: 22px;
+    color: #d5c7c7;
+    line-height: 1.3;
+    background: #000000c2;
+    /*display: none;*/
+}
+.project-button{
+    position:absolute;
+    width: max-content;
+    height: max-content;
+    left: 0;
+    bottom: 80px;
+    right: 0;
+    margin: auto;
+    color: white;
+    font-size: 15px;
+    background-color: #323040;
+    border: 3px solid #ea3131;
+}
+#projects>button{
     position: absolute;
     height: 40px;
     width:120px ;
     right: 0;
     left: 0;
-    bottom: -55px;
+    bottom:-55px;
     margin: auto;
 }
 /*-----------------education---------------*/
@@ -487,7 +546,7 @@ body>main{
 }
 .red-circle{
     position: absolute;
-    background-color:#ea3131 ;
+    background-color:#ef4747 ;
     height: 25px;
     width: 25px;
     border-radius: 100%;
@@ -495,7 +554,7 @@ body>main{
 }
 .red-line{
     position: absolute;
-    background-color:#ea3131 ;
+    background-color:#ef4747 ;
     height: 5px;
     width: 125px;
     margin: auto;
@@ -574,7 +633,7 @@ body>main{
 .education-div{
     position: absolute;
     text-align: center;
-    color: white;
+    color: #d5c7c7;
     width: 30%;
     border: 2px solid white;
 }
@@ -644,7 +703,7 @@ body>main{
     position: relative;
     text-align: center;
     font-size: 18px;
-    color: white;
+    color: #d5c7c7;
     bottom: -95px;
 }
 #interest>section:nth-child(3){
@@ -682,7 +741,7 @@ body>main{
     position: relative;
     width:40% ;
     height:70% ;
-    top: 100px;
+    top: 50px;
 }
 #contact>section:nth-child(2)>div{
     position: absolute;
@@ -743,7 +802,7 @@ body>main{
 }
 #contact>section:nth-child(4)>p{
     position: absolute;
-    width: 215px;
+    width: max-content;
     top:-35px ;
     left: 0;
     right: 0;
@@ -761,14 +820,14 @@ body>main{
     left: 0;
     right: 0;
     margin: auto;
-    font-size: 16px;
+    font-size: 18px;
 }
 .contact-form{
+    color: white;
     padding-left: 10px;
     border-radius: 10px;
     position: absolute;
     background-color: #383B49;
-    border: 1px solid black;
     width: 80%;
     height: 30px;
     left: 0;
@@ -809,8 +868,8 @@ footer>section{
 }
 footer>section>nav{
     position: absolute;
-    width: 233px;
-    height: 50px;
+    width: max-content;
+    height: max-content;
     top: 40px;
     bottom: 0;
     left: 0;
