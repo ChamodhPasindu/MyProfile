@@ -1,0 +1,80 @@
+/*-------------project------------------*/
+main>section{
+    position: relative;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.sub-tittle{
+    position: relative;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 38px;
+    color: white;
+}
+#my-project{
+    top: 40px;
+    height: 780px;
+}
+#my-project>h2{
+    bottom:30px;
+}
+#my-project>h2>div{
+    width: 41%;
+}
+#my-project>section{
+    position: absolute;
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #323542;
+    width:calc( 95%/3);
+    height: calc(700px/2);
+}
+
+#my-project>section:nth-child(3){
+    left: 0;
+    right: 0;
+    margin:auto ;
+}
+#my-project>section:nth-child(4){
+    right: 0;
+}
+#my-project>section:nth-child(5){
+    left: 0;
+    bottom: 0;
+}
+/*------------assignments----------------*/
+
+#my-assignment{
+    height: 700px;
+    top: 155px;
+}
+#my-assignment>h2>div{
+    width: 38%;
+}
+#my-assignment>h2{
+    bottom: 65px;
+}
+
+.project-tittle{
+    top: 0px;
+    font-size: 20px;
+
+}
+.project-img{
+    top: 100px;
+}
+.project-p{
+    padding-top: 36px;
+    height: 145px;
+    top: 38px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.project-p:hover{
+    height: 200px;
+    top: 15px;
+}
+
