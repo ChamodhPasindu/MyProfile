@@ -13,6 +13,7 @@ main>section{
     font-size: 38px;
     color: white;
 }
+
 #my-project{
     top: 40px;
     height: 780px;
@@ -43,24 +44,7 @@ main>section{
     left: 0;
     bottom: 0;
 }
-/*------------assignments----------------*/
 
-#my-assignment{
-    height: 700px;
-    top: 155px;
-}
-#my-assignment>h2>div{
-    width: 38%;
-}
-#my-assignment>h2{
-    bottom: 65px;
-}
-
-.project-tittle{
-    top: 0px;
-    font-size: 20px;
-
-}
 .project-img{
     top: 100px;
 }
@@ -78,3 +62,86 @@ main>section{
     top: 15px;
 }
 
+/*------------assignments----------------*/
+
+#my-assignment{
+    height: 820px;
+    top: 160px;
+}
+#my-assignment>h2>div{
+    width: 38%;
+}
+#my-assignment>h2{
+    bottom: 65px;
+}
+
+.project-tittle{
+    top: 0px;
+    font-size: 20px;
+
+}
+#my-assignment>section{
+    position: absolute;
+    box-shadow:10px 13px 8px -5px #282626;
+    background-color: #323542;
+    width:calc( 95%/3);
+    height: calc(760px/3);
+}
+#my-assignment>section:nth-child(2){
+    top: 0;
+    left: 0;
+    margin:auto ;
+}
+
+#my-assignment>section:nth-child(3){
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:auto ;
+}
+#my-assignment>section:nth-child(4){
+    right: 0;
+    top: 0;
+}
+#my-assignment>section:nth-child(5){
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#my-assignment>section:nth-child(6){
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#my-assignment>section:nth-child(7){
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#my-assignment>section:nth-child(8){
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+#my-assignment>section:nth-child(9){
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+#my-assignment>section:nth-child(10){
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+/*-----------------------*/
+footer>section{
+    position: relative;
+    height: 50px;
+    top: 250px;
+    background-color: #383B49;
+}

@@ -45,8 +45,9 @@ span{
 }
 
 .button:hover{
-    background-color: red;
+    background-color: #ea3131;
     font-weight: bold;
+    box-shadow:0px 1px 8px 3px #282626;
 }
 
 .tittle-line1{
@@ -57,6 +58,7 @@ span{
     background-color: #ea3131;
     height: 10px;
 }
+
 .tittle-line2{
     position: absolute;
     height: 10px;
@@ -86,7 +88,7 @@ body{
     position: fixed;
     width: 100%;
     height: 55px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     z-index: 100;
 }
 
@@ -709,7 +711,6 @@ body>main{
     height: 150px;
     background-color: #323542;
     box-shadow:10px 13px 8px -5px #282626;
-
 }
 #interest>section:nth-child(2)>div:nth-child(1){
     left: 0;
@@ -760,8 +761,6 @@ body>main{
     color: white;
     font-size: 20px;
 }
-
-
 /*------------contacts------------*/
 #contact{
     height: 550px;
@@ -943,7 +942,6 @@ footer>section>p{
         margin-left: 500px;
     }
     .main-section{
-
         margin-left: 500px;
         margin-right: 500px;
     }
