@@ -6,7 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
-    <link href="assets/css/normalize.css">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fonts/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
         header{
@@ -42,7 +44,6 @@
 
         body>main{
             position: relative;
-            padding-bottom: 1px;
         }
 
         main>nav{
@@ -62,24 +63,55 @@
         main>nav>ul>li{
             padding-top: 15px;
         }
+
+        main>nav>ul>li>a{
+            text-decoration: none;
+            color: black;
+            padding-bottom: 4px;
+            margin-left: 13px;
+        }
+
         main>nav>ul>li:hover{
             color: #a62626;
             font-size: 30px;
             cursor: pointer;
         }
 
+
         main>section{
             margin-left: 220px;
+            padding: 10px;
+        }
+
+        main > section > section {
+            border: 1px solid black;
+            height: 300px;
+            position: relative;
         }
 
         main>section>section>div{
-            padding-top: 10px;
-            text-align: center;
+            border: 1px solid black;
+            position: absolute;
+            height: 100%;
+            width: calc(100% / 3);
         }
 
-        main>section>section>div>img{
-            width: 28%;
-            border: 1px solid black;
+        main>section>section>div:nth-child(1){
+            left: 0;
+            background: url("assets/img/img3.png");
+            background-size: cover;
+        }
+
+        main>section>section>div:nth-child(2){
+            left: calc(100% /3);
+            background: url("assets/img/img3.png");
+            background-size: cover;
+        }
+
+        main>section>section>div:nth-child(3){
+            left: calc((100% /3)*2);
+            background: url("assets/img/img3.png");
+            background-size: cover;
         }
 
         footer{
@@ -99,6 +131,58 @@
             margin: auto;
             color: white;
         }
+        @media all and (max-width: 425px){
+            header{
+                height: 90px;
+            }
+            header>img{
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 0px;
+            }
+
+            header > ul {
+                right: 30px;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                font-size: 19px;
+                width: max-content;
+                margin: auto;
+                padding-left: 0;
+            }
+
+            main > nav {
+                display: none;
+            }
+
+            main > section {
+                margin-left: 0;
+            }
+
+            main > section > section {
+                height: 900px;
+            }
+            main>section>section>div{
+                position: absolute;
+                height:calc(100% / 3) ;
+                width: 100%;
+            }
+            main>section>section>div:nth-child(1){
+                top:0;
+                left: 0;
+            }
+            main>section>section>div:nth-child(2){
+                top:300px;
+                left: 0;
+            }
+            main>section>section>div:nth-child(3){
+                bottom:0;
+                left: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -116,20 +200,18 @@
 <main>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Service</li>
-            <li>Contacts</li>
-            <li>About Us</li>
+            <li><i class="fas fa-home"></i></i><a href="">Home</a></li>
+            <li><i class="fas fa-poll-h"></i><a href="">Service</a></li>
+            <li><i class="far fa-id-card"></i><a href="">Contacts</a></li>
+            <li><i class="fas fa-info-circle"></i><a href="">About Us</a></li>
         </ul>
     </nav>
 
     <section>
         <section>
-            <div>
-                <img src="assets/img/img3.png" alt="student img">
-                <img src="assets/img/img3.png" alt="student img">
-                <img src="assets/img/img3.png" alt="student img">
-            </div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium debitis, eligendi expedita fugiat
