@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 10</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        body {
+            background: url("assets/img/sky.jpg");
+            overflow: hidden;
+        }
+
+        main > div:nth-child(1) {
+            display: flex;
+            position: absolute;
+            bottom: 13vw;
+            animation-name: city;
+            animation-duration: 10s;
+        }
+
+        main > div:nth-child(1) > img {
+            height: 40vh;
+        }
+
+        @keyframes city {
+            from {
+                left: 0;
+            }
+            to {
+                left: -200%;
+            }
+        }
+
+        main > div:nth-child(2) {
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            animation-name: road;
+            animation-duration: 10s;
+        }
+
+        @keyframes road {
+            from {
+                left: 0;
+            }
+            to {
+                left: -200%;
+            }
+        }
+
+        main > div:nth-child(2) > img {
+            height: 13vw;
+        }
+
+        main > div:nth-child(3) {
+            position: absolute;
+            height: 30%;
+            width: 100%;
+            bottom: 0;
+        }
+
+        main > div:nth-child(3) > img {
+            position: absolute;
+            width: 30%;
+            left: 0;
+            right: 0;
+            bottom: 15vh;
+            margin: auto;
+        }
+
+        main > div:nth-child(4) {
+            position: absolute;
+            height: 30%;
+            width: 100%;
+            bottom: 0;
+        }
+
+        main > div:nth-child(4) > img {
+            position: absolute;
+            width: 6%;
+            left: 0;
+            right: 0;
+            bottom: 16vh;
+            margin: auto;
+            animation-name: wheel;
+            animation-duration: 10s;
+        }
+
+        @keyframes wheel {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(1800deg);
+            }
+        }
+
+        main > div:nth-child(4) > img:first-child {
+            position: absolute;
+            left: 17vw;
+            right: 0;
+            margin: auto;
+        }
+
+        main > div:nth-child(4) > img:last-child {
+            position: absolute;
+            left: 0;
+            right: 19vw;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+    <div>
+        <img src="assets/img/city.png" alt="city">
+        <img src="assets/img/city.png" alt="city">
+        <img src="assets/img/city.png" alt="city">
+        <img src="assets/img/city.png" alt="city">
+    </div>
+    <div>
+        <img src="assets/img/road.jpg" alt="road">
+        <img src="assets/img/road.jpg" alt="road">
+    </div>
+    <div>
+        <img src="assets/img/car.png" alt="car">
+    </div>
+    <div>
+        <img src="assets/img/wheel.png" alt="wheel1">
+        <img src="assets/img/wheel.png" alt="wheel2">
+    </div>
+</main>
+</body>
+</html>

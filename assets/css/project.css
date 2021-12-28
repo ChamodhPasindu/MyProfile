@@ -93,8 +93,8 @@ main>section{
 }
 #my-assignment>section>section {
     position: relative;
-    width: 412px;
-    height: 253px;
+    width:calc( 95%/3);
+    height: calc(1015px/4);
     margin-bottom: 35px;
     text-align: center;
     box-shadow: 10px 13px 8px -5px #282626;
