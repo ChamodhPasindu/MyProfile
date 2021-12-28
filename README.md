@@ -1,12 +1,13 @@
 
-## My Personal Web Site
+# My Personal Web Site
 
 
-## Screenshots
+##Sample Screenshots
 
-![Image of Myprofile](assets/images/portfolio1.png)
-![Image of Myprofile](assets/images/portfolio3.png)
-![Image of Myprofile](assets/images/portfolio2.png)
+![Image of MyProfile](assets/images/ss1.png)
+![Image of MyProfile](assets/images/ss2.png)
+![Image of MyProfile](assets/images/ss3.png)
+![Image of MyProfile](assets/images/ss4.png)
 
 ## Tech/framework used
 * HTML
