@@ -13,18 +13,18 @@
 * CSS
 * Java Script
 
-[comment]: <> (## :link: references)
+## :link: references
 
-[comment]: <> (* [Site Map]&#40;https://www.gloomaps.com/e7KqyYzowP&#41;)
+* [Site Map](https://www.gloomaps.com/e7KqyYzowP)
 
-[comment]: <> (* [Wireframe]&#40;https://wireframe.cc/42HeXW&#41;)
+* [Wireframe](https://wireframe.cc/42HeXW)
 
-[comment]: <> (* [Mockup]&#40;https://www.figma.com/file/1RzcDOVsBOEoPqe9lc1DOY/Portfoilo?node-id=0%3A1&#41;)
+* [Mockup](https://www.figma.com/file/1RzcDOVsBOEoPqe9lc1DOY/Portfoilo?node-id=0%3A1)
 
-[comment]: <> (#### This site was built using [GitHub Pages]&#40;https://pages.github.com/&#41; and [000WebHost]&#40;https://www.000webhost.com/?__cf_chl_jschl_tk__=TO2FoBSzgjuetbZdG7MU8EbIkZukgEsU5byQHnwQ45w-1640521467-0-gaNycGzNCv0&#41;)
+#### This site was built using [GitHub Pages](https://pages.github.com/) and [000WebHost](https://www.000webhost.com/?__cf_chl_jschl_tk__=TO2FoBSzgjuetbZdG7MU8EbIkZukgEsU5byQHnwQ45w-1640521467-0-gaNycGzNCv0)
 
-[comment]: <> (* [GitHub Pages URL]&#40;https://chamodhpasindu.github.io/MyProfile/&#41;)
+* [GitHub Pages URL](https://chamodhpasindu.github.io/MyProfile/)
 
-[comment]: <> (* [000WebHost URL]&#40;https://chamodhpasindu.000webhostapp.com/&#41;)
+* [000WebHost URL](https://chamodhpasindu.000webhostapp.com/)
 
 **Developed By _Chamodh Pasindu_**

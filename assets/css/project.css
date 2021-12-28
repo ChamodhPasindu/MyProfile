@@ -46,7 +46,8 @@ main>section{
 }
 
 .project-img{
-    top: 28%;
+    top: 25%;
+    height: 65%;
 }
 .project-p{
     padding-top: 36px;
@@ -59,20 +60,20 @@ main>section{
 
 .project-p:hover{
     height: 200px;
-    top: 15px;
+    top: 18px;
 }
 
 /*------------assignments----------------*/
 
 #my-assignment{
-    height: 820px;
-    top: 160px;
+    height: 1140px;
+    top: 95px;
 }
 #my-assignment>h2>div{
     width: 38%;
 }
 #my-assignment>h2{
-    bottom: 65px;
+    bottom: 20px;
 }
 
 .project-tittle{
@@ -81,63 +82,77 @@ main>section{
 
 }
 #my-assignment>section{
-    position: absolute;
-    box-shadow:10px 13px 8px -5px #282626;
-    background-color: #323542;
-    width:calc( 95%/3);
-    height: calc(760px/3);
+    /*position: absolute;*/
+    /*box-shadow:10px 13px 8px -5px #282626;*/
+    /*background-color: #323542;*/
+    /*width:calc( 95%/3);*/
+    /*height: calc(1015px/4);*/
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
 }
-#my-assignment>section:nth-child(2){
-    top: 0;
-    left: 0;
-    margin:auto ;
+#my-assignment>section>section {
+    position: relative;
+    width: 412px;
+    height: 253px;
+    margin-bottom: 35px;
+    text-align: center;
+    box-shadow: 10px 13px 8px -5px #282626;
+    background-color: #323542;
 }
 
-#my-assignment>section:nth-child(3){
-    top: 0;
-    left: 0;
-    right: 0;
-    margin:auto ;
-}
-#my-assignment>section:nth-child(4){
-    right: 0;
-    top: 0;
-}
-#my-assignment>section:nth-child(5){
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-#my-assignment>section:nth-child(6){
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-#my-assignment>section:nth-child(7){
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-#my-assignment>section:nth-child(8){
-    left: 0;
-    bottom: 0;
-    margin: auto;
-}
-#my-assignment>section:nth-child(9){
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-}
-#my-assignment>section:nth-child(10){
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
+/*}*/
+/*#my-assignment>section:nth-child(2){*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    margin:auto ;*/
+/*}*/
+
+/*#my-assignment>section:nth-child(3){*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    margin:auto ;*/
+/*}*/
+/*#my-assignment>section:nth-child(4){*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*}*/
+/*#my-assignment>section:nth-child(5){*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*}*/
+/*#my-assignment>section:nth-child(6){*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*}*/
+/*#my-assignment>section:nth-child(7){*/
+/*    right: 0;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*}*/
+/*#my-assignment>section:nth-child(8){*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*}*/
+/*#my-assignment>section:nth-child(9){*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*}*/
+/*#my-assignment>section:nth-child(10){*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    margin: auto;*/
+/*}*/
 .assignment-p{
     position: relative;
     text-align: center;
@@ -170,6 +185,6 @@ main>section{
 footer>section{
     position: relative;
     height: 50px;
-    top: 250px;
+    top: 150px;
     background-color: #383B49;
 }
