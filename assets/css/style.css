@@ -1110,11 +1110,17 @@ footer > section > p {
     #home > aside:nth-child(2) > nav {
         text-align: center;
     }
+
+
+    #about > h2 {
+        bottom: 85px;
+    }
     #about > h2 > div {
         width: 33%;
     }
     #about {
         height: 1325px;
+        top: 220px;
     }
     #about > aside > dl {
         right: 0;
@@ -1150,7 +1156,7 @@ footer > section > p {
     #about > section > p {
         margin: 22px;
         width: 600px;
-        font-size:35px
+        font-size:30px
     }
     #about > section {
         bottom: 45px;
@@ -1185,9 +1191,10 @@ footer > section > p {
     }
     .service-p2 {
         position: absolute;
+        text-align: left;
         width: 360px;
         padding: 0;
-        right: 90px;
+        right: 70px;
         top: 81px;
         font-size: 30px;
     }
@@ -1195,10 +1202,10 @@ footer > section > p {
 
     #skills{
         height: 730px;
-        top: 440px;
+        top: 460px;
     }
     #skills > h2 {
-        bottom: 75px;
+        bottom: 85px;
     }
     #skills > h2 > div {
         width: 34%;
@@ -1244,6 +1251,206 @@ footer > section > p {
         margin-left: 100px;
     }
 
+
+    #projects {
+        height: 1000px;
+        top: 585px;
+    }
+    #projects > h2 {
+        bottom: 85px;
+    }
+    #projects > h2 > div {
+        width: 30%;
+    }
+    #projects > section {
+        width: 100%;
+        height: calc(950px/3);
+    }
+    #projects > section:nth-child(3) {
+        bottom: 0;
+    }
+    #projects > section:nth-child(4) {
+        top: 690px;
+    }
+    .project-tittle {
+        top: -20px;
+        font-size: 35px;
+    }
+    .project-img {
+        width: 67%;
+        height: 69%;
+        top: 68px;
+    }
+    .project-p {
+        padding-top: 40px;
+         height: 30px;
+        margin-left: 70px;
+        margin-right: 70px;
+        top: -46px;
+    }
+    .project-p:hover {
+        height: 190px;
+        top: -50px;
+        margin-right: 55px;
+        margin-left: 55px;
+        font-size: 25px;
+    }
+    .project-button {
+        height: 40px;
+        bottom: 12px;
+        font-size: 22px;
+    }
+    #projects > button {
+        height: 60px;
+        width: 180px;
+        bottom: -90px;
+    }
+
+
+    #education {
+        top: 790px;
+    }
+    #education > h2 > div {
+        width: 28%;
+    }
+    .education-div {
+        text-align: left;
+        padding-left: 20px;
+        width: 34%;
+        height: 37%;
+        font-size: 20px;
+    }
+    #education > aside > div:nth-child(13) {
+        left: 58%;
+    }
+    #education > aside > div:nth-child(14) {
+         left: 4.5%;
+     }
+    #education > aside > div:nth-child(15) {
+        left: 58%;
+    }
+
+
+    #interest {
+        top: 860px;
+        height: 480px;
+    }
+    #interest > h2 {
+        bottom: 35px;
+    }
+    #interest > h2 > div {
+        width: 20%;
+    }
+    #interest > section:nth-child(2) > div {
+        width: calc(90% / 3);
+        height: 200px;
+        margin: auto;
+    }
+    #interest > section:nth-child(2) > div:nth-child(2) {
+        left: calc(100%/3);
+    }
+    #interest > section:nth-child(2) > div:nth-child(3) {
+        left: calc((100%/3)*2);
+    }
+    #interest > section:nth-child(2) > div:nth-child(4) {
+        left: 0;
+        bottom: 0;
+    }
+    #interest > section:nth-child(2) > div:nth-child(5) {
+        left: calc(100%/3);
+        bottom: 0;
+    }
+    #interest > section:nth-child(2) > div:nth-child(6) {
+        left: calc((100%/3)*2);
+        bottom: 0;
+    }
+    .interest-img {
+        height: 110px;
+        width: 110px;
+        top: 20px;
+    }
+    .interest-text {
+        font-size: 25px;
+        bottom: -115px;
+    }
+    #interest > section:nth-child(3) {
+        bottom: -130px;
+    }
+    #interest > section > p {
+        font-size: 30px;
+    }
+
+
+    #contact {
+        top: 1120px;
+    }
+    #contact > h2 > div {
+        width: 30%;
+    }
+    #contact > article {
+        margin-left: 3%;
+        font-size: 30px;
+    }
+    #contact > section:nth-child(4) {
+        width: 100%;
+        top: 280px;
+    }
+    #contact > section:nth-child(4) > p {
+        font-size: 28px;
+    }
+    #contact > section:nth-child(4) > form {
+        height: 490px;
+        top: 560px;
+        font-size: 30px;
+    }
+    .contact-form {
+        color: white;
+        height: 45px;
+        width: 90%;
+        margin: auto;
+    }
+    #contact > section:nth-child(4) > form > button {
+        width: 265px;
+        height: 50px;
+        bottom: 70px;
+    }
+    #contact > section:nth-child(2) {
+        width: 90%;
+        top: 740px;
+        right: 120px;
+    }
+    .contact-p1 {
+        font-size: 25px;
+    }
+    .contact-p2 {
+        font-size: 25px;
+        width: 200px;
+    }
+    #contact > section:nth-child(2) > div {
+        width: 45%;
+    }
+    #contact > section:nth-child(2) > div:nth-child(2) {
+        left: 500px;
+        top: 0;
+    }
+    #contact > section:nth-child(2) > div:nth-child(3) {
+        left: 0;
+        top: 150px;
+    }
+    #contact > section:nth-child(2) > div:nth-child(4) {
+        left: 0;
+        top: 250px;
+    }
+
+
+    footer > section {
+        top: 1700px;
+        width: 775px;
+    }
+
+    footer > section > p {
+        font-size: 25px;
+    }
 }
 
 
