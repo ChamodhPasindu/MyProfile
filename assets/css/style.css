@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Roboto;
     text-decoration: none;
 }
@@ -18,39 +18,42 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #ea3131;
-   border-radius: 5px;
+    border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #b30000;
 }
+
 /*--------------------------------*/
-a{
+a {
     color: white;
 }
 
-span{
+span {
     color: #ef4747;
 }
-.span{
+
+.span {
     font-weight: normal;
     text-decoration: underline;
 }
-.button{
+
+.button {
     color: white;
     font-size: 20px;
     background-color: #323040;
     border: 5px solid #ea3131;
 }
 
-.button:hover{
+.button:hover {
     background-color: #ea3131;
     font-weight: bold;
-    box-shadow:0px 1px 8px 3px #282626;
+    box-shadow: 0px 1px 8px 3px #282626;
 }
 
-.tittle-line1{
+.tittle-line1 {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -59,7 +62,7 @@ span{
     height: 10px;
 }
 
-.tittle-line2{
+.tittle-line2 {
     position: absolute;
     height: 10px;
     right: 0;
@@ -68,7 +71,8 @@ span{
     margin: auto;
     background-color: #ffffff;
 }
-.main-title{
+
+.main-title {
     position: relative;
     text-align: center;
     left: 0;
@@ -80,11 +84,11 @@ span{
 
 /*------------ Header-navigation---------------------*/
 
-body{
+body {
     background-color: #323040;
 }
 
-#header{
+#header {
     position: fixed;
     width: 100%;
     height: 55px;
@@ -92,62 +96,70 @@ body{
     z-index: 100;
 }
 
-#header>section{
+#header > section {
     position: relative;
     height: 50px;
     margin-left: 25px;
     margin-right: 25px;
 }
-#header>section>div{
+
+#header > section > div {
     position: absolute;
     top: 10px;
     width: 150px;
     height: 35px;
     border: 2px solid #ea3131;
 }
-#header>section>div>h3{
+
+#header > section > div > h3 {
     position: absolute;
     font-size: 30px;
     left: 10px;
     top: 1px;
-    margin:auto;
+    margin: auto;
 }
-header>section>nav>ul{
+
+header > section > nav > ul {
     position: absolute;
     margin: auto;
     top: 15px;
-    right: 0px;
+    right: 0;
     list-style: none;
+
 }
-section>nav>ul>li{
+
+section > nav > ul > li {
     display: inline-block;
     padding-left: 35px;
 }
-section>nav>ul>li>a{
+
+section > nav > ul > li > a {
     color: #f5f0f0;
     font-size: 23px;
 }
-section>nav>ul>li>a:hover{
+
+section > nav > ul > li > a:hover {
     font-weight: bold;
 }
 
 /*---------------home--------------*/
-body>main{
+body > main {
     position: relative;
 }
 
-.main-section{
+.main-section {
     position: relative;
     margin-left: 25px;
     margin-right: 25px;
     background-color: #323542;
 }
 
-#home{
+#home {
     height: 515px;
     top: 90px;
-    box-shadow:10px 13px 8px -5px #282626;
+    box-shadow: 10px 13px 8px -5px #282626;
 }
+
 /*#shape{*/
 /*    position: absolute;*/
 /*    left: 0;*/
@@ -167,45 +179,49 @@ body>main{
 /*    border-right: 161px solid rgba(0, 0, 0, 0.1);*/
 /*    border-bottom: 396px solid transparent;*/
 /*}*/
-#home>aside:nth-child(2){
+#home > aside:nth-child(2) {
     position: absolute;
     top: 40px;
     left: 70px;
     margin: auto;
 }
-#home>aside:nth-child(2)>h3{
+
+#home > aside:nth-child(2) > h3 {
     font-size: 50px;
     color: #ea3131;
     margin-bottom: -22px;
 }
-#home>aside:nth-child(2)>p{
+
+#home > aside:nth-child(2) > p {
     color: white;
     font-size: 37px;
     margin-bottom: -30px;
 }
-#home>aside:nth-child(2)>h1{
+
+#home > aside:nth-child(2) > h1 {
     color: white;
     font-size: 37px;
-    margin-bottom:35px ;
+    margin-bottom: 35px;
     margin-top: 37px;
 }
-#home>aside:nth-child(2)>button{
+
+#home > aside:nth-child(2) > button {
     height: 40px;
-    width:100px ;
+    width: 100px;
 }
-#home>aside:nth-child(2)>nav{
+
+#home > aside:nth-child(2) > nav {
     position: relative;
-    top: 30px;
-    width: 265px;
-    height: 60px;
+    top: 32px;
 }
-#home>aside:nth-child(2)>nav>a>img{
+
+#home > aside:nth-child(2) > nav > a > img {
     width: 60px;
     height: 60px;
     padding-right: 25px;
 }
 
-#home>aside:nth-child(3){
+#home > aside:nth-child(3) {
     position: absolute;
     width: 420px;
     height: 420px;
@@ -221,60 +237,69 @@ body>main{
 
 /*---------------About--------------*/
 
-#about{
+#about {
     height: 500px;
-    box-shadow:10px 13px 8px -5px #282626;
+    box-shadow: 10px 13px 8px -5px #282626;
     top: 212px;
 }
-#about>h2{
+
+#about > h2 {
     bottom: 75px;
 }
-#about>h2>div{
+
+#about > h2 > div {
     width: 40%;
 }
-#about>article{
+
+#about > article {
     position: absolute;
-    width: max-content;
+    width: 53%;
     height: max-content;
     left: 60px;
     top: 40px;
 }
-#about>article>h2{
+
+#about > article > h2 {
     position: relative;
     bottom: 30px;
     font-size: 30px;
     color: white;
     text-decoration: underline;
 }
-#about>article>p{
+
+#about > article > p {
     color: #d5c7c7;
     font-size: 23px;
     line-height: 1.5;
 }
-#about>aside>dl{
+
+#about > aside > dl {
     position: absolute;
-    border:2px solid #ea3131 ;
+    border: 2px solid #ea3131;
     width: 460px;
     height: 240px;
     top: 55px;
     right: 30px;
     margin: auto;
 }
-#about>aside>dl>dd{
+
+#about > aside > dl > dd {
     position: relative;
     top: 12px;
     color: white;
     font-size: 20px;
     padding-top: 9px;
-    padding-bottom:10px ;
+    padding-bottom: 10px;
     padding-left: 55px;
     white-space: pre;
 }
-#about>aside>dl>dd>b{
+
+#about > aside > dl > dd > b {
     position: relative;
     right: 55px;
 }
-#about>aside>button{
+
+#about > aside > button {
     position: absolute;
     bottom: 135px;
     right: 185px;
@@ -282,17 +307,18 @@ body>main{
     height: 40px;
 }
 
-#about>section{
+#about > section {
     position: absolute;
     width: 650px;
     left: 0;
     right: 0;
     bottom: 30px;
-    margin:auto ;
+    margin: auto;
     border: 2px solid #ea3131;
     border-radius: 40px;
 }
-#about>section>p{
+
+#about > section > p {
     position: relative;
     width: 650px;
     text-align: center;
@@ -302,39 +328,43 @@ body>main{
 
 /*----------------services-----------------------*/
 
-#services{
+#services {
     height: 550px;
     top: 300px;
-    background-color:#323040 ;
+    background-color: #323040;
 }
-#services>h2{
+
+#services > h2 {
     bottom: 40px;
 }
 
-#services>h2>div{
+#services > h2 > div {
     width: 38%;
 }
 
-#services>section{
+#services > section {
     position: absolute;
-    box-shadow:10px 13px 8px -5px #282626;
+    box-shadow: 10px 13px 8px -5px #282626;
     background-color: #323542;
-    width:calc( 95%/3);
+    width: calc(95% / 3);
     height: 500px;
 }
-#services>section:nth-child(2){
+
+#services > section:nth-child(2) {
     left: 0;
 }
-#services>section:nth-child(3){
-    right:0 ;
+
+#services > section:nth-child(3) {
+    right: 0;
     left: 0;
     margin: auto;
 }
-#services>section:nth-child(4){
-    right:0 ;
+
+#services > section:nth-child(4) {
+    right: 0;
 }
 
-.service-img{
+.service-img {
     position: absolute;
     width: 150px;
     height: 150px;
@@ -344,14 +374,15 @@ body>main{
     margin: auto;
 }
 
-.service-p1{
+.service-p1 {
     position: relative;
     text-align: center;
     top: 190px;
     color: white;
     font-size: 25px;
 }
-.service-p2{
+
+.service-p2 {
     position: relative;
     text-align: center;
     padding-left: 50px;
@@ -362,53 +393,63 @@ body>main{
     color: #d5c7c7;
     line-height: 1.3;
 }
+
 /*------------------skills---------------------*/
 
-#skills{
+#skills {
     height: 500px;
     top: 390px;
-    background-color:#323040 ;
+    background-color: #323040;
 }
-#skills>h2{
+
+#skills > h2 {
     bottom: 25px;
 }
-#skills>h2>div{
+
+#skills > h2 > div {
     width: 41%;
 }
 
-#skills>div:nth-child(2){
+#skills > div:nth-child(2) {
     left: 0;
 }
-#skills>div:nth-child(3){
+
+#skills > div:nth-child(3) {
     left: 0;
     right: 0;
     margin: auto;
 }
-#skills>div:nth-child(4){
+
+#skills > div:nth-child(4) {
     right: 0;
 }
-#skills>div:nth-child(5){
+
+#skills > div:nth-child(5) {
     bottom: 0;
     left: 0;
 }
-#skills>div:nth-child(6){
+
+#skills > div:nth-child(6) {
     right: 0;
     left: 0;
     bottom: 0;
     margin: auto;
 }
-#skills>div:nth-child(7){
+
+#skills > div:nth-child(7) {
     right: 0;
     bottom: 0;
 }
-.skills-h1{
+
+.skills-h1 {
     position: relative;
     text-align: center;
     color: white;
     font-size: 35px;
     bottom: 12px;
 }
-.skills-p1{
+
+.skills-p1 {
     color: #d5c7c7;
     position: relative;
     text-align: center;
@@ -416,7 +457,8 @@ body>main{
     bottom: 30px;
     margin-left: 60px;
 }
-.skills-p2{
+
+.skills-p2 {
     color: #d5c7c7;
     position: relative;
     text-align: center;
@@ -424,14 +466,16 @@ body>main{
     bottom: 30px;
     margin-left: 90px;
 }
-.skill-div1{
+
+.skill-div1 {
     width: calc(95% / 3);
-    height:calc(410px /2) ;
-    box-shadow:10px 13px 8px -5px #282626;
+    height: calc(410px / 2);
+    box-shadow: 10px 13px 8px -5px #282626;
     background-color: #323542;
     position: absolute;
 }
-.skill-div2{
+
+.skill-div2 {
     position: absolute;
     left: 0;
     right: 0;
@@ -439,53 +483,63 @@ body>main{
     bottom: 0;
     margin: auto;
 }
-.skills-img{
+
+.skills-img {
     position: absolute;
     width: 25%;
     height: 45%;
     left: 50px;
     top: 70px;
 }
+
 /*---------------projects---------------*/
 
-#projects{
+#projects {
     height: 500px;
     background-color: #323040;
     top: 535px;
 }
-#projects>h2{
+
+#projects > h2 {
     bottom: 80px;
 }
-#projects>h2>div{
+
+#projects > h2 > div {
     width: 39%;
 }
-#projects>section{
+
+#projects > section {
     position: absolute;
     top: 0;
-    box-shadow:10px 13px 8px -5px #282626;
+    box-shadow: 10px 13px 8px -5px #282626;
     background-color: #323542;
-    width:calc( 95%/3);
+    width: calc(95% / 3);
     height: 500px;
 }
-#projects>section:nth-child(2){
+
+#projects > section:nth-child(2) {
     left: 0;
 }
-#projects>section:nth-child(3){
-    right:0 ;
+
+#projects > section:nth-child(3) {
+    right: 0;
     left: 0;
     margin: auto;
 }
-#projects>section:nth-child(4){
-    right:0 ;
+
+#projects > section:nth-child(4) {
+    right: 0;
 }
-.project-tittle{
+
+.project-tittle {
     position: relative;
     text-align: center;
     top: 30px;
     color: white;
     font-size: 25px;
 }
-.project-img{
+
+.project-img {
     position: absolute;
     border-radius: 5%;
     width: 86%;
@@ -497,7 +551,7 @@ body>main{
     opacity: 90%;
 }
 
-.project-p{
+.project-p {
     position: relative;
     text-align: center;
     padding-top: 64px;
@@ -516,7 +570,7 @@ body>main{
     opacity: 0%;
 }
 
-.project-p:hover{
+.project-p:hover {
     opacity: 100%;
     height: 268px;
     top: 36px;
@@ -527,7 +581,8 @@ body>main{
     transition-duration: 0.5s;
     cursor: pointer;
 }
-.project-button{
+
+.project-button {
     position: absolute;
     width: max-content;
     height: 30px;
@@ -541,46 +596,52 @@ body>main{
     background-color: #323040;
     border: 3px solid #ea3131;
 }
-.project-button:hover{
+
+.project-button:hover {
     background-color: #67697e;
     font-weight: bold;
-    box-shadow:0px 1px 8px 3px #282626;
+    box-shadow: 0px 1px 8px 3px #282626;
     border: 3px solid #67697e;
 }
 
-#projects>button{
+#projects > button {
     position: absolute;
     height: 40px;
-    width:120px ;
+    width: 120px;
     right: 0;
     left: 0;
-    bottom:-55px;
+    bottom: -55px;
     margin: auto;
 
 
 }
+
 /*-----------------education---------------*/
 
-#education{
+#education {
     height: 500px;
     box-shadow: 10px 13px 8px -5px #282626;
     top: 700px;
 }
-#education>h2{
+
+#education > h2 {
     bottom: 80px;
 }
-#education>h2>div{
+
+#education > h2 > div {
     width: 37%;
 }
-#education>aside{
+
+#education > aside {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right:  0;
+    right: 0;
     margin: auto;
 }
-.white-circle{
+
+.white-circle {
     position: absolute;
     background-color: white;
     border-radius: 100%;
@@ -590,28 +651,33 @@ body>main{
     right: 0;
     margin: auto;
 }
-.red-circle{
+
+.red-circle {
     position: absolute;
-    background-color:#ef4747 ;
+    background-color: #ef4747;
     height: 25px;
     width: 25px;
     border-radius: 100%;
     margin: auto;
 }
-.red-line{
+
+.red-line {
     position: absolute;
-    background-color:#ef4747 ;
+    background-color: #ef4747;
     height: 5px;
-    width: 125px;
+    width: 9vw;
     margin: auto;
 }
-#education>aside>div:nth-child(1){
+
+#education > aside > div:nth-child(1) {
     top: 30px;
 }
-#education>aside>div:nth-child(2){
+
+#education > aside > div:nth-child(2) {
     bottom: 30px;
 }
-#education>aside>div:nth-child(3){
+
+#education > aside > div:nth-child(3) {
     position: absolute;
     background-color: white;
     height: 440px;
@@ -622,120 +688,142 @@ body>main{
     bottom: 0;
     margin: auto;
 }
-#education>aside>div:nth-child(4){
+
+#education > aside > div:nth-child(4) {
     left: 0;
     right: 0;
     top: 0;
     bottom: 250px;
 }
-#education>aside>div:nth-child(5){
-    left: 250px;
+
+#education > aside > div:nth-child(5) {
+    left: 18vw;
     right: 0;
     top: 0;
     bottom: 250px;
 }
-#education>aside>div:nth-child(6){
-    left: 130px;
+
+#education > aside > div:nth-child(6) {
+    left: 9vw;
     right: 0;
     top: 0;
     bottom: 250px;
 }
-#education>aside>div:nth-child(7){
+
+#education > aside > div:nth-child(7) {
     left: 0;
     right: 0;
     top: 250px;
     bottom: 0;
 }
-#education>aside>div:nth-child(8){
-    left: 250px;
+
+#education > aside > div:nth-child(8) {
+    left: 18vw;
     right: 0;
     top: 250px;
     bottom: 0;
 }
-#education>aside>div:nth-child(9){
-    left: 130px;
+
+#education > aside > div:nth-child(9) {
+    left: 9vw;
     right: 0;
     top: 250px;
     bottom: 0;
 }
-#education>aside>div:nth-child(10){
+
+#education > aside > div:nth-child(10) {
     left: 0;
     right: 0;
     top: 0px;
     bottom: 0;
 }
-#education>aside>div:nth-child(11){
+
+#education > aside > div:nth-child(11) {
     left: 0;
-    right: 250px;
-    top: 0px;
-    bottom: 0;
-}
-#education>aside>div:nth-child(12){
-    left: 0;
-    right: 130px;
+    right: 18vw;
     top: 0;
     bottom: 0;
 }
-.education-div{
+
+#education > aside > div:nth-child(12) {
+    left: 0;
+    right: 9vw;
+    top: 0;
+    bottom: 0;
+}
+
+.education-div {
     position: absolute;
     text-align: center;
     color: #d5c7c7;
     width: 30%;
     border: 2px solid white;
 }
-#education>aside>div:nth-child(13){
+
+#education > aside > div:nth-child(13) {
     bottom: 60%;
     left: 61%;
 }
-#education>aside>div:nth-child(14){
+
+#education > aside > div:nth-child(14) {
     bottom: 36%;
-    left:8.5% ;
+    left: 8.5%;
 }
-#education>aside>div:nth-child(15){
+
+#education > aside > div:nth-child(15) {
     bottom: 10%;
-    left:61% ;
+    left: 61%;
 }
 
 /*---------------interest-----------*/
 
-#interest{
+#interest {
     height: 350px;
     top: 770px;
     background-color: #323040;
 }
 
-#interest>h2{
+#interest > h2 {
     bottom: 30px;
 }
-#interest>h2>div{
+
+#interest > h2 > div {
     width: 33%;
 }
-#interest>section:nth-child(2)>div{
+
+#interest > section:nth-child(2) > div {
     position: absolute;
-    width: calc(90%/6);
+    width: calc(90% / 6);
     height: 150px;
     background-color: #323542;
-    box-shadow:10px 13px 8px -5px #282626;
+    box-shadow: 10px 13px 8px -5px #282626;
 }
-#interest>section:nth-child(2)>div:nth-child(1){
+
+#interest > section:nth-child(2) > div:nth-child(1) {
     left: 0;
 }
-#interest>section:nth-child(2)>div:nth-child(2){
-    left: calc((100%/6)*1);
+
+#interest > section:nth-child(2) > div:nth-child(2) {
+    left: calc((100% / 6) * 1);
 }
-#interest>section:nth-child(2)>div:nth-child(3){
-    left: calc((100%/6)*2);
+
+#interest > section:nth-child(2) > div:nth-child(3) {
+    left: calc((100% / 6) * 2);
 }
-#interest>section:nth-child(2)>div:nth-child(4){
-    left: calc((100%/6)*3);
+
+#interest > section:nth-child(2) > div:nth-child(4) {
+    left: calc((100% / 6) * 3);
 }
-#interest>section:nth-child(2)>div:nth-child(5){
-    left: calc((100%/6)*4);;
+
+#interest > section:nth-child(2) > div:nth-child(5) {
+    left: calc((100% / 6) * 4);;
 }
-#interest>section:nth-child(2)>div:nth-child(6){
-    left:calc((100%/6)*5);
+
+#interest > section:nth-child(2) > div:nth-child(6) {
+    left: calc((100% / 6) * 5);
 }
-.interest-img{
+
+.interest-img {
     position: absolute;
     height: 90px;
     width: 90px;
@@ -744,93 +832,107 @@ body>main{
     margin: auto;
     top: 8px;
 }
-.interest-text{
+
+.interest-text {
     position: relative;
     text-align: center;
     font-size: 18px;
     color: #d5c7c7;
     bottom: -95px;
 }
-#interest>section:nth-child(3){
+
+#interest > section:nth-child(3) {
     position: absolute;
     width: 650px;
     left: 0;
     right: 0;
     bottom: 15px;
-    margin:auto ;
+    margin: auto;
     border: 2px solid #ea3131;
     border-radius: 40px;
 }
-#interest>section>p{
+
+#interest > section > p {
     text-align: center;
     color: white;
     font-size: 20px;
 }
+
 /*------------contacts------------*/
-#contact{
+#contact {
     height: 550px;
     top: 900px;
     background-color: #323040;
 }
 
-#contact>h2{
+#contact > h2 {
     bottom: 80px;
 }
 
-#contact>h2>div{
+#contact > h2 > div {
     width: 39%;
 }
-#contact>section:nth-child(2){
+
+#contact > section:nth-child(2) {
     position: relative;
-    width:40% ;
-    height:70% ;
+    width: 40%;
+    height: 70%;
     top: 50px;
 }
-#contact>section:nth-child(2)>div{
+
+#contact > section:nth-child(2) > div {
     position: absolute;
     width: 70%;
     right: 0;
     bottom: 0;
     margin: auto;
 }
-#contact>section:nth-child(2)>div:nth-child(1){
+
+#contact > section:nth-child(2) > div:nth-child(1) {
     left: 0;
     top: 0;
 
 }
-#contact>section:nth-child(2)>div:nth-child(2){
+
+#contact > section:nth-child(2) > div:nth-child(2) {
     left: 0;
     top: 100px;
 }
-#contact>section:nth-child(2)>div:nth-child(3){
+
+#contact > section:nth-child(2) > div:nth-child(3) {
     left: 0;
     top: 230px;
 }
-#contact>section:nth-child(2)>div:nth-child(4){
+
+#contact > section:nth-child(2) > div:nth-child(4) {
     left: 0;
     top: 330px;
 }
-#contact>section:nth-child(2)>div>img{
+
+#contact > section:nth-child(2) > div > img {
     width: 60px;
     height: 60px;
 }
-.contact-p1{
+
+.contact-p1 {
     position: absolute;
-    width:80px;
+    width: 80px;
     left: 85px;
     top: -25px;
     font-size: 20px;
     color: white;
 }
-.contact-p2{
+
+.contact-p2 {
     position: absolute;
-    width:150px;
+    width: 150px;
     left: 85px;
     top: 10px;
     font-size: 20px;
     color: white;
 }
-#contact>article{
+
+#contact > article {
     position: relative;
     margin-left: 49%;
     margin-right: 60px;
@@ -838,16 +940,18 @@ body>main{
     color: #d5c7c7;
     font-size: 19px;
 }
-#contact>section:nth-child(4){
+
+#contact > section:nth-child(4) {
     position: absolute;
     width: 56%;
     right: 0;
     top: 200px;
 }
-#contact>section:nth-child(4)>p{
+
+#contact > section:nth-child(4) > p {
     position: absolute;
     width: max-content;
-    top:-35px ;
+    top: -35px;
     left: 0;
     right: 0;
     margin: auto;
@@ -855,18 +959,20 @@ body>main{
     font-size: 22px;
     font-weight: bold;
 }
-#contact>section:nth-child(4)>form{
+
+#contact > section:nth-child(4) > form {
     position: absolute;
     width: 100%;
     height: 330px;
-    top:365px;
+    top: 365px;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
     font-size: 18px;
 }
-.contact-form{
+
+.contact-form {
     color: white;
     padding-left: 10px;
     border-radius: 10px;
@@ -878,21 +984,26 @@ body>main{
     right: 0;
     margin: auto;
 }
-#contact>section:nth-child(4)>form>input:nth-child(1){
-    top:0px;
+
+#contact > section:nth-child(4) > form > input:nth-child(1) {
+    top: 0px;
 }
-#contact>section:nth-child(4)>form>input:nth-child(3){
-    top:calc(40% / 3);
+
+#contact > section:nth-child(4) > form > input:nth-child(3) {
+    top: calc(40% / 3);
 }
-#contact>section:nth-child(4)>form>input:nth-child(5){
-    top:calc((40% / 3)*2);
+
+#contact > section:nth-child(4) > form > input:nth-child(5) {
+    top: calc((40% / 3) * 2);
 }
-#contact>section:nth-child(4)>form>textarea{
+
+#contact > section:nth-child(4) > form > textarea {
     padding-top: 10px;
     height: 130px;
-    top:calc((40% / 3)*3);
+    top: calc((40% / 3) * 3);
 }
-#contact>section:nth-child(4)>form>button{
+
+#contact > section:nth-child(4) > form > button {
     position: absolute;
     width: 170px;
     height: 40px;
@@ -904,13 +1015,14 @@ body>main{
 
 /*-----------------footer---------------*/
 
-footer>section{
+footer > section {
     position: relative;
     height: 100px;
     top: 900px;
     background-color: #383B49;
 }
-footer>section>nav{
+
+footer > section > nav {
     position: absolute;
     width: max-content;
     height: max-content;
@@ -920,12 +1032,14 @@ footer>section>nav{
     right: 0;
     margin: auto;
 }
-footer>section>nav>a>img{
+
+footer > section > nav > a > img {
     width: 45px;
     height: 45px;
     padding-right: 25px;
 }
-footer>section>p{
+
+footer > section > p {
     position: relative;
     text-align: center;
     color: white;
@@ -933,20 +1047,217 @@ footer>section>p{
     font-size: 18px;
     font-weight: bold;
 }
-@media all and (min-width: 320px) and (max-width:375px) {
-    body{
-        width: 320px;
+
+/*---------------Media Query---------------*/
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+
+    .button{
+        color: white;
+        font-size: 30px;
+        background-color: #323040;
+        border: 5px solid #ea3131;
     }
+
+    #header > section > div {
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 190px;
+        height: 45px;
+    }
+
+    #header > section > div > h3 {
+        font-size: 40px;
+    }
+
+    #header > section > nav > ul {
+        display: none;
+    }
+    #header {
+        height: 65px;
+    }
+    #home {
+        height: 685px;
+    }
+    .main-section {
+        width: 730px;
+    }
+    #home > aside:nth-child(3) {
+        width: 320px;
+        height: 320px;
+        bottom: 295px;
+        left: 0;
+        right: 0;
+    }
+    #home > aside:nth-child(2) {
+        top: 325px;
+        left: 0;
+        right: 0;
+    }
+    #home > aside:nth-child(2) > h3,#home > aside:nth-child(2) > p, #home > aside:nth-child(2) > h1  {
+        text-align: center;
+    }
+    #home > aside:nth-child(2) > button {
+        left: 0;
+        right: 0;
+        margin: auto;
+        bottom: 40px;
+        position: absolute;
+        height: 52px;
+        width: 150px;
+    }
+    #home > aside:nth-child(2) > nav {
+        text-align: center;
+    }
+    #about > h2 > div {
+        width: 33%;
+    }
+    #about {
+        height: 1325px;
+    }
+    #about > aside > dl {
+        right: 0;
+        left: 0;
+        top: 730px;
+        width: 620px;
+        height: 290px;
+        margin: auto;
+    }
+    #about > aside > dl > dd {
+        font-size: 30px;
+    }
+    #about > aside > button {
+        right: 0;
+        left: 0;
+        bottom: 210px;
+        margin: auto;
+        width: 220px;
+        height: 62px;
+    }
+    #about > article {
+        width: 100%;
+        height: max-content;
+        left: 22px;
+    }
+    #about > article > p {
+        font-size: 35px;
+        width: 95%;
+    }
+    #about > article > h2 {
+        font-size: 40px;
+    }
+    #about > section > p {
+        margin: 22px;
+        width: 600px;
+        font-size:35px
+    }
+    #about > section {
+        bottom: 45px;
+    }
+
+    #services{
+        height: 820px;
+    }
+    #services > h2 > div {
+        width: 29%;
+    }
+    #services > section {
+        height:250px;
+        width: 100%;
+    }
+    #services > section:nth-child(3) {
+        top: 335px;
+    }
+    #services > section:nth-child(4) {
+        top: 610px;
+    }
+    .service-img {
+        position: absolute;
+        right: 440px;
+        top: 50px;
+    }
+    .service-p1 {
+        position: absolute;
+        left: 300px;
+        top: -10px;
+        font-size: 30px;
+    }
+    .service-p2 {
+        position: absolute;
+        width: 360px;
+        padding: 0;
+        right: 90px;
+        top: 81px;
+        font-size: 30px;
+    }
+
+
+    #skills{
+        height: 730px;
+        top: 440px;
+    }
+    #skills > h2 {
+        bottom: 75px;
+    }
+    #skills > h2 > div {
+        width: 34%;
+    }
+    .skill-div1 {
+        width: calc(95% / 2);
+        height: calc(660px / 3);
+        margin: auto;
+    }
+    #skills > div:nth-child(2) {
+        left: 0;
+        top: 0;
+    }
+    #skills > div:nth-child(3) {
+        right: 380px;
+        top: 0;
+        bottom: 0;
+    }
+    #skills > div:nth-child(4) {
+         right: 0;
+         top: 0;
+     }
+    #skills > div:nth-child(6) {
+        top: 0;
+        left: 380px;
+    }
+    .skills-h1 {
+        font-size: 40px;
+        bottom: 20px;
+    }
+    .skills-img {
+        left: 35px;
+        top: 80px;
+    }
+    .skills-p1 {
+        font-size: 35px;
+        bottom: 40px;
+        margin-left: 60px;
+    }
+    .skills-p2 {
+        font-size: 35px;
+        bottom: 50px;
+        margin-left: 100px;
+    }
+
 }
-@media all and (min-width: 2272px) and (max-width:2652px){
-    #header>section{
+
+
+
+@media all and (min-width: 2272px) and (max-width: 2652px) {
+    #header > section {
         position: relative;
         height: 80px;
         top: 10px;
         margin-right: 500px;
         margin-left: 500px;
     }
-    .main-section{
+
+    .main-section {
         margin-left: 500px;
         margin-right: 500px;
     }

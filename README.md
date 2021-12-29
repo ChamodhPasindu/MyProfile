@@ -2,7 +2,7 @@
 # My Personal Web Site
 
 
-##Sample Screenshots
+## Sample Screenshots
 
 ![Image of MyProfile](assets/images/ss1.png)
 ![Image of MyProfile](assets/images/ss2.png)
@@ -16,11 +16,11 @@
 
 ## :link: references
 
-* [Site Map](https://www.gloomaps.com/e7KqyYzowP)
+* [Site Map URL](https://www.gloomaps.com/e7KqyYzowP)
 
-* [Wireframe](https://wireframe.cc/42HeXW)
+* [Wireframe URL](https://wireframe.cc/42HeXW)
 
-* [Mockup](https://www.figma.com/file/1RzcDOVsBOEoPqe9lc1DOY/Portfoilo?node-id=0%3A1)
+* [Mockup URL](https://www.figma.com/file/1RzcDOVsBOEoPqe9lc1DOY/Portfoilo?node-id=0%3A1)
 
 #### This site was built using [GitHub Pages](https://pages.github.com/) and [000WebHost](https://www.000webhost.com/?__cf_chl_jschl_tk__=TO2FoBSzgjuetbZdG7MU8EbIkZukgEsU5byQHnwQ45w-1640521467-0-gaNycGzNCv0)
 
