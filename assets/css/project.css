@@ -212,7 +212,7 @@ footer > section {
 
 @media all and (min-width: 320px) and (max-width: 425px) {
     .sub-section{
-        width: 580px;
+        width: 560px;
     }
     #my-project {
         top: 40px;
@@ -222,7 +222,7 @@ footer > section {
         width: 31%;
     }
     #my-project > section {
-        width: 95%;
+        width: 100%;
         height: 320px;
     }
     #my-project > section:nth-child(3) {
@@ -231,7 +231,6 @@ footer > section {
     }
     #my-project > section:nth-child(4) {
         top: 42%;
-        right: 5%;
     }
     #my-project > section:nth-child(5) {
         left: 0;
@@ -275,7 +274,7 @@ footer > section {
     }
     #my-assignment > section > section {
         height: 320px;
-        width: 95%;
+        width: 100%;
         text-align: center;
     }
     .assignment-p {
@@ -300,5 +299,41 @@ footer > section {
     footer > section > p {
         font-size: 22px;
     }
+}
+@media all and (min-width: 426px) and (max-width: 768px) {
+    .sub-section {
+        width: 730px;
+    }
+    #my-project > h2 > div {
+        width: 35%;
+    }
+    #my-project>section:nth-child(2)>div>h3{
+        margin-bottom: -20px;
+    }
+    #my-project>section:nth-child(4)>div>h3{
+        margin-bottom: -20px;
+    }
+    .project-img {
+        height: 60%;
+    }
 
+    #my-assignment > h2 > div {
+        width: 30%;
+    }
+    .assignment-p {
+        padding-top: 25px;
+        height: 118px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 15px;
+        top: 0;
+    }
+    .assignment-p:hover {
+        height: 150px;
+        top: -15px;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
 }
