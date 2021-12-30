@@ -1060,6 +1060,7 @@ footer > section > p {
     }
 
     #header > section > div {
+        top: 15px;
         left: 0;
         right: 0;
         margin: auto;
@@ -1075,7 +1076,7 @@ footer > section > p {
         display: none;
     }
     #header {
-        height: 65px;
+        height: 85px;
     }
     #home {
         height: 685px;
@@ -1452,6 +1453,257 @@ footer > section > p {
         font-size: 25px;
     }
 }
+
+@media all and (min-width: 426px) and (max-width: 768px) {
+    .button {
+        font-size: 16px;
+    }
+    #home {
+        height: 400px;
+    }
+    #header > section > div {
+        width: 105px;
+        height: 25px;
+    }
+    #header > section > div > h3 {
+        font-size: 20px;
+    }
+    section > nav > ul > li {
+        padding-left: 15px;
+    }
+    section > nav > ul > li > a {
+        font-size: 20px;
+    }
+    #home > aside:nth-child(3) {
+        width: 260px;
+        height: 300px;
+        right: 33px;
+        border: 10px solid #39373d
+    }
+    #home > aside:nth-child(2) {
+        left: 35px;
+    }
+    #home > aside:nth-child(2) > h3 {
+        font-size: 35px;
+    }
+    #home > aside:nth-child(2) > p {
+        font-size: 25px;
+    }
+    #home > aside:nth-child(2) > h1 {
+        font-size: 35px;
+    }
+
+    #home > aside:nth-child(2) > button {
+        height: 35px;
+        width: 80px;
+    }
+    #home > aside:nth-child(2) > nav > a > img {
+        width: 45px;
+        height: 45px;
+        padding-right: 15px;
+    }
+    #home > aside:nth-child(2) > nav {
+        top: 20px;
+    }
+
+    #about {
+        top: 200px;
+        height: 830px;
+
+    }
+    #about > h2 > div {
+        width: 34%;
+    }
+    #about > article {
+        width: 95%;
+        left: 30px;
+    }
+    #about > aside > dl {
+        top: 390px;
+        right: 0;
+        left: 0;
+    }
+    #about > aside > button {
+        right: 0;
+        left: 0;
+        width: 130px;
+        margin: auto;
+    }
+
+
+    #services {
+        top: 260px;
+    }
+    #services > h2 {
+        bottom: 30px;
+    }
+    #services > h2 > div {
+        width: 30%;
+    }
+    .service-img {
+        width: 140px;
+        height: 130px;
+        top: 30px;
+    }
+    #services>section:nth-child(2)>div>p:nth-child(2){
+        top: 150px;
+    }
+    #services>section:nth-child(2)>div>p:nth-child(3){
+        top: 155px;
+    }
+    .service-p1 {
+        top: 170px;
+    }
+    .service-p2 {
+        padding-left: 15px;
+        padding-right: 15px;
+        top: 185px;
+    }
+    #skills {
+        top: 325px;
+        height: 460px;
+    }
+    #skills > h2 > div {
+        width: 34%;
+    }
+    .skills-h1 {
+        font-size: 30px;
+    }
+    .skill-div1 {
+        height: calc(380px / 2);
+    }
+    .skills-img {
+        width: 30%;
+        height: 40%;
+        left: 20px;
+        top: 70px;
+    }
+    .skills-p1 {
+        font-size: 24px;
+        bottom: 15px;
+    }
+    .skills-p2 {
+        font-size: 24px;
+        bottom: 15px;
+    }
+
+
+    #projects {
+        top: 435px;
+        height: 355px;
+    }
+    #projects > h2 > div {
+        width: 30%;
+    }
+    #projects > section {
+        height: 350px;
+    }
+    .project-tittle {
+        top: 15px;
+        font-size: 20px;
+    }
+    .project-img {
+        top: 110px;
+    }
+    .project-p {
+        height: 173px;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 23px;
+        font-size: 13px;
+        padding-top: 20px
+    }
+    .project-button {
+         bottom: 12px;
+         font-size: 13px;
+     }
+    .project-p:hover {
+        height: 190px;
+        top: 13px;
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+    #projects>section:nth-child(3)>div>h3{
+        margin-bottom: 40px;
+    }
+
+
+    #education {
+        top: 600px;
+    }
+    #education > h2 > div {
+        width: 28%;
+    }
+    #education > aside > div:nth-child(13) {
+        left: 62%;
+    }
+    #education > aside > div:nth-child(15) {
+        left: 62%;
+    }
+    #education > aside > div:nth-child(14) {
+        left: 7.5%;
+    }
+    #interest {
+        top: 660px;
+    }
+    #interest > h2 > div {
+        width: 20%;
+    }
+    .interest-img {
+         height: 80px;
+         width: 80px;
+         top: 10px;
+     }
+    .interest-text {
+        font-size: 17px;
+        bottom: -85px;
+    }
+    #interest > section:nth-child(3) {
+        bottom: 30px;
+    }
+
+
+    #contact {
+        top: 750px;
+    }
+    #contact > h2 > div {
+        width: 31%;
+    }
+
+    #contact > article {
+        margin-left: 4%;
+        font-size: 19px;
+    }
+    .contact-p2 {
+        font-size: 17px;
+    }
+    #contact > section:nth-child(2) {
+        width: 8%;
+        top: 130px;
+    }
+    #contact > section:nth-child(4) > form {
+        width: 106%;
+        top: 390px;
+    }
+    footer > section {
+        height: 80px;
+        top: 800px;
+    }
+    footer > section > nav > a > img {
+        width: 35px;
+        height: 35px;
+    }
+
+}
+
+
+
+
+
+}
+
+
+
 
 
 
