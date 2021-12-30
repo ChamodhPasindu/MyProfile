@@ -1754,16 +1754,124 @@ footer > section > p {
 }
 
 @media all and (min-width: 769px) and (max-width: 1024px) {
-  /*  #header > section {
-        position: relative;
-        height: 80px;
-        top: 10px;
-        margin-right: 500px;
-        margin-left: 500px;
+
+    .main-section {
+        width: 975px;
+    }
+    #home > aside:nth-child(2) > h3 {
+        font-size: 40px;
+    }
+    #home > aside:nth-child(3) {
+        width: 360px;
+        height: 360px;
+        right: 35px;
+        border: 10px solid #39373d;
+    }
+    #home > aside:nth-child(2) {
+        left: 40px;
+        top: 55px;
+    }
+    #home > aside:nth-child(2) > nav > a > img {
+        width: 50px;
+        height: 50px;
     }
 
+
+    #about {
+        height: 770px;
+    }
+    #about > h2 > div {
+        width: 38%;
+    }
+    #about > article {
+        width: 95%;
+        left: 35px;
+    }
+    #about > aside > dl {
+        top: 320px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    #about > aside > button {
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    h2 > div {
+        width: 35%;
+    }
+
+    #skills > h2 > div {
+        width: 38%;
+    }
+
+
+    #projects {
+        height: 420px;
+    }
+    #projects > h2 > div {
+        width: 35%;
+    }
+    .project-tittle {
+        top: 0;
+        padding: 10px;
+    }
+    #projects > section {
+        height: 420px;
+    }
+    .project-img {
+        top: 135px;
+    }
+    #projects > section:nth-child(3) > div > h3 {
+        margin-bottom: 54px;
+    }
+
+
+    .project-p {
+        padding-top: 30px;
+        height: 195px;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        top: 8px;
+        font-size: 17px;
+    }
+    .project-p:hover {
+        top: -25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #education > h2 > div {
+        width: 33%;
+    }
+
+    #interest > h2 > div {
+        width: 27%;
+    }
+    #contact > h2 > div {
+        width: 35%;
+    }
+
+    footer>section{
+        height: 80px;
+        top: 920px;
+        width: 1024px;
+    }
+}
+@media all and (min-width: 2200px) and (max-width: 2560px) {
+    #header {
+        width: 62%;
+        height: 55px;
+        margin-left: 480px;
+    }
     .main-section {
         margin-left: 500px;
         margin-right: 500px;
-    }*/
+    }
 }
