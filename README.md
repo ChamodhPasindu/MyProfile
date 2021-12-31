@@ -1,7 +1,15 @@
 
 # My Personal Web Site
 
+## Description
+#### This website creates for showing some information about my career.I categorize them into few sections...
+* Who am I
+* What kind of services I provide
+* What are the technologies & languages I use
+* Projects & assignments I have done
+* My contact details
 
+#### Also,this website optimized for all mobile & desktop devices can view 
 ## Sample Screenshots
 
 ![Image of MyProfile](assets/images/ss1.png)
