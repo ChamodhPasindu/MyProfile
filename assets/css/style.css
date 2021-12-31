@@ -159,26 +159,6 @@ body > main {
     top: 90px;
     box-shadow: 10px 13px 8px -5px #282626;
 }
-
-/*#shape{*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    margin: auto;*/
-/*    width: calc(78%/2);*/
-/*    height: 515px;*/
-/*    background-color: rgba(0, 0, 0, 0.1);*/
-/*}*/
-/*#shape:before{*/
-/*    content: "";*/
-/*    transform: rotate(180deg);*/
-/*    position: absolute;*/
-/*    left: 509px;*/
-/*    height: 0;*/
-/*    width: 10px;*/
-/*    border-top: 119px solid transparent;*/
-/*    border-right: 161px solid rgba(0, 0, 0, 0.1);*/
-/*    border-bottom: 396px solid transparent;*/
-/*}*/
 #home > aside:nth-child(2) {
     position: absolute;
     top: 40px;
@@ -339,7 +319,7 @@ body > main {
 }
 
 #services > h2 > div {
-    width: 38%;
+    width: 37%;
 }
 
 #services > section {
@@ -407,7 +387,7 @@ body > main {
 }
 
 #skills > h2 > div {
-    width: 41%;
+    width: 40%;
 }
 
 #skills > div:nth-child(2) {
@@ -505,7 +485,7 @@ body > main {
 }
 
 #projects > h2 > div {
-    width: 39%;
+    width: 38%;
 }
 
 #projects > section {
@@ -612,8 +592,6 @@ body > main {
     left: 0;
     bottom: -55px;
     margin: auto;
-
-
 }
 
 /*-----------------education---------------*/
@@ -629,7 +607,7 @@ body > main {
 }
 
 #education > h2 > div {
-    width: 37%;
+    width: 36%;
 }
 
 #education > aside {
@@ -788,7 +766,7 @@ body > main {
 }
 
 #interest > h2 > div {
-    width: 33%;
+    width: 32%;
 }
 
 #interest > section:nth-child(2) > div {
@@ -870,7 +848,7 @@ body > main {
 }
 
 #contact > h2 > div {
-    width: 39%;
+    width: 38%;
 }
 
 #contact > section:nth-child(2) {
@@ -1080,7 +1058,7 @@ footer > section > p {
         height: 85px;
     }
     #home {
-        height: 685px;
+        height: 720px;
     }
     .main-section {
         width: 730px;
@@ -1088,12 +1066,12 @@ footer > section > p {
     #home > aside:nth-child(3) {
         width: 320px;
         height: 320px;
-        bottom: 295px;
+        bottom: 330px;
         left: 0;
         right: 0;
     }
     #home > aside:nth-child(2) {
-        top: 325px;
+        top: 335px;
         left: 0;
         right: 0;
     }
@@ -1104,13 +1082,14 @@ footer > section > p {
         left: 0;
         right: 0;
         margin: auto;
-        bottom: 40px;
+        bottom: 30px;
         position: absolute;
         height: 52px;
         width: 150px;
     }
     #home > aside:nth-child(2) > nav {
         text-align: center;
+        top: 50px;
     }
 
 
@@ -1757,6 +1736,23 @@ footer > section > p {
 
     .main-section {
         width: 975px;
+        margin-left: 22px;
+    }
+    #header > section > div {
+        top: 11px;
+        width: 128px;
+        height: 30px;
+    }
+
+    #header > section > div > h3 {
+        position: absolute;
+        font-size: 25px;
+        left: 10px;
+        top: 1px;
+        margin: auto;
+    }
+    section > nav > ul > li > a {
+        font-size: 20px;
     }
     #home > aside:nth-child(2) > h3 {
         font-size: 40px;
@@ -1799,7 +1795,7 @@ footer > section > p {
         margin: auto;
     }
 
-    h2 > div {
+    #services > h2 > div {
         width: 35%;
     }
 
@@ -1861,7 +1857,12 @@ footer > section > p {
     footer>section{
         height: 80px;
         top: 920px;
-        width: 1024px;
+        width: 1010px;
+    }
+    footer > section > nav > a > img {
+        width: 35px;
+        height: 35px;
+        padding-right: 25px;
     }
 }
 @media all and (min-width: 2200px) and (max-width: 2560px) {

@@ -99,11 +99,6 @@ main > section {
 }
 
 #my-assignment > section {
-    /*position: absolute;*/
-    /*box-shadow:10px 13px 8px -5px #282626;*/
-    /*background-color: #323542;*/
-    /*width:calc( 95%/3);*/
-    /*height: calc(1015px/4);*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -119,58 +114,6 @@ main > section {
     background-color: #323542;
 }
 
-/*}*/
-/*#my-assignment>section:nth-child(2){*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    margin:auto ;*/
-/*}*/
-
-/*#my-assignment>section:nth-child(3){*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    margin:auto ;*/
-/*}*/
-/*#my-assignment>section:nth-child(4){*/
-/*    right: 0;*/
-/*    top: 0;*/
-/*}*/
-/*#my-assignment>section:nth-child(5){*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    margin: auto;*/
-/*}*/
-/*#my-assignment>section:nth-child(6){*/
-/*    right: 0;*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    margin: auto;*/
-/*}*/
-/*#my-assignment>section:nth-child(7){*/
-/*    right: 0;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    margin: auto;*/
-/*}*/
-/*#my-assignment>section:nth-child(8){*/
-/*    left: 0;*/
-/*    bottom: 0;*/
-/*    margin: auto;*/
-/*}*/
-/*#my-assignment>section:nth-child(9){*/
-/*    right: 0;*/
-/*    left: 0;*/
-/*    bottom: 0;*/
-/*    margin: auto;*/
-/*}*/
-/*#my-assignment>section:nth-child(10){*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    margin: auto;*/
-/*}*/
 .assignment-p {
     position: relative;
     text-align: center;
@@ -363,14 +306,16 @@ footer > section {
         margin-left: 6px;
     }
 }
-
 @media all and (min-width: 769px) and (max-width: 1024px) {
     main > section {
         width: 980px;
+        margin-left: 20px;
     }
+
     #my-project > h2 > div {
         width: 38%;
     }
+
     #my-assignment > h2 > div {
         width: 35%;
     }
