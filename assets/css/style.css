@@ -328,10 +328,19 @@ body > main {
     background-color: #323542;
     width: calc(95% / 3);
     height: 500px;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 1s;
 }
 #services > section:hover {
+    /*background-color: #323040;*/
     background-image:  linear-gradient(90deg, rgba(50,48,64,1) 0%, rgba(50,53,66,1) 100%);
     cursor:pointer;
+    box-shadow: 0px 0px 0 0px #282626;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 1s;
+
 }
 
 #services > section:nth-child(2) {
@@ -457,10 +466,17 @@ body > main {
     box-shadow: 10px 13px 8px -5px #282626;
     background-color: #323542;
     position: absolute;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 1s;
 }
 .skill-div1:hover{
     background-image:  linear-gradient(90deg, rgba(50,48,64,1) 0%, rgba(50,53,66,1) 100%);
     cursor:pointer;
+    box-shadow: 0px 0px 0 0px #282626;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 1s;
 }
 .skill-div2 {
     position: absolute;
@@ -747,6 +763,10 @@ body > main {
 
 .education-div:hover {
     font-size: 18px;
+
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 
@@ -787,10 +807,18 @@ body > main {
     height: 150px;
     background-color: #323542;
     box-shadow: 10px 13px 8px -5px #282626;
+
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 1s;
 }
 #interest > section:nth-child(2) > div:hover {
     background-image:  linear-gradient(90deg, rgba(50,48,64,1) 0%, rgba(50,53,66,1) 100%);
     cursor:pointer;
+    box-shadow: 0px 0px 0 0px #282626;
+    transition-delay: 0s;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 #interest > section:nth-child(2) > div:nth-child(1) {
