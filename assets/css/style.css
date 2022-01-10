@@ -164,18 +164,46 @@ body > main {
     top: 40px;
     left: 70px;
     margin: auto;
+    overflow: hidden;
+    height: 390px;
 }
 
 #home > aside:nth-child(2) > h3 {
+    position: relative;
     font-size: 50px;
     color: #ea3131;
     margin-bottom: -22px;
+
+    animation-name: h3;
+    animation-duration: 8s;
+    animation-direction: alternate;
+}
+@keyframes h3 {
+    from{
+        left: -60%;
+    }
+    to{
+        left: 0%;
+    }
 }
 
 #home > aside:nth-child(2) > p {
+    position: relative;
     color: white;
     font-size: 37px;
     margin-bottom: -30px;
+
+    animation-name:p;
+    animation-duration: 8s;
+    animation-direction: alternate;
+}
+@keyframes p{
+    from{
+        left: 100%;
+    }
+    to{
+        left: 0%;
+    }
 }
 
 #home > aside:nth-child(2) > h1 {
@@ -183,6 +211,17 @@ body > main {
     font-size: 37px;
     margin-bottom: 35px;
     margin-top: 37px;
+
+    animation: h1 2s linear 7s 1 normal forwards;
+    opacity: 0;
+}
+@keyframes h1 {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
 }
 
 #home > aside:nth-child(2) > button {
@@ -1126,7 +1165,7 @@ footer > section > p {
         left: 0;
         right: 0;
         margin: auto;
-        bottom: 30px;
+        bottom: 100px;
         position: absolute;
         height: 52px;
         width: 150px;
