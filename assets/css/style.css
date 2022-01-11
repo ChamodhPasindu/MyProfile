@@ -335,6 +335,19 @@ body > main {
     margin: auto;
     border: 2px solid #ea3131;
     border-radius: 40px;
+
+    animation-name: up-down;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes up-down {
+    from{
+    }
+    to{
+        bottom: 50px;
+    }
 }
 
 #about > section > p {
@@ -911,6 +924,20 @@ body > main {
     margin: auto;
     border: 2px solid #ea3131;
     border-radius: 40px;
+
+    animation-name: up-down2;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+
+}
+@keyframes up-down2 {
+    from{
+
+    }
+    to{
+        bottom: 45px;
+    }
 }
 
 #interest > section > p {
