@@ -936,7 +936,7 @@ body > main {
 
     }
     to{
-        bottom: 45px;
+        bottom: 50px;
     }
 }
 
@@ -1465,7 +1465,21 @@ footer > section > p {
         bottom: -115px;
     }
     #interest > section:nth-child(3) {
-        bottom: -130px;
+        bottom: -150px;
+
+        animation-name: up-down3;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+
+    }
+    @keyframes up-down3 {
+        from{
+
+        }
+        to{
+            bottom: -130px;
+        }
     }
     #interest > section > p {
         font-size: 30px;
@@ -1793,7 +1807,7 @@ footer > section > p {
     }
 
     .interest-text {
-        font-size: 17px;
+        font-size: 15px;
         bottom: -85px;
     }
 
