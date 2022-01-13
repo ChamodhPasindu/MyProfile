@@ -155,25 +155,26 @@ body > main {
 }
 
 #home {
-    height: 515px;
-    top: 90px;
+    height: 86vh;
+    top: 10vh;
     box-shadow: 10px 13px 8px -5px #282626;
 }
 #home > aside:nth-child(2) {
     position: absolute;
-    top: 40px;
-    left: 70px;
+    top: 0;
+    bottom: 0;
+    left: 6%;
     margin: auto;
     overflow: hidden;
-    height: 390px;
+    height: max-content;
 }
 
 #home > aside:nth-child(2) > h3 {
     position: relative;
-    font-size: 50px;
+    font-size: 5vw;
+    top: -50px;
     color: #ea3131;
     margin-bottom: -22px;
-
     animation-name: h3;
     animation-duration: 8s;
     animation-direction: alternate;
@@ -190,10 +191,10 @@ body > main {
 #home > aside:nth-child(2) > p {
     position: relative;
     color: white;
-    font-size: 37px;
+    top: -32px;
+    font-size: 3vw;
     margin-bottom: -30px;
-
-    animation-name:p;
+    animation-name: p;
     animation-duration: 8s;
     animation-direction: alternate;
 }
@@ -207,11 +208,12 @@ body > main {
 }
 
 #home > aside:nth-child(2) > h1 {
+    position: relative;
     color: white;
-    font-size: 37px;
+    font-size: 3vw;
+    top: -28px;
     margin-bottom: 35px;
     margin-top: 37px;
-
     animation: h1 2s linear 7s 1 normal forwards;
     opacity: 0;
 }
@@ -225,13 +227,16 @@ body > main {
 }
 
 #home > aside:nth-child(2) > button {
-    height: 40px;
-    width: 100px;
+    height: 3vw;
+    width: 8vw;
+    top: -19px;
+    position: relative;
+    font-size: 1.5vw;
 }
 
 #home > aside:nth-child(2) > nav {
     position: relative;
-    top: 32px;
+    top: 0;
 }
 
 #home > aside:nth-child(2) > nav > a > img {
@@ -242,11 +247,11 @@ body > main {
 
 #home > aside:nth-child(3) {
     position: absolute;
-    width: 420px;
-    height: 420px;
+    width: 32vw;
+    height: 32vw;
     top: 0;
     bottom: 0;
-    right: 80px;
+    right: 6%;
     border-radius: 50%;
     border: 20px solid #39373d;
     margin: auto;
@@ -1169,6 +1174,7 @@ footer > section > p {
     }
     #home {
         height: 720px;
+        top: 100px;
     }
     .main-section {
         width: 730px;
@@ -1181,9 +1187,18 @@ footer > section > p {
         right: 0;
     }
     #home > aside:nth-child(2) {
-        top: 335px;
+        top: 385px;
         left: 0;
         right: 0;
+    }
+    #home > aside:nth-child(2)>h3{
+        font-size: 50px;
+        margin-bottom: -40px;
+        top: -60px;
+    }
+    #home > aside:nth-child(2) > p,#home > aside:nth-child(2) > h1{
+        font-size: 37px;
+        top: -40px;
     }
     #home > aside:nth-child(2) > h3,#home > aside:nth-child(2) > p, #home > aside:nth-child(2) > h1  {
         text-align: center;
@@ -1196,10 +1211,11 @@ footer > section > p {
         position: absolute;
         height: 52px;
         width: 150px;
+        top: 190px;
+        font-size: 30px;
     }
     #home > aside:nth-child(2) > nav {
         text-align: center;
-        top: 50px;
     }
 
 
@@ -1598,30 +1614,31 @@ footer > section > p {
     }
 
     #home > aside:nth-child(2) > h3 {
-        font-size: 35px;
+        font-size: 40px;
+        top: -33px;
+
     }
 
     #home > aside:nth-child(2) > p {
         font-size: 25px;
+        top: -13px;
     }
 
     #home > aside:nth-child(2) > h1 {
-        font-size: 35px;
+        font-size: 30px;
+        top: -13px;
     }
 
     #home > aside:nth-child(2) > button {
         height: 35px;
         width: 80px;
+        font-size: 16px;
     }
 
     #home > aside:nth-child(2) > nav > a > img {
         width: 45px;
         height: 45px;
         padding-right: 15px;
-    }
-
-    #home > aside:nth-child(2) > nav {
-        top: 20px;
     }
 
     #about {
@@ -1989,7 +2006,7 @@ footer > section > p {
         padding-right: 25px;
     }
 }
-@media all and (min-width: 2200px) and (max-width: 2560px) {
+@media all and (min-width: 2344px) and (max-width: 2560px) {
     #header {
         width: 62%;
         height: 55px;
@@ -1998,5 +2015,20 @@ footer > section > p {
     .main-section {
         margin-left: 500px;
         margin-right: 500px;
+    }
+    #home > aside:nth-child(3) {
+        width: 20vw;
+        height: 20vw;
+    }
+    #home > aside:nth-child(2) > h3 {
+        font-size: 3vw;
+    }
+    #home > aside:nth-child(2) > h1,#home > aside:nth-child(2) > p {
+        font-size: 2vw;
+    }
+    #home > aside:nth-child(2) > button {
+        height: 2.5vw;
+        width: 6vw;
+        font-size: 1.1vw;
     }
 }
