@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
+        <div class="container-fluid">
+
+            <a class="navbar-brand fw-bolder fs-2 " href="index.html"> <i
+                    class="fas fa-balance-scale-right  fs-3 me-2"></i>POS System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bolder" aria-current="page" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/orders.html">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/item.html">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/customer.html">Customer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container-md position-relative">
+    <div>
+        <div class="row ">
+            <div class="p-1 px-3 rounded-3 fw-bolder bg-secondary text-light fs-3 mt-4 shadow-sm"><i class="fas fa-shopping-cart me-1"></i>
+                Order
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="row">
+            <div class="col-5 col-sm-3 col-lg-2">
+                <select class="form-select form-select-ls mt-4" aria-label=".form-select-lg example">
+                    <option selected>ID</option>
+                    <option value="1">Name</option>
+                    <option value="2">Date</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-9 col-lg-10">
+                <form class="d-flex mt-3 mt-sm-4">
+                    <input class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="p-3 rounded-3  bg-primary text-light fw-bolder mt-4">Order Details</div>
+
+
+        <div class="px-3 rounded-3 mt-4 p-3 border mb-lg-0 mb-sm-4 mb-4 shadow-sm" >
+            <div class="row gx-3">
+                <div class="col-5 col-lg col-sm-6 ">
+                    <div class="mb-4">
+                        <label for="orderId" class="form-label">Order ID</label>
+                        <input type="text" class="form-control" id="orderId" placeholder="O001" disabled>
+                    </div>
+                </div>
+                <div class="col-7 col-lg  col-sm-6">
+                    <div class="mb-4">
+                        <label for="OrderDate" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="OrderDate" disabled>
+                    </div>
+                </div>
+
+                <div class="col col-lg col-sm-12 ">
+                    <div class="mb-4">
+                        <label for="customerName" class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="customerName" placeholder="Dasun" disabled>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row gx-3">
+                <div class="col">
+                    <div class="mb-2">
+                        <label for="discount" class="form-label">Discount</label>
+                        <input type="text" class="form-control" id="discount" placeholder="00.00" disabled>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-2">
+                        <label for="cost" class="form-label">Cost</label>
+                        <input type="text" class="form-control" id="cost" placeholder="0000.00" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" gap-2 d-flex justify-content-center justify-content-md-end justify-content-sm-center  mt-4">
+                    <button type="button" class="btn btn-secondary">Clear</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+
+        <hr class="mt-4">
+        <div>
+            <div class="row ">
+                <div class="p-1 px-3 col rounded-3 fw-bolder bg-secondary text-light fs-3 mt-1 shadow-sm"><i class="fas fa-chart-line me-2"></i>
+                    All Orders</div>
+            </div>
+        </div>
+        <div class="mb-5 mt-4 table-wrapper-scroll-y my-custom-scrollbar " >
+            <table class="table table-hover table-borderless table-striped ">
+                <thead class="bg-primary text-light">
+                <tr>
+                    <th scope="col">Order ID</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Discount</th>
+                    <th scope="col">Cost(Rs)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">O001</th>
+                    <td>01/01/2022</td>
+                    <td>Dasun</td>
+                    <td>0.00</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <th scope="row">O002</th>
+                    <td>01/01/2022</td>
+                    <td>Ravindu</td>
+                    <td>100.00</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <th scope="row">O003</th>
+
+                    <td>01/01/2022</td>
+                    <td>Pasindu</td>
+                    <td>50.00</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <th scope="row">O004</th>
+                    <td>01/01/2022</td>
+                    <td>Lakshan</td>
+                    <td>150.00</td>
+                    <td>7500</td>
+                </tr>
+                <tr>
+                    <th scope="row">O005</th>
+                    <td>01/01/2022</td>
+                    <td>Ravindu</td>
+                    <td>200.00</td>
+                    <td>340</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

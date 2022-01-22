@@ -242,7 +242,7 @@ body > main {
 #home > aside:nth-child(2) > nav > a > img {
     width: 60px;
     height: 60px;
-    padding-right: 25px;
+    padding-right: 2vw;
 }
 
 #home > aside:nth-child(3) {
