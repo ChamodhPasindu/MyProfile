@@ -240,8 +240,8 @@ body > main {
 }
 
 #home > aside:nth-child(2) > nav > a > img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding-right: 2vw;
 }
 
