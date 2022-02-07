@@ -148,42 +148,8 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">O001</th>
-                        <td>01/01/2022</td>
-                        <td>Dasun</td>
-                        <td>0.00</td>
-                        <td>300</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">O002</th>
-                        <td>01/01/2022</td>
-                        <td>Ravindu</td>
-                        <td>100.00</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">O003</th>
 
-                        <td>01/01/2022</td>
-                        <td>Pasindu</td>
-                        <td>50.00</td>
-                        <td>500</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">O004</th>
-                        <td>01/01/2022</td>
-                        <td>Lakshan</td>
-                        <td>150.00</td>
-                        <td>7500</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">O005</th>
-                        <td>01/01/2022</td>
-                        <td>Ravindu</td>
-                        <td>200.00</td>
-                        <td>340</td>
-                    </tr>
+
                     </tbody>
                 </table>
             </div>
@@ -323,36 +289,8 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Ruwan</td>
-                        <td>Galle</td>
-                        <td>25000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Dasun</td>
-                        <td>Colombo</td>
-                        <td>10000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Pasindu</td>
-                        <td>Panadura</td>
-                        <td>50000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Lakshan</td>
-                        <td>Kottawa</td>
-                        <td>75000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Ravindu</td>
-                        <td>Galle</td>
-                        <td>36000</td>
-                    </tr>
+
+
                     </tbody>
                 </table>
             </div>
@@ -489,36 +427,8 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Oil</td>
-                        <td>10</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Rice</td>
-                        <td>50</td>
-                        <td>120</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Soap</td>
-                        <td>100</td>
-                        <td>50</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td>Sugar</td>
-                        <td>76</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td>Biscuit</td>
-                        <td>100</td>
-                        <td>75</td>
-                    </tr>
+
+
                     </tbody>
                 </table>
             </div>
@@ -706,20 +616,8 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">P001</th>
-                        <td>Soap</td>
-                        <td>150</td>
-                        <td>2</td>
-                        <td>300</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">P002</th>
-                        <td>Rice</td>
-                        <td>300</td>
-                        <td>4</td>
-                        <td>1200</td>
-                    </tr>
+
+                    
                     </tbody>
                 </table>
             </div>
@@ -729,38 +627,51 @@
 </main>
 
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script>
-    document.getElementById("mainBtn").addEventListener("click", function () {
-        document.getElementById("customer").style.display = 'none'
-        document.getElementById("item").style.display = 'none'
-        document.getElementById("order").style.display = 'none'
-        document.getElementById("home").style.display = 'block'
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 
-    })
-    document.getElementById("dashboardBtn").addEventListener("click", function () {
-        document.getElementById("customer").style.display = 'none'
-        document.getElementById("item").style.display = 'none'
-        document.getElementById("order").style.display = 'none'
-        document.getElementById("home").style.display = 'block'
-    })
-    document.getElementById("orderBtn").addEventListener("click", function () {
-        document.getElementById("customer").style.display = 'none'
-        document.getElementById("item").style.display = 'none'
-        document.getElementById("home").style.display = 'none'
-        document.getElementById("order").style.display = 'block'
-    })
-    document.getElementById("customerBtn").addEventListener("click", function () {
-        document.getElementById("item").style.display = 'none'
-        document.getElementById("order").style.display = 'none'
-        document.getElementById("home").style.display = 'none'
-        document.getElementById("customer").style.display = 'block'
-    })
-    document.getElementById("itemBtn").addEventListener("click", function () {
-        document.getElementById("customer").style.display = 'none'
-        document.getElementById("order").style.display = 'none'
-        document.getElementById("home").style.display = 'none'
-        document.getElementById("item").style.display = 'block'
-    })
+<script>
+
+    $("#customer").css("display", "none");
+    $("#item").css("display", "none");
+    $("#order").css("display", "none");
+
+
+    $("#mainBtn").click(function () {
+        $("#customer").css("display", "none");
+        $("#item").css("display", "none");
+        $("#order").css("display", "none");
+        $("#home").css("display", "block");
+    });
+
+    $("#dashboardBtn").click(function () {
+        $("#customer").css("display", "none");
+        $("#item").css("display", "none");
+        $("#order").css("display", "none");
+        $("#home").css("display", "block");
+    });
+
+    $("#orderBtn").click(function () {
+        $("#customer").css("display", "none");
+        $("#item").css("display", "none");
+        $("#order").css("display", "block");
+        $("#home").css("display", "none");
+    });
+
+    $("#customerBtn").click(function () {
+        $("#customer").css("display", "block");
+        $("#item").css("display", "none");
+        $("#order").css("display", "none");
+        $("#home").css("display", "none");
+    });
+
+    $("#itemBtn").click(function () {
+        $("#customer").css("display", "none");
+        $("#item").css("display", "block");
+        $("#order").css("display", "none");
+        $("#home").css("display", "none");
+    });
+
 </script>
+
 </body>
 </html>
