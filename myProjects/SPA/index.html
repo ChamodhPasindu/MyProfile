@@ -183,10 +183,10 @@
                 <div class="col-xl col-lg col-sm-12 col-md-4 d-grid justify-content-md-end">
                     <button type="button" class="btn btn-success mt-4 d-grid  col-6 col-md-12 col-sm-6 mx-auto"
                             data-bs-toggle="modal"
-                            data-bs-target="#addItemModal">+Add Customer
+                            data-bs-target="#addCustomerModal">+Add Customer
                     </button>
 
-                    <div class="modal fade" id="customerAddItemModal" tabindex="-1" aria-labelledby="addItemModalLabel"
+                    <div class="modal fade" id="addCustomerModal" tabindex="-1" aria-labelledby="addItemModalLabel"
                          aria-hidden="true">
                         <div class="modal-dialog-centered modal-dialog">
                             <div class="modal-content">
@@ -198,27 +198,27 @@
                                 <div class="modal-body">
                                     <form>
                                         <div>
-                                            <label for="customer-Id" class="col-form-label">Customer ID:</label>
-                                            <input type="text" class="form-control" id="customer-Id">
+                                            <label for="txtCusId" class="col-form-label">Customer ID:</label>
+                                            <input type="text" class="form-control" id="txtCusId">
                                         </div>
                                         <div>
-                                            <label for="customer-Name" class="col-form-label">Customer Name:</label>
-                                            <input type="text" class="form-control" id="customer-Name">
+                                            <label for="txtCusName" class="col-form-label">Customer Name:</label>
+                                            <input type="text" class="form-control" id="txtCusName">
                                         </div>
                                         <div>
-                                            <label for="customerCustomerAddress" class="col-form-label">Address:</label>
-                                            <input type="text" class="form-control" id="customerCustomerAddress">
+                                            <label for="txtCusAddress" class="col-form-label">Address:</label>
+                                            <input type="text" class="form-control" id="txtCusAddress">
                                         </div>
                                         <div>
-                                            <label for="customer-Salary" class="col-form-label">Salary:</label>
-                                            <input type="text" class="form-control" id="customer-Salary">
+                                            <label for="txtCusSalary" class="col-form-label">Salary:</label>
+                                            <input type="text" class="form-control" id="txtCusSalary">
                                         </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                     </button>
-                                    <button type="button" class="btn btn-primary">Save</button>
+                                    <button type="button" id="btnCustomerSave" class="btn btn-primary">Save</button>
                                 </div>
                             </div>
                         </div>
@@ -234,20 +234,20 @@
                     <div class="col-5 col-sm-5 col-lg">
                         <div class="mb-4">
                             <label for="customerId" class="form-label">Customer ID</label>
-                            <input type="text" class="form-control" id="customerId" placeholder="C001" disabled>
+                            <input type="text" class="form-control" id="customerId" placeholder="C001" >
                         </div>
                     </div>
                     <div class="col-7 col-sm-7 col-lg">
                         <div class="mb-4">
                             <label for="customerName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="customerName" placeholder="Dasun" disabled>
+                            <input type="text" class="form-control" id="customerName" placeholder="Dasun" >
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="mb-4">
                             <label for="customerSalary" class="form-label">Salary(Rs)</label>
-                            <input type="text" class="form-control" id="customerSalary" placeholder="0000.00" disabled>
+                            <input type="text" class="form-control" id="customerSalary" placeholder="0000.00" >
                         </div>
                     </div>
 
@@ -256,7 +256,7 @@
                     <div class="col">
                         <div class="mb-2">
                             <label for="customerAddress" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="customerAddress" placeholder="Galle" disabled>
+                            <input type="text" class="form-control" id="customerAddress" placeholder="Galle" >
                         </div>
                     </div>
                 </div>
@@ -288,8 +288,7 @@
                         <th scope="col">Salary(Rs)</th>
                     </tr>
                     </thead>
-                    <tbody>
-
+                    <tbody id="customerTable">
 
                     </tbody>
                 </table>
@@ -338,27 +337,27 @@
                                 <div class="modal-body">
                                     <form>
                                         <div>
-                                            <label for="item-id" class="col-form-label">Item Code:</label>
-                                            <input type="text" class="form-control" id="item-id">
+                                            <label for="txtItemId" class="col-form-label">Item Code:</label>
+                                            <input type="text" class="form-control" id="txtItemId">
                                         </div>
                                         <div>
-                                            <label for="item-name" class="col-form-label">Item Name:</label>
-                                            <input type="text" class="form-control" id="item-name">
+                                            <label for="txtItemName" class="col-form-label">Item Name:</label>
+                                            <input type="text" class="form-control" id="txtItemName">
                                         </div>
                                         <div>
-                                            <label for="item-price" class="col-form-label">Item Price:</label>
-                                            <input type="text" class="form-control" id="item-price">
+                                            <label for="txtItemPrice" class="col-form-label">Item Price:</label>
+                                            <input type="text" class="form-control" id="txtItemPrice">
                                         </div>
                                         <div>
-                                            <label for="item-quantity" class="col-form-label">Item Quantity:</label>
-                                            <input type="number" class="form-control" id="item-quantity">
+                                            <label for="txtItemQty" class="col-form-label">Item Quantity:</label>
+                                            <input type="number" class="form-control" id="txtItemQty">
                                         </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
                                     </button>
-                                    <button type="button" class="btn btn-primary">Save</button>
+                                    <button type="button" id="btnItemSave" class="btn btn-primary">Save</button>
                                 </div>
                             </div>
                         </div>
@@ -373,26 +372,26 @@
                     <div class="col-5 col-sm-5 col-lg">
                         <div class="mb-4">
                             <label for="itemId" class="form-label">Item Code</label>
-                            <input type="text" class="form-control" id="itemId" placeholder="P001" disabled>
+                            <input type="text" class="form-control" id="itemId" placeholder="P001" >
                         </div>
                     </div>
                     <div class="col-7 col-sm-7 col-lg">
                         <div class="mb-4">
                             <label for="itemName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="itemName" placeholder="Saop" disabled>
+                            <input type="text" class="form-control" id="itemName" placeholder="Saop" >
                         </div>
                     </div>
 
                     <div class="col col-lg">
                         <div class="mb-2">
-                            <label for="qtyOnHand" class="form-label">Quantity</label>
-                            <input type="number" class="form-control" id="qtyOnHand" placeholder="00" disabled>
+                            <label for="itemQtyOnHand" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="itemQtyOnHand" placeholder="00" >
                         </div>
                     </div>
                     <div class="col col-lg">
                         <div class="mb-2">
-                            <label for="price" class="form-label">Unit Price</label>
-                            <input type="text" class="form-control" id="price" placeholder="0000.00" disabled>
+                            <label for="itemPrice" class="form-label">Unit Price</label>
+                            <input type="text" class="form-control" id="itemPrice" placeholder="0000.00" >
                         </div>
                     </div>
 
@@ -426,7 +425,7 @@
                         <th scope="col">Unit Price(Rs)</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="itemTable">
 
 
                     </tbody>
@@ -617,7 +616,7 @@
                     </thead>
                     <tbody>
 
-                    
+
                     </tbody>
                 </table>
             </div>
@@ -669,6 +668,120 @@
         $("#item").css("display", "block");
         $("#order").css("display", "none");
         $("#home").css("display", "none");
+    });
+
+    /*---------------CUSTOMER FUNCTION---------------------------*/
+
+
+    $("#txtCusId").keydown(function (event) {
+        if (event.key == "Enter") {
+            $("#txtCusName").focus();
+        }
+    });
+
+    $("#txtCusName").keydown(function (event){
+        if (event.key=="Enter"){
+            $("#txtCusAddress").focus();
+        }
+    });
+
+    $("#txtCusAddress").keydown(function (event){
+        if (event.key=="Enter"){
+            $("#txtCusSalary").focus();
+        }
+    });
+
+    $("#txtCusSalary").keydown(function (event){
+        if (event.key=="Enter"){
+            $("#btnCustomerSave").focus();
+        }
+    });
+
+
+    /*------------------------------------------*/
+
+    $("#btnCustomerSave").click(function () {
+
+        $("#customerTable>tr").off("click");
+
+        let customerID = $("#txtCusId").val();
+        let customerName = $("#txtCusName").val();
+        let customerAddress = $("#txtCusAddress").val();
+        let customerSalary = $("#txtCusSalary").val();
+
+        let row = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerAddress}</td><td>${customerSalary}</td></tr>`;
+
+        $("#customerTable").append(row);
+
+        $("#customerTable>tr").click(function () {
+
+            let cusId = $(this).children(":eq(0)").text();
+            let cusName = $(this).children(":eq(1)").text();
+            let cusAddress = $(this).children(":eq(2)").text();
+            let cusSalary = $(this).children(":eq(3)").text();
+
+            $("#customerId").val(cusId)
+            $("#customerName").val(cusName)
+            $("#customerSalary").val(cusSalary)
+            $("#customerAddress").val(cusAddress)
+        });
+    });
+
+    /*---------------ITEM FUNCTION---------------------------*/
+
+
+    $("#txtItemId").keydown(function (event) {
+        if (event.key == "Enter") {
+            $("#txtItemName").focus();
+        }
+    });
+
+    $("#txtItemName").keydown(function (event){
+        if (event.key=="Enter"){
+            $("#txtItemPrice").focus();
+        }
+    });
+
+    $("#txtItemPrice").keydown(function (event){
+        if (event.key=="Enter"){
+            $("#txtItemQty").focus();
+        }
+    });
+
+    $("#txtItemQty").keydown(function (event){
+        if (event.key=="Enter"){
+            $("#btnItemSave").focus();
+        }
+    });
+
+
+    /*------------------------------------------*/
+
+    $("#btnItemSave").click(function () {
+
+        $("#itemTable>tr").off("click");
+
+        let itemID = $("#txtItemId").val();
+        let itemName = $("#txtItemName").val();
+        let itemPrice = $("#txtItemPrice").val();
+        let itemQty = $("#txtItemQty").val();
+
+        let row = `<tr><td>${itemID}</td><td>${itemName}</td><td>${itemQty}</td><td>${itemPrice}</td></tr>`;
+
+        $("#itemTable").append(row);
+
+        $("#itemTable>tr").click(function () {
+
+            let id = $(this).children(":eq(0)").text();
+            let name = $(this).children(":eq(1)").text();
+            let price = $(this).children(":eq(2)").text();
+            let qty = $(this).children(":eq(3)").text();
+
+            $("#itemId").val(id)
+            $("#itemName").val(name)
+            $("#itemPrice").val(price)
+            $("#itemQtyOnHand").val(qty)
+        });
     });
 
 </script>
