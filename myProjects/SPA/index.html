@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>POS System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../javaScript/1.Assignment/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -174,9 +174,9 @@
                 </div>
                 <div class="col-12 col-xl col-sm-9 col-md-6 col-lg">
                     <form class="d-flex mt-3 mt-sm-4 mt-lg-4">
-                        <input class="form-control me-2" type="search" placeholder="Search Customer"
-                               aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                        <input id="txtCustomerSearch" class="form-control me-2" type="text"
+                               placeholder="Search Customer">
+                        <button id="btnCustomerSearch" class="btn btn-outline-primary" type="button">Search</button>
                     </form>
                 </div>
 
@@ -200,18 +200,22 @@
                                         <div>
                                             <label for="txtCusId" class="col-form-label">Customer ID:</label>
                                             <input type="text" class="form-control" id="txtCusId">
+                                            <p><small class="text-danger pl-2" id="lblCusId"></small></p>
                                         </div>
                                         <div>
                                             <label for="txtCusName" class="col-form-label">Customer Name:</label>
                                             <input type="text" class="form-control" id="txtCusName">
+                                            <p><small class="text-danger pl-2" id="lblCusName"></small></p>
                                         </div>
                                         <div>
                                             <label for="txtCusAddress" class="col-form-label">Address:</label>
                                             <input type="text" class="form-control" id="txtCusAddress">
+                                            <p><small class="text-danger pl-2" id="lblCusAddress"></small></p>
                                         </div>
                                         <div>
                                             <label for="txtCusSalary" class="col-form-label">Salary:</label>
                                             <input type="text" class="form-control" id="txtCusSalary">
+                                            <p><small class="text-danger pl-2" id="lblCusSalary"></small></p>
                                         </div>
                                     </form>
                                 </div>
@@ -234,20 +238,20 @@
                     <div class="col-5 col-sm-5 col-lg">
                         <div class="mb-4">
                             <label for="customerId" class="form-label">Customer ID</label>
-                            <input type="text" class="form-control" id="customerId" placeholder="C001" >
+                            <input type="text" class="form-control" id="customerId" placeholder="C00-001" disabled>
                         </div>
                     </div>
                     <div class="col-7 col-sm-7 col-lg">
                         <div class="mb-4">
                             <label for="customerName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="customerName" placeholder="Dasun" >
+                            <input type="text" class="form-control" id="customerName" placeholder="Dasun">
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="mb-4">
                             <label for="customerSalary" class="form-label">Salary(Rs)</label>
-                            <input type="text" class="form-control" id="customerSalary" placeholder="0000.00" >
+                            <input type="text" class="form-control" id="customerSalary" placeholder="0000.00">
                         </div>
                     </div>
 
@@ -256,15 +260,14 @@
                     <div class="col">
                         <div class="mb-2">
                             <label for="customerAddress" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="customerAddress" placeholder="Galle" >
+                            <input type="text" class="form-control" id="customerAddress" placeholder="Galle">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="gap-2 d-flex justify-content-center justify-content-md-end justify-content-sm-center  mt-4">
-                        <button type="button" class="btn btn-secondary">Clear</button>
-                        <button type="button" class="btn btn-danger">Delete</button>
-                        <button type="button" class="btn btn-primary">Update</button>
+                        <button id="btnCustomerDelete" type="button" class="btn btn-danger">Delete</button>
+                        <button id="btnCustomerUpdate" type="button" class="btn btn-primary">Update</button>
                     </div>
                 </div>
             </div>
@@ -315,8 +318,8 @@
                 </div>
                 <div class="col-12 col-xl col-sm-9 col-md-6 col-lg">
                     <form class="d-flex mt-3 mt-sm-4 mt-lg-4">
-                        <input class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
-                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                        <input id="txtItemSearch" class="form-control me-2" type="text" placeholder="Search Item">
+                        <button id="btnItemSearch" class="btn btn-outline-primary" type="button">Search</button>
                     </form>
                 </div>
                 <div class="col-xl col-lg col-sm-12 col-md-4 d-grid justify-content-md-end ">
@@ -339,18 +342,24 @@
                                         <div>
                                             <label for="txtItemId" class="col-form-label">Item Code:</label>
                                             <input type="text" class="form-control" id="txtItemId">
+                                            <p><small class="text-danger pl-2" id="lblItemId"></small></p>
                                         </div>
                                         <div>
                                             <label for="txtItemName" class="col-form-label">Item Name:</label>
                                             <input type="text" class="form-control" id="txtItemName">
+                                            <p><small class="text-danger pl-2" id="lblItemName"></small></p>
+
                                         </div>
                                         <div>
                                             <label for="txtItemPrice" class="col-form-label">Item Price:</label>
                                             <input type="text" class="form-control" id="txtItemPrice">
+                                            <p><small class="text-danger pl-2" id="lblItemPrice"></small></p>
+
                                         </div>
                                         <div>
                                             <label for="txtItemQty" class="col-form-label">Item Quantity:</label>
                                             <input type="number" class="form-control" id="txtItemQty">
+                                            <p><small class="text-danger pl-2" id="lblItemQty"></small></p>
                                         </div>
                                     </form>
                                 </div>
@@ -372,35 +381,34 @@
                     <div class="col-5 col-sm-5 col-lg">
                         <div class="mb-4">
                             <label for="itemId" class="form-label">Item Code</label>
-                            <input type="text" class="form-control" id="itemId" placeholder="P001" >
+                            <input type="text" class="form-control" id="itemId" placeholder="P00-001" disabled>
                         </div>
                     </div>
                     <div class="col-7 col-sm-7 col-lg">
                         <div class="mb-4">
                             <label for="itemName" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="itemName" placeholder="Saop" >
+                            <input type="text" class="form-control" id="itemName" placeholder="Saop">
                         </div>
                     </div>
 
                     <div class="col col-lg">
                         <div class="mb-2">
                             <label for="itemQtyOnHand" class="form-label">Quantity</label>
-                            <input type="number" class="form-control" id="itemQtyOnHand" placeholder="00" >
+                            <input type="number" class="form-control" id="itemQtyOnHand" placeholder="00">
                         </div>
                     </div>
                     <div class="col col-lg">
                         <div class="mb-2">
                             <label for="itemPrice" class="form-label">Unit Price</label>
-                            <input type="text" class="form-control" id="itemPrice" placeholder="0000.00" >
+                            <input type="text" class="form-control" id="itemPrice" placeholder="0000.00">
                         </div>
                     </div>
 
                 </div>
                 <div class="row">
                     <div class=" gap-2 d-flex justify-content-center justify-content-md-end justify-content-sm-center  mt-4 mt-lg-2">
-                        <button type="button" class="btn btn-secondary">Clear</button>
-                        <button type="button" class="btn btn-danger">Delete</button>
-                        <button type="button" class="btn btn-primary">Update</button>
+                        <button id="btnItemDelete" type="button" class="btn btn-danger">Delete</button>
+                        <button id="btnItemUpdate" type="button" class="btn btn-primary">Update</button>
                     </div>
                 </div>
             </div>
@@ -625,11 +633,13 @@
 
 </main>
 
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="../javaScript/1.Assignment/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../javaScript/1.Assignment/assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="db/DB.js"></script>
 
 <script>
 
+    //START SPA
     $("#customer").css("display", "none");
     $("#item").css("display", "none");
     $("#order").css("display", "none");
@@ -669,49 +679,201 @@
         $("#order").css("display", "none");
         $("#home").css("display", "none");
     });
+    //END SPA
 
-    /*---------------CUSTOMER FUNCTION---------------------------*/
+    /*---------------START ALL CUSTOMER FUNCTION---------------------------*/
 
+    //START CUSTOMER VALIDATION
+    $('#btnCustomerSave,#btnCustomerUpdate,#btnCustomerDelete').prop('disabled', true);
+    $('#customerName,#customerSalary,#customerAddress').prop('disabled', true);
 
-    $("#txtCusId").keydown(function (event) {
-        if (event.key == "Enter") {
-            $("#txtCusName").focus();
+    var regExCusID = /^(C00-)[0-9]{3,4}$/;
+    var regExCusName = /^[A-z\s+]{5,50}$/;
+    var regExCusAddress = /^[A-z\s+]{5,50}$/;
+    var regExCusSalary = /^[0-9]*([.][0-9]{2})$/;
+
+    //START NEW CUSTOMER VALIDATION
+    function checkNewCustomerValidation() {
+        let inputCusId = $("#txtCusId").val();
+        let inputCusName = $("#txtCusName").val();
+        let inputCusAddress = $("#txtCusAddress").val();
+        let inputCusSalary = $("#txtCusSalary").val();
+
+        if (regExCusID.test(inputCusId)) {
+            if (regExCusName.test(inputCusName)) {
+                if (regExCusAddress.test(inputCusAddress)) {
+                    if (regExCusSalary.test(inputCusSalary)) {
+                        $("#btnCustomerSave").prop('disabled', false);
+                    }
+                }
+            }
+        }
+    }
+
+    $("#txtCusId").keyup(function () {
+        let inputCusId = $("#txtCusId").val();
+        if (regExCusID.test(inputCusId)) {
+            $("#txtCusId").css('border', '2px solid blue');
+            $("#lblCusId").text("");
+
+            checkNewCustomerValidation()
+            $("#txtCusId").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#txtCusName").focus();
+                }
+            });
+        } else {
+            $("#txtCusId").css('border', '2px solid red');
+            $("#lblCusId").text("Cus ID is a required field : Pattern C00-000");
+            $("#btnCustomerSave").prop('disabled', true);
+
         }
     });
 
-    $("#txtCusName").keydown(function (event){
-        if (event.key=="Enter"){
-            $("#txtCusAddress").focus();
+    $("#txtCusName").keyup(function () {
+        let inputCusName = $("#txtCusName").val();
+        if (regExCusName.test(inputCusName)) {
+            $("#txtCusName").css('border', '2px solid blue');
+            $("#lblCusName").text("");
+
+            checkNewCustomerValidation()
+            $("#txtCusName").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#txtCusAddress").focus();
+                }
+            });
+
+        } else {
+            $("#txtCusName").css('border', '2px solid red');
+            $("#lblCusName").text("Cus Name is a required field : Mimimum 5, Max 20, Spaces Allowed");
+
+            $("#btnCustomerSave").prop('disabled', true);
+
         }
     });
 
-    $("#txtCusAddress").keydown(function (event){
-        if (event.key=="Enter"){
-            $("#txtCusSalary").focus();
+    $("#txtCusAddress").keyup(function () {
+        let inputCusAddress = $("#txtCusAddress").val();
+        if (regExCusAddress.test(inputCusAddress)) {
+            $("#txtCusAddress").css('border', '2px solid blue');
+            $("#lblCusAddress").text("");
+
+            checkNewCustomerValidation()
+            $("#txtCusAddress").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#txtCusSalary").focus();
+                }
+            });
+
+        } else {
+            $("#txtCusAddress").css('border', '2px solid red');
+            $("#lblCusAddress").text("Cus Name is a required field : Mimum 5");
+
+            $("#btnCustomerSave").prop('disabled', true);
+
         }
     });
 
-    $("#txtCusSalary").keydown(function (event){
-        if (event.key=="Enter"){
-            $("#btnCustomerSave").focus();
+    $("#txtCusSalary").keyup(function () {
+        let inputCusSalary = $("#txtCusSalary").val();
+        if (regExCusSalary.test(inputCusSalary)) {
+            $("#txtCusSalary").css('border', '2px solid blue');
+            $("#lblCusSalary").text("");
+
+            checkNewCustomerValidation()
+            $("#txtCusSalary").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#btnCustomerSave").focus();
+                }
+            });
+        } else {
+            $("#txtCusSalary").css('border', '2px solid red');
+            $("#lblCusSalary").text("Cus Salary is a required field : Pattern 100.00");
+
+            $("#btnCustomerSave").prop('disabled', true);
+        }
+    });
+    //END NEW CUSTOMER VALIDATION
+
+    //START UPDATE CUSTOMER VALIDATION
+    function checkUpdateCustomerValidation() {
+        let inputCusName = $("#customerName").val();
+        let inputCusAddress = $("#customerAddress").val();
+        let inputCusSalary = $("#customerSalary").val();
+
+        if (regExCusName.test(inputCusName)) {
+            if (regExCusAddress.test(inputCusAddress)) {
+                if (regExCusSalary.test(inputCusSalary)) {
+                    $("#btnCustomerUpdate").prop('disabled', false);
+                }
+            }
+        }
+    }
+
+    $("#customerName").keyup(function () {
+        let inputCusName = $("#customerName").val();
+        if (regExCusName.test(inputCusName)) {
+            $("#customerName").css('border', '2px solid blue');
+            checkUpdateCustomerValidation()
+            $("#customerName").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#customerAddress").focus();
+                }
+            });
+
+        } else {
+            $("#customerName").css('border', '2px solid red');
+            $("#btnCustomerUpdate").prop('disabled', true);
+
         }
     });
 
+    $("#customerAddress").keyup(function () {
+        let inputCusAddress = $("#customerAddress").val();
+        if (regExCusAddress.test(inputCusAddress)) {
+            $("#customerAddress").css('border', '2px solid blue');
+            checkUpdateCustomerValidation()
+            $("#customerAddress").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#customerSalary").focus();
+                }
+            });
 
-    /*------------------------------------------*/
+        } else {
+            $("#customerAddress").css('border', '2px solid red');
+            $("#btnCustomerUpdate").prop('disabled', true);
 
+        }
+    });
+
+    $("#customerSalary").keyup(function () {
+        let inputCusSalary = $("#customerSalary").val();
+        if (regExCusSalary.test(inputCusSalary)) {
+            $("#customerSalary").css('border', '2px solid blue');
+            checkUpdateCustomerValidation()
+            $("#customerSalary").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#btnCustomerUpdate").focus();
+                }
+            });
+        } else {
+            $("#customerSalary").css('border', '2px solid red');
+            $("#btnCustomerUpdate").prop('disabled', true);
+        }
+    });
+    //END UPDATE CUSTOMER VALIDATION
+
+    //END CUSTOMER VALIDATION
+
+
+    //START CUSTOMER BTN FUNCTIONS
     $("#btnCustomerSave").click(function () {
 
+        saveCustomer();
+        clearAll();
+        loadAllCustomer();
+
         $("#customerTable>tr").off("click");
-
-        let customerID = $("#txtCusId").val();
-        let customerName = $("#txtCusName").val();
-        let customerAddress = $("#txtCusAddress").val();
-        let customerSalary = $("#txtCusSalary").val();
-
-        let row = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerAddress}</td><td>${customerSalary}</td></tr>`;
-
-        $("#customerTable").append(row);
 
         $("#customerTable>tr").click(function () {
 
@@ -727,62 +889,443 @@
         });
     });
 
-    /*---------------ITEM FUNCTION---------------------------*/
+    $("#btnCustomerSearch").click(function () {
+        var searchID = $("#txtCustomerSearch").val();
 
+        var response = searchCustomer(searchID);
+        if (response) {
+            $("#customerId").val(response.id);
+            $("#customerName").val(response.name);
+            $("#customerAddress").val(response.address);
+            $("#customerSalary").val(response.salary);
 
-    $("#txtItemId").keydown(function (event) {
-        if (event.key == "Enter") {
-            $("#txtItemName").focus();
+            $('#customerName,#customerSalary,#customerAddress').prop('disabled', false);
+            $("#btnCustomerDelete").prop('disabled', false);
+        } else {
+            clearAll();
+            alert("No such a Customer")
         }
     });
 
-    $("#txtItemName").keydown(function (event){
-        if (event.key=="Enter"){
-            $("#txtItemPrice").focus();
+    $("#btnCustomerDelete").click(function () {
+        var cusId = $("#customerId").val();
+        var response = searchCustomer(cusId);
+
+        let index = customerDB.indexOf(response);
+        let res = confirm("Do you really need to delete this customer ?");
+        if (res) {
+            deleteCustomer(index);
         }
     });
 
-    $("#txtItemPrice").keydown(function (event){
-        if (event.key=="Enter"){
-            $("#txtItemQty").focus();
+    $("#btnCustomerUpdate").click(function () {
+        updateCustomer();
+    });
+    //END CUSTOMER BTN FUNCTIONS
+
+
+    //START CUSTOMER CRUD OPERATIONS
+    function saveCustomer() {
+
+        //get customer details from user inputs
+        let customerID = $("#txtCusId").val();
+        let customerName = $("#txtCusName").val();
+        let customerAddress = $("#txtCusAddress").val();
+        let customerSalary = $("#txtCusSalary").val();
+
+        //create customer object
+        var customerObj = {
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            salary: customerSalary
+        };
+
+        customerDB.push(customerObj)
+
+    }
+
+    function deleteCustomer(index) {
+        customerDB.pop(index);
+
+        clearAll();
+        loadAllCustomer();
+    }
+
+    function updateCustomer() {
+        let cusName = $("#customerName").val();
+        let cusAddress = $("#customerAddress").val();
+        let cusSalary = $("#customerSalary").val();
+
+        var cusId = $("#customerId").val();
+        var response = searchCustomer(cusId);
+        let index = customerDB.indexOf(response);
+
+        customerDB[index].name = cusName;
+        customerDB[index].salary = cusSalary;
+        customerDB[index].address = cusAddress;
+
+        clearAll();
+        loadAllCustomer();
+
+    }
+
+    function searchCustomer(id) {
+        for (var i = 0; i < customerDB.length; i++) {
+            if (customerDB[i].id == id) {
+                return customerDB[i];
+            }
+        }
+    }
+
+    function clearAll() {
+        $('#txtCusId,#txtCusName,#txtCusAddress,#txtCusSalary,#txtCustomerSearch').val("");
+        $('#customerId,#customerName,#customerAddress,#customerSalary').val("");
+
+        $('#txtCusId,#txtCusName,#txtCusAddress,#txtCusSalary').css('border', '2px solid #ced4da');
+        $('#customerId,#customerName,#customerAddress,#customerSalary').css('border', '2px solid #ced4da');
+
+        $('#txtCusId').focus();
+
+        $('#btnCustomerSave,#btnCustomerUpdate,#btnCustomerDelete').prop('disabled', true);
+        $('#customerName,#customerSalary,#customerAddress').prop('disabled', true);
+
+    }
+
+    function loadAllCustomer() {
+
+        $("#customerTable").empty();
+        for (var i of customerDB) {
+            let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.address}</td><td>${i.salary}</td></tr>`;
+            $("#customerTable").append(row);
+        }
+    }
+    //END CUSTOMER CRUD OPERATIONS
+
+    /*---------------END ALL CUSTOMER FUNCTION---------------------------*/
+
+
+    /*---------------START ALL ITEM FUNCTION---------------------------*/
+
+    //START ITEM VALIDATION
+    $('#btnItemSave,#btnItemUpdate,#btnItemDelete').prop('disabled', true);
+    $('#itemName,#itemPrice,#itemQtyOnHand').prop('disabled', true);
+
+    var regExItemID = /^(I00-)[0-9]{3,4}$/;
+    var regExItemName = /^[A-z\s+]{3,50}$/;
+    var regExItemQty = /^[0-9]{1,3}$/;
+    var regExItemPrice = /^[1-9][0-9]*([.][0-9]{2})?$/;
+
+    //START NEW ITEM VALIDATION
+    function checkNewItemValidation() {
+        let inputItemId = $("#txtItemId").val();
+        let inputItemName = $("#txtItemName").val();
+        let inputItemQty = $("#txtItemQty").val();
+        let inputItemPrice = $("#txtItemPrice").val();
+
+        if (regExItemID.test(inputItemId)) {
+            if (regExItemName.test(inputItemName)) {
+                if (regExItemQty.test(inputItemQty)) {
+                    if (regExItemPrice.test(inputItemPrice)) {
+                        $("#btnItemSave").prop('disabled', false);
+                    }
+                }
+            }
+        }
+    }
+
+    $("#txtItemId").keyup(function () {
+        let inputItemId = $("#txtItemId").val();
+        if (regExItemID.test(inputItemId)) {
+            $("#txtItemId").css('border', '2px solid blue');
+            $("#lblItemId").text("");
+
+            checkNewItemValidation();
+            $("#txtItemId").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#txtItemName").focus();
+                }
+            });
+        } else {
+            $("#txtItemId").css('border', '2px solid red');
+            $("#lblItemId").text("Item ID is a required field : Pattern I00-000");
+            $("#btnItemSave").prop('disabled', true);
+
         }
     });
 
-    $("#txtItemQty").keydown(function (event){
-        if (event.key=="Enter"){
-            $("#btnItemSave").focus();
+    $("#txtItemName").keyup(function () {
+        let inputItemName = $("#txtItemName").val();
+        if (regExItemName.test(inputItemName)) {
+            $("#txtItemName").css('border', '2px solid blue');
+            $("#lblItemName").text("");
+
+            checkNewItemValidation();
+            $("#txtItemName").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#txtItemPrice").focus();
+                }
+            });
+
+        } else {
+            $("#txtItemName").css('border', '2px solid red');
+            $("#lblItemName").text("Item Name is a required field : Mimimum 5, Max 20, Spaces Allowed");
+
+            $("#btnItemSave").prop('disabled', true);
+
         }
     });
 
+    $("#txtItemPrice").keyup(function () {
+        let inputItemPrice = $("#txtItemPrice").val();
+        if (regExItemPrice.test(inputItemPrice)) {
+            $("#txtItemPrice").css('border', '2px solid blue');
+            $("#lblItemPrice").text("");
 
-    /*------------------------------------------*/
+            checkNewItemValidation();
+            $("#txtItemPrice").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#txtItemQty").focus();
+                }
+            });
 
+        } else {
+            $("#txtItemPrice").css('border', '2px solid red');
+            $("#lblItemPrice").text("Item Price is a required field : Pattern 100.00 or 100");
+
+            $("#btnItemSave").prop('disabled', true);
+
+        }
+    });
+
+    $("#txtItemQty").keyup(function () {
+        let inputItemQty = $("#txtItemQty").val();
+        if (regExItemQty.test(inputItemQty)) {
+            $("#txtItemQty").css('border', '2px solid blue');
+            $("#lblItemQty").text("");
+
+            checkNewItemValidation()
+            $("#txtItemQty").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#btnItemSave").focus();
+                }
+            });
+        } else {
+            $("#txtItemQty").css('border', '2px solid red');
+            $("#lblItemQty").text("Item Qty is a required field : Mimum 1");
+
+            $("#btnItemSave").prop('disabled', true);
+        }
+    });
+    //END NEW ITEM VALIDATION
+
+    //START UPDATE ITEM VALIDATION
+    function checkUpdateItemValidation() {
+        let inputItemName = $("#itemName").val();
+        let inputItemPrice = $("#itemPrice").val();
+        let inputItemQty = $("#itemQtyOnHand").val();
+
+        if (regExItemName.test(inputItemName)) {
+            if (regExItemQty.test(inputItemQty)) {
+                if (regExItemPrice.test(inputItemPrice)) {
+                    $("#btnItemUpdate").prop('disabled', false);
+                }
+            }
+        }
+    }
+
+    $("#itemName").keyup(function () {
+        let inputItemName = $("#itemName").val();
+        if (regExItemName.test(inputItemName)) {
+            $("#itemName").css('border', '2px solid blue');
+            checkUpdateItemValidation()
+            $("#itemName").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#itemQtyOnHand").focus();
+                }
+            });
+
+        } else {
+            $("#itemName").css('border', '2px solid red');
+            $("#btnItemUpdate").prop('disabled', true);
+
+        }
+    });
+
+    $("#itemQtyOnHand").keyup(function () {
+        let inputItemQty = $("#itemQtyOnHand").val();
+        if (regExItemQty.test(inputItemQty)) {
+            $("#itemQtyOnHand").css('border', '2px solid blue');
+            checkUpdateItemValidation()
+            $("#itemQtyOnHand").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#itemPrice").focus();
+                }
+            });
+
+        } else {
+            $("#itemQtyOnHand").css('border', '2px solid red');
+            $("#btnItemUpdate").prop('disabled', true);
+
+        }
+    });
+
+    $("#itemPrice").keyup(function () {
+        let inputItemPrice = $("#itemPrice").val();
+        if (regExItemPrice.test(inputItemPrice)) {
+            $("#itemPrice").css('border', '2px solid blue');
+            checkUpdateItemValidation()
+            $("#itemPrice").keydown(function (event) {
+                if (event.key == "Enter") {
+                    $("#btnItemUpdate").focus();
+                }
+            });
+        } else {
+            $("#itemPrice").css('border', '2px solid red');
+            $("#btnCustomerUpdate").prop('disabled', true);
+        }
+    });
+    //END UPDATE ITEM VALIDATION
+
+    //END ITEM VALIDATION
+
+
+    //START ITEM BTN FUNCTIONS
     $("#btnItemSave").click(function () {
+        saveItem();
+        clearAllItemDetails();
+        loadAllItem();
+
 
         $("#itemTable>tr").off("click");
 
-        let itemID = $("#txtItemId").val();
-        let itemName = $("#txtItemName").val();
-        let itemPrice = $("#txtItemPrice").val();
-        let itemQty = $("#txtItemQty").val();
-
-        let row = `<tr><td>${itemID}</td><td>${itemName}</td><td>${itemQty}</td><td>${itemPrice}</td></tr>`;
-
-        $("#itemTable").append(row);
-
         $("#itemTable>tr").click(function () {
 
-            let id = $(this).children(":eq(0)").text();
-            let name = $(this).children(":eq(1)").text();
-            let price = $(this).children(":eq(2)").text();
-            let qty = $(this).children(":eq(3)").text();
+            let itemId = $(this).children(":eq(0)").text();
+            let itemName = $(this).children(":eq(1)").text();
+            let itemQty = $(this).children(":eq(2)").text();
+            let itemUnitPrice = $(this).children(":eq(3)").text();
 
-            $("#itemId").val(id)
-            $("#itemName").val(name)
-            $("#itemPrice").val(price)
-            $("#itemQtyOnHand").val(qty)
+            $("#itemId").val(itemId)
+            $("#itemName").val(itemName)
+            $("#itemQtyOnHand").val(itemQty)
+            $("#itemPrice").val(itemUnitPrice)
         });
     });
+
+    $("#btnItemSearch").click(function () {
+        var searchID = $("#txtItemSearch").val();
+
+        var response = searchItem(searchID);
+        if (response) {
+            $("#itemId").val(response.id);
+            $("#itemName").val(response.name);
+            $("#itemQtyOnHand").val(response.qty);
+            $("#itemPrice").val(response.price);
+
+            $('#itemName,#itemPrice,#itemQtyOnHand').prop('disabled', false);
+            $("#btnItemDelete").prop('disabled', false);
+
+        } else {
+            clearAllItemDetails();
+            alert("No such a Customer")
+        }
+    });
+
+    $("#btnItemUpdate").click(function () {
+        updateItem();
+    });
+
+    $("#btnItemDelete").click(function () {
+        var itemId = $("#itemId").val();
+        var response = searchItem(itemId);
+
+        let index = itemDB.indexOf(response);
+        let res = confirm("Do you really need to delete this item ?");
+        if (res) {
+            deleteItem(index);
+        }
+    });
+    //END ITEM BTN FUNCTIONS
+
+    //START ITEM CRUD OPERATIONS
+    function saveItem() {
+
+        //get item details from user inputs
+        let itemID = $("#txtItemId").val();
+        let itemName = $("#txtItemName").val();
+        let itemQty = $("#txtItemQty").val();
+        let itemPrice = $("#txtItemPrice").val();
+
+        //create customer object
+        var itemObj = {
+            id: itemID,
+            name: itemName,
+            qty: itemQty,
+            price: itemPrice
+        };
+
+        itemDB.push(itemObj)
+    }
+
+    function clearAllItemDetails() {
+        $('#txtItemId,#txtItemName,#txtItemQty,#txtItemPrice,#txtItemSearch').val("");
+        $('#itemId,#itemName,#itemQtyOnHand,#itemPrice').val("");
+
+        $('#txtItemId,#txtItemName,#txtItemQty,#txtItemPrice').css('border', '2px solid #ced4da');
+        $('#itemId,#itemName,#itemQtyOnHand,#itemPrice').css('border', '2px solid #ced4da');
+
+        $('#txtItemId').focus();
+
+        $('#btnItemSave,#btnItemUpdate,#btnItemDelete').prop('disabled', true);
+        $('#itemName,#itemPrice,#itemQtyOnHand').prop('disabled', true);
+
+    }
+
+    function loadAllItem() {
+        $("#itemTable").empty();
+        for (var i of itemDB) {
+            let row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.qty}</td><td>${i.price}</td></tr>`;
+            $("#itemTable").append(row);
+        }
+    }
+
+    function searchItem(id) {
+        for (var i = 0; i < itemDB.length; i++) {
+            if (itemDB[i].id == id) {
+                return itemDB[i];
+            }
+        }
+    }
+
+    function updateItem() {
+        let itemName = $("#itemName").val();
+        let itemQty = $("#itemQtyOnHand").val();
+        let itemPrice = $("#itemPrice").val();
+
+        var itemId = $("#itemId").val();
+        var response = searchItem(itemId);
+        let index = itemDB.indexOf(response);
+
+        itemDB[index].name = itemName;
+        itemDB[index].qty = itemQty;
+        itemDB[index].price = itemPrice;
+
+        clearAllItemDetails();
+        loadAllItem();
+    }
+
+    function deleteItem(index) {
+        itemDB.pop(index);
+
+        clearAllItemDetails();
+        loadAllItem();
+
+    }
+    //END ITEM CRUD OPERATIONS
+
+    /*---------------END ALL ITEM FUNCTION---------------------------*/
+
 
 </script>
 
