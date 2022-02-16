@@ -4,13 +4,105 @@
     <meta charset="UTF-8">
     <title>JS Queue</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <style>
+        div {
+            width: 150px;
+            height: 60px;
+            border-radius: 10px;
+        }
+    </style>
 
 </head>
-<body class="container bg-secondary">
-<section>
-    <h2 class="text-light mt-5 ">Java Script Queue</h2>
-    <hr class="bg-light ">
-    <hr class="bg-light">
+<body class="container-md bg-secondary position-relative">
+<h2 class="text-light mt-5 text-center">Java Script Queue</h2>
+
+<section class="mt-5">
+    <div class=" col-2" id="one"></div>
+    <hr class="bg-light p-1">
+
+    <section class="row d-flex justify-content-center ">
+        <div class=" col-2 mx-3 " id="two"></div>
+        <div class="col-2 mx-3" id="three"></div>
+        <div class="col-2 mx-3" id="four"></div>
+        <div class=" col-2 mx-3" id="five"></div>
+    </section>
+
+    <hr class="bg-light p-1">
+    <div class=" col-2 position-absolute end-0 " id="six"></div>
+
+    <section class="d-flex justify-content-center mt-5">
+        <button id="btnStart" type="button" class="btn btn-primary mx-2">Start</button>
+        <button id="btnStop" type="button" class="btn btn-danger">Stop</button>
+    </section>
 </section>
 </body>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+
+<script>
+    var colors = ['red', 'lightblue', 'black', 'yellow', 'blue', 'green'];
+
+    $("#one").css('background-color', colors[0]);
+    $("#two").css('background-color', colors[5]);
+    $("#three").css('background-color', colors[4]);
+    $("#four").css('background-color', colors[3]);
+    $("#five").css('background-color', colors[2]);
+    $("#six").css('background-color', colors[1]);
+
+    let timerID;
+
+    $("#btnStart").click(function () {
+        clearInterval(timerID);
+        timerID = setInterval(changeColor, 1000);
+    });
+
+    let count = 0;
+
+    function changeColor() {
+
+        if (count == 6) {
+            count = 0;
+        }
+
+        if (count == 5) {
+            $("#one").css('background-color', colors[0]);
+        } else {
+            $("#one").css('background-color', colors[count + 1]);
+        }
+
+        $("#two").css('background-color', colors[count]);
+
+
+        if (count + 4 >= 5) {
+            $("#three").css('background-color', colors[count - 1]);
+        } else {
+            $("#three").css('background-color', colors[count + 5]);
+
+        }
+
+        if (count + 3 >= 5) {
+            $("#four").css('background-color', colors[count - 2]);
+        } else {
+            $("#four").css('background-color', colors[count + 4]);
+        }
+
+        if (count + 2 >= 5) {
+            $("#five").css('background-color', colors[count - 3]);
+        } else {
+            $("#five").css('background-color', colors[count + 3]);
+        }
+
+        if (count + 1 >= 5) {
+            $("#six").css('background-color', colors[count - 4]);
+        } else {
+            $("#six").css('background-color', colors[count + 2]);
+        }
+
+        count++;
+    }
+
+    $("#btnStop").click(function () {
+        clearInterval(timerID);
+    });
+</script>
+
 </html>

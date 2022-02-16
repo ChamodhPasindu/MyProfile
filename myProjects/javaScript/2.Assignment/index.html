@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight Rider</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <style>
+        div {
+            width: 150px;
+            height: 60px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: white;
+        }
+    </style>
+
+</head>
+<body class="container-md bg-black position-relative">
+<h2 class="text-danger mt-5 mb-5 text-center">JavaScript Knight Rider</h2>
+
+<hr class="bg-light p-1">
+<section class="row ">
+    <div class=" col mx-1" id="one"></div>
+    <div class=" col mx-1 " id="two"></div>
+    <div class="col mx-1" id="three"></div>
+    <div class="col mx-1" id="four"></div>
+    <div class=" col mx-1" id="five"></div>
+    <div class=" col mx-1" id="six"></div>
+</section>
+<hr class="bg-light p-1">
+
+<section class="d-flex justify-content-center mt-5">
+    <button id="btnStart" type="button" class="btn btn-primary mx-2">Start</button>
+    <button id="btnStop" type="button" class="btn btn-danger">Stop</button>
+</section>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+
+    var colors = ['#e71010', '#b73024', '#9e4037', '#b96961', '#debbb9', 'white'];
+
+    let timerID;
+
+    $("#btnStart").click(function () {
+        clearInterval(timerID);
+        timerID = setInterval(changeColor, 120);
+    });
+
+    let count = 0;
+    let i = 0;
+
+    function changeColor() {
+
+        if (count == 24) {
+            count = 0;
+        }
+        $("#one").css('background-color', colors[count]);
+        $("#two").css('background-color', colors[count - 1]);
+        $("#three").css('background-color', colors[count - 2]);
+        $("#four").css('background-color', colors[count - 3]);
+        $("#five").css('background-color', colors[count - 4]);
+        $("#six").css('background-color', colors[count - 5]);
+
+        console.log(count)
+
+        if (count > 11) {
+
+            if (i == 12) {
+                i = 0;
+            }
+            $("#one").css('background-color', colors[i - 5]);
+            $("#two").css('background-color', colors[i - 4]);
+            $("#three").css('background-color', colors[i - 3]);
+            $("#four").css('background-color', colors[i - 2]);
+            $("#five").css('background-color', colors[i - 1]);
+            $("#six").css('background-color', colors[i]);
+
+            i++;
+        }
+        count++;
+    }
+
+    $("#btnStop").click(function () {
+        clearInterval(timerID);
+    });
+
+</script>
+</body>
+</html>
