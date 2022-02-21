@@ -77,6 +77,7 @@ $("#btnOrderSearch").click(function (){
 
     var response = searchOrder(searchID);
     if (response) {
+        $("#homeOrderId").val(response.getOrderId());
         $("#homeOrderDate").val(response.getOrderDate());
         $("#homeDiscount").val(response.getOrderDiscount());
         $("#homeCost").val(response.getOrderTotal());
