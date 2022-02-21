@@ -38,12 +38,11 @@
 <script>
 
     var colors = ['#e71010', '#b73024', '#9e4037', '#b96961', '#debbb9', 'white'];
-
     let timerID;
 
     $("#btnStart").click(function () {
         clearInterval(timerID);
-        timerID = setInterval(changeColor, 120);
+        timerID = setInterval(changeColor, 100);
     });
 
     let count = 0;
@@ -51,9 +50,11 @@
 
     function changeColor() {
 
-        if (count == 24) {
+        if (count == 20) {
             count = 0;
+            i = 0;
         }
+
         $("#one").css('background-color', colors[count]);
         $("#two").css('background-color', colors[count - 1]);
         $("#three").css('background-color', colors[count - 2]);
@@ -61,13 +62,8 @@
         $("#five").css('background-color', colors[count - 4]);
         $("#six").css('background-color', colors[count - 5]);
 
-        console.log(count)
+        if (count >= 10) {
 
-        if (count > 11) {
-
-            if (i == 12) {
-                i = 0;
-            }
             $("#one").css('background-color', colors[i - 5]);
             $("#two").css('background-color', colors[i - 4]);
             $("#three").css('background-color', colors[i - 3]);
